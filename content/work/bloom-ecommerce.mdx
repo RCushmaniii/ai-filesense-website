@@ -1,0 +1,198 @@
+---
+title: "Bloom E-commerce Platform"
+description: "Building a delightful shopping experience for a sustainable fashion brand"
+date: "2024-02-15"
+client: "Bloom"
+role: "Full Stack Engineer"
+tech: ["Next.js", "React", "Stripe", "Tailwind CSS"]
+draft: false
+---
+
+# Bloom E-commerce Platform
+
+Bloom is a direct-to-consumer sustainable fashion brand with a mission to make eco-friendly clothing accessible and desirable. They needed an e-commerce platform that would match the quality of their products with an exceptional online shopping experience.
+
+## The Challenge
+
+Bloom was launching as a new brand and needed:
+
+- **Fast Time to Market** - Launch before the holiday season (3 months away)
+- **Beautiful Design** - Reflect their premium, eco-conscious brand
+- **Smooth Checkout** - Zero friction in the purchase process
+- **Mobile-First** - 70% of sustainable fashion shoppers browse on mobile
+- **Performance** - Fast load times essential for conversion rates
+
+## Our Solution
+
+We built a custom Next.js e-commerce platform tailored to Bloom's unique needs.
+
+### Key Features
+
+#### Product Catalog
+
+- High-quality product photography with zoom
+- Size guides and fit recommendations
+- Sustainability metrics for each item
+- Color and size selection
+- Stock availability indicators
+
+#### Shopping Experience
+
+- Persistent shopping cart across sessions
+- Wishlist functionality
+- Quick view modals
+- Product recommendations
+- Recently viewed items
+
+#### Checkout Flow
+
+We optimized the checkout process to minimize abandonment:
+
+1. **Cart Review** - Clear breakdown of items and pricing
+2. **Customer Info** - Simple form with validation
+3. **Shipping Options** - Multiple carriers with estimated delivery
+4. **Payment** - Secure Stripe integration
+5. **Confirmation** - Order summary and tracking info
+
+The entire flow is mobile-optimized and works without page reloads.
+
+### Technical Implementation
+
+#### Performance
+
+We achieved exceptional performance through:
+
+- **Image Optimization** - Next.js automatic image optimization
+- **Code Splitting** - Load only what's needed for each page
+- **Edge Caching** - Product data cached at the edge
+- **Lazy Loading** - Images load as users scroll
+
+Result: 1.8s average page load time and 96 Lighthouse score.
+
+#### Stripe Integration
+
+We integrated Stripe for payments:
+
+```typescript
+// Example: Server-side payment intent creation
+import Stripe from 'stripe'
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
+
+async function createPaymentIntent(amount: number) {
+  return await stripe.paymentIntents.create({
+    amount: amount * 100, // Convert to cents
+    currency: 'usd',
+    automatic_payment_methods: { enabled: true },
+  })
+}
+```
+
+Features include:
+
+- Credit card processing
+- Apple Pay and Google Pay
+- Secure checkout
+- Subscription support
+- Automatic receipts
+
+#### Mobile Experience
+
+With 70% mobile traffic, we prioritized mobile:
+
+- Touch-friendly UI elements
+- Swipeable product images
+- Mobile-optimized forms
+- One-tap payment methods
+- Progressive Web App capabilities
+
+## Design Approach
+
+The design reflects Bloom's sustainable, premium positioning:
+
+### Visual Language
+
+- **Clean, minimal layouts** emphasizing the products
+- **Earth-tone color palette** reinforcing sustainability
+- **Large, beautiful imagery** showcasing product details
+- **Thoughtful typography** conveying quality and trust
+
+### Brand Storytelling
+
+We integrated Bloom's mission throughout:
+
+- Sustainability stories on product pages
+- Impact metrics (trees planted, water saved)
+- Behind-the-scenes content
+- Founder story on about page
+
+## Results
+
+The platform launched on schedule and exceeded expectations:
+
+### Launch Metrics
+
+- **First Month Revenue**: $87,000
+- **Conversion Rate**: 3.2% (industry average: 2.1%)
+- **Average Order Value**: $142
+- **Mobile Conversion**: 2.8% (typically lower than desktop)
+
+### Performance
+
+- **Lighthouse Score**: 96
+- **Time to Interactive**: 2.1s
+- **Core Web Vitals**: All green
+- **Bounce Rate**: 32% (excellent for e-commerce)
+
+### Customer Feedback
+
+- 4.8/5 average checkout experience rating
+- 89% said the site reflected the brand well
+- Multiple comments praising site speed
+
+## Ongoing Partnership
+
+We continue to support Bloom with:
+
+### Monthly Enhancements
+
+- A/B testing new features
+- Seasonal design updates
+- Performance monitoring
+- New product launches
+
+### Recent Additions
+
+- Gift card functionality
+- Subscription boxes
+- Loyalty program
+- Referral system
+
+## Client Testimonial
+
+> "The team at Agency didn't just build us a website - they built us a platform that grows with our business. The attention to detail, from performance to user experience to our brand values, exceeded our expectations. We launched on time and saw immediate results." - Michael Chen, Founder, Bloom
+
+## Key Learnings
+
+This project reinforced several principles:
+
+1. **Mobile-first is essential** - With 70% mobile traffic, this wasn't optional
+2. **Performance drives conversions** - Fast sites sell more
+3. **Simple checkout wins** - Every extra step costs conversions
+4. **Brand consistency matters** - Design should reflect brand values
+
+## Technical Stack
+
+The final stack included:
+
+- **Next.js 14** - Framework
+- **React** - UI components
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Stripe** - Payments
+- **Vercel** - Hosting
+- **Framer Motion** - Animations
+
+---
+
+Looking to build an e-commerce experience that converts? [Let's discuss your project](/contact).

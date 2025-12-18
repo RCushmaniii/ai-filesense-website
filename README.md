@@ -1,0 +1,248 @@
+# Next.js Agency Starter
+
+A production-grade starter template for building modern agency websites, marketing sites, and portfolios with Next.js, TypeScript, and Tailwind CSS.
+
+## ✨ Features
+
+- ⚡ **Next.js 14** with App Router
+- 🎨 **Tailwind CSS** for styling
+- 📘 **TypeScript** in strict mode
+- 📝 **MDX** for blog posts and case studies
+- 🌗 **Dark mode** support with localStorage persistence
+- 📱 **Fully responsive** mobile-first design
+- ♿ **Accessible** - WCAG AA compliant
+- 🚀 **Optimized** - 90+ Lighthouse scores
+- 🔍 **SEO-ready** - Metadata, sitemap, robots.txt
+- 📦 **Component library** - Reusable UI components
+
+## 📋 Prerequisites
+
+- Node.js 20 or higher
+- npm, yarn, or pnpm
+
+## 🚀 Quick Start
+
+1. **Install dependencies**
+
+```bash
+npm install
+```
+
+2. **Set up environment variables**
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and update `SITE_URL` to match your domain.
+
+3. **Run development server**
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to see your site.
+
+## 📁 Project Structure
+
+```
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Home page
+│   ├── blog/              # Blog routes
+│   ├── work/              # Portfolio routes
+│   └── ...                # Other pages
+├── components/
+│   ├── ui/                # Primitive components (Button, Input, etc.)
+│   ├── layout/            # Layout components (Navbar, Footer, etc.)
+│   └── content/           # Content components (MDX, Prose, etc.)
+├── content/
+│   ├── blog/              # Blog posts (MDX)
+│   └── work/              # Case studies (MDX)
+├── lib/                   # Utilities and helpers
+├── public/                # Static assets
+└── styles/                # Global styles
+```
+
+## 📝 Adding Content
+
+### Blog Posts
+
+Create a new `.mdx` file in `content/blog/`:
+
+```mdx
+---
+title: "Your Post Title"
+description: "A brief description"
+date: "2024-01-15"
+tags: ["nextjs", "react"]
+draft: false
+---
+
+Your content here...
+```
+
+### Case Studies
+
+Create a new `.mdx` file in `content/work/`:
+
+```mdx
+---
+title: "Project Name"
+description: "Project description"
+date: "2024-01-15"
+client: "Client Name"
+role: "Your Role"
+tech: ["Next.js", "TypeScript"]
+draft: false
+---
+
+Your content here...
+```
+
+## 🎨 Customization
+
+### Brand Colors
+
+Edit `styles/globals.css` to customize colors:
+
+```css
+:root {
+  --color-primary: 59 130 246;      /* Your primary color */
+  --color-secondary: 16 185 129;    /* Your secondary color */
+}
+```
+
+### Components
+
+All components are in `components/` and can be customized:
+
+- `components/ui/` - Primitive components
+- `components/layout/` - Layout components
+- `components/content/` - Content components
+
+### Fonts
+
+The default font is Inter. To change it, edit `app/layout.tsx`:
+
+```typescript
+import { YourFont } from 'next/font/google'
+
+const yourFont = YourFont({ subsets: ['latin'] })
+```
+
+## 🛠️ Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+- `npm run typecheck` - Check TypeScript types
+- `npm run check` - Run typecheck + lint
+
+## 🚢 Deployment
+
+### Vercel (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+1. Push your code to GitHub
+2. Import your repository in Vercel
+3. Vercel will auto-detect Next.js and deploy
+4. Set environment variables in Vercel dashboard
+
+### Other Platforms
+
+This is a standard Next.js application and can be deployed to:
+
+- Netlify
+- AWS Amplify
+- Google Cloud
+- Railway
+- Render
+- Self-hosted with Docker
+
+## 🔧 Environment Variables
+
+Create a `.env` file with:
+
+```env
+SITE_URL=https://yourdomain.com
+```
+
+## 📚 Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org)
+- **Language**: [TypeScript](https://www.typescriptlang.org)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com)
+- **Content**: [MDX](https://mdxjs.com)
+- **Deployment**: [Vercel](https://vercel.com)
+
+## 🎯 What's Included
+
+### Pages
+
+- ✅ Home page with hero, services, process, work, testimonials
+- ✅ Work/portfolio listing and detail pages
+- ✅ Blog listing and detail pages
+- ✅ About page
+- ✅ Contact form with validation
+- ✅ Privacy policy page
+- ✅ Custom 404 page
+
+### Components
+
+- ✅ Button with variants
+- ✅ Input and Textarea with error states
+- ✅ Card components
+- ✅ Badge component
+- ✅ Smart Link component
+- ✅ Responsive Navbar with mobile menu
+- ✅ Footer with social links
+- ✅ Container, Section, Stack layouts
+
+### Features
+
+- ✅ Dark mode toggle
+- ✅ MDX content support
+- ✅ SEO optimization
+- ✅ Automatic sitemap generation
+- ✅ Image optimization
+- ✅ TypeScript strict mode
+- ✅ ESLint + Prettier
+- ✅ Responsive design
+- ✅ Accessibility features
+
+## 📖 Documentation
+
+- [CLAUDE.md](./CLAUDE.md) - AI assistant guide and architecture docs
+- [CLIENT_START.md](./CLIENT_START.md) - Client project customization checklist
+- [IMAGE_SOURCES.md](./IMAGE_SOURCES.md) - Image attribution guidelines
+
+## 🤝 Contributing
+
+This is a starter template meant to be customized for your needs. Feel free to:
+
+1. Fork the repository
+2. Make your changes
+3. Use it for your projects
+
+## 📄 License
+
+MIT License - feel free to use this template for personal or commercial projects.
+
+## 🆘 Support
+
+- Check the [CLAUDE.md](./CLAUDE.md) for detailed architecture information
+- Review [Next.js Documentation](https://nextjs.org/docs)
+- Open an issue for bugs or questions
+
+## 🎉 Getting Started with a Client Project
+
+See [CLIENT_START.md](./CLIENT_START.md) for a complete checklist to customize this template for a client project.
+
+---
+
+Built with ❤️ using Next.js, TypeScript, and Tailwind CSS

@@ -1,0 +1,59 @@
+---
+title: "Why We Build with Next.js"
+description: "Our technical rationale for choosing Next.js as our primary framework for modern web development"
+date: "2024-01-15"
+tags: ["nextjs", "react", "architecture"]
+draft: false
+---
+
+# Why We Build with Next.js
+
+When it comes to building modern web applications, the choice of framework can make or break a project. After years of experience with various technologies, we've settled on Next.js as our go-to framework. Here's why.
+
+## Performance Out of the Box
+
+Next.js provides exceptional performance optimizations without requiring extensive configuration. Features like automatic code splitting, image optimization, and built-in caching mean our applications load faster and provide better user experiences from day one.
+
+The framework's hybrid rendering capabilities allow us to choose the best rendering strategy for each page:
+
+- **Static Generation** for marketing pages and blog posts
+- **Server-Side Rendering** for dynamic, personalized content
+- **Client-Side Rendering** for highly interactive components
+
+## Developer Experience
+
+The developer experience with Next.js is unmatched. File-based routing, fast refresh, and TypeScript support out of the box mean our team can move quickly without sacrificing code quality.
+
+```typescript
+// Example: Creating a new page is as simple as adding a file
+export default function AboutPage() {
+  return <h1>About Us</h1>
+}
+```
+
+## Production Ready
+
+Next.js is battle-tested at scale by companies like Netflix, TikTok, and Twitch. The framework handles edge cases, provides robust error handling, and makes it easy to implement best practices.
+
+Deployment is seamless with Vercel, but the framework is flexible enough to deploy anywhere - from traditional hosting to serverless environments.
+
+## The Ecosystem
+
+The React ecosystem is vast, and Next.js sits at the center of it. We can leverage the entire npm ecosystem while benefiting from Next.js's opinionated approach to common challenges like:
+
+- Routing and navigation
+- API routes and backend logic
+- SEO and metadata management
+- Image and font optimization
+
+## Future-Proof
+
+The Next.js team at Vercel is constantly innovating. Features like the App Router, Server Components, and streaming SSR keep the framework at the cutting edge of web development.
+
+By building with Next.js, we ensure our clients' applications are built on a foundation that will continue to evolve and improve.
+
+## Conclusion
+
+Next.js gives us the perfect balance of performance, developer experience, and flexibility. It allows us to build production-grade applications quickly while maintaining high standards for code quality and user experience.
+
+If you're considering Next.js for your next project, we highly recommend it. And if you need help getting started, [get in touch](/contact) - we'd love to help.
