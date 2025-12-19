@@ -2,7 +2,7 @@
 
 **A production-grade starter kit for modern agency, marketing, and portfolio websites.**
 
-Designed for real client work — not demos, not tutorials.
+Designed for real client work — not demos, not tutorials. For real clients, not fake clients.
 This starter gives you a clean, scalable foundation so you can focus on **content, conversion, and delivery**, not wiring.
 
 🌐 **Live Demo:**
