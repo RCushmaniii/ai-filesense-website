@@ -46,6 +46,7 @@ When you add an image, document it like this:
 
 ```markdown
 ### hero-homepage.jpg
+
 - **Source**: [Unsplash](https://unsplash.com/photos/abc123)
 - **Photographer**: John Doe
 - **License**: Unsplash License (Free to use)
