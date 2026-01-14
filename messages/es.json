@@ -1,0 +1,373 @@
+{
+  "metadata": {
+    "title": "AI FileSense - Organizacion de Archivos con IA para Windows",
+    "siteName": "AI FileSense",
+    "description": "Finalmente organiza tu Escritorio, Documentos y Descargas sin subir nada a la nube. Clasificacion inteligente con IA que respeta tu privacidad."
+  },
+  "common": {
+    "downloadFree": "Descargar Gratis",
+    "learnMore": "Saber Mas",
+    "seeHowItWorks": "Ver Como Funciona",
+    "comingSoon": "Proximamente",
+    "getStarted": "Comenzar",
+    "viewFaq": "Ver Preguntas Frecuentes",
+    "backToHome": "Volver al Inicio",
+    "current": "Actual"
+  },
+  "nav": {
+    "features": "Caracteristicas",
+    "pricing": "Precios",
+    "download": "Descargar",
+    "support": "Soporte",
+    "skipToContent": "Saltar al contenido",
+    "toggleDarkMode": "Cambiar modo oscuro",
+    "toggleMenu": "Abrir menu"
+  },
+  "footer": {
+    "product": "Producto",
+    "support": "Soporte",
+    "legal": "Legal",
+    "features": "Caracteristicas",
+    "pricing": "Precios",
+    "download": "Descargar",
+    "changelog": "Historial de Cambios",
+    "faq": "Preguntas Frecuentes",
+    "gettingStarted": "Primeros Pasos",
+    "contact": "Contacto",
+    "privacyPolicy": "Politica de Privacidad",
+    "termsOfService": "Terminos de Servicio",
+    "tagline": "Organizacion de archivos con IA para Windows. Tus archivos permanecen en tu computadora — solo los nombres de archivo se envian a la IA para clasificacion inteligente.",
+    "localPrivate": "100% Local y Privado",
+    "copyright": "© {year} AI FileSense. Todos los derechos reservados."
+  },
+  "home": {
+    "hero": {
+      "badge": "Tus archivos nunca salen de tu computadora",
+      "title": "Organizacion de Archivos con IA para Windows",
+      "subtitle": "Finalmente organiza tu Escritorio, Documentos y Descargas — sin subir nada a la nube.",
+      "stat1": "Gratis para 1,000 archivos",
+      "stat2": "Sin cuenta requerida",
+      "stat3": "Windows 10/11"
+    },
+    "problems": {
+      "title": "¿Te Suena Familiar?",
+      "problem1": "Cientos de archivos acumulados en tu Escritorio",
+      "problem2": "Nunca encuentras ese documento que necesitas",
+      "problem3": "Intentaste organizar pero te rendiste a los 10 minutos",
+      "problem4": "No quieres subir archivos personales a la nube"
+    },
+    "solution": {
+      "title": "Conoce AI FileSense",
+      "subtitle": "Organizacion inteligente que respeta tu privacidad",
+      "step1Title": "Escanear",
+      "step1Desc": "Apuntalo a tu carpeta de Escritorio, Documentos o Descargas",
+      "step2Title": "Previsualizar",
+      "step2Desc": "Ve exactamente como la IA organizaria tus archivos antes de mover nada",
+      "step3Title": "Organizar",
+      "step3Desc": "Un clic para una computadora limpia y organizada con soporte completo de deshacer"
+    },
+    "features": {
+      "title": "Todo lo que Necesitas",
+      "subtitle": "Funciones poderosas que mantienen tus archivos privados",
+      "smartAI": "Clasificacion Inteligente con IA",
+      "smartAIDesc": "La IA entiende tus archivos por contenido, no solo por nombre. Documentos fiscales, registros medicos, proyectos de trabajo — ordenados automaticamente.",
+      "localPrivate": "100% Local y Privado",
+      "localPrivateDesc": "Tus archivos nunca salen de tu computadora. Solo los nombres de archivo y pequenos fragmentos van a la IA — nunca el contenido completo.",
+      "undo": "Deshacer con Un Clic",
+      "undoDesc": "¿Cometiste un error? Revierte cualquier organizacion al instante. El historial completo te permite volver a cualquier estado anterior.",
+      "bilingual": "Ingles + Espanol",
+      "bilingualDesc": "Soporte bilingue completo. Usa AI FileSense en ingles o espanol (Mexico) — tu eliges.",
+      "fast": "Rapido y Ligero",
+      "fastDesc": "La indexacion incremental significa que solo se vuelven a escanear los archivos modificados. El procesamiento por lotes mantiene los costos bajos.",
+      "free": "Gratis para 1,000 Archivos",
+      "freeDesc": "Comienza sin costo. Escaneo ilimitado, todas las funciones, deshacer con un clic — todo gratis para tus primeros 1,000 archivos."
+    },
+    "pricing": {
+      "title": "Precios Simples y Transparentes",
+      "subtitle": "Comienza gratis, actualiza cuando necesites mas",
+      "free": "Gratis",
+      "forever": "para siempre",
+      "perYear": "/ano",
+      "pro": "Pro",
+      "freeFeature1": "1,000 archivos con clasificacion IA",
+      "freeFeature2": "Escaneo local ilimitado",
+      "freeFeature3": "Todos los estilos de organizacion",
+      "freeFeature4": "Funciones completas de busqueda",
+      "freeFeature5": "Deshacer con un clic",
+      "freeFeature6": "Sin cuenta requerida",
+      "proFeature1": "10,000+ archivos con clasificacion IA",
+      "proFeature2": "Todo lo del plan Gratis",
+      "proFeature3": "Soporte prioritario",
+      "proFeature4": "Acceso anticipado a nuevas funciones",
+      "proFeature5": "Multiples perfiles de organizacion",
+      "apiCostNote": "Tu proporcionas tu propia clave API de Anthropic. Costo estimado de IA: ~$0.50-1.00 por 1,000 archivos."
+    },
+    "cta": {
+      "title": "¿Listo para un Escritorio Mas Limpio?",
+      "subtitle": "Descarga AI FileSense y comienza a organizar en minutos. Sin cuenta necesaria, sin archivos subidos.",
+      "button": "Descargar Gratis para Windows",
+      "specs": "Windows 10/11 (64-bit) • 100MB de descarga • Gratis para 1,000 archivos"
+    }
+  },
+  "features": {
+    "hero": {
+      "title": "Organizacion Inteligente, Cero Subida a la Nube",
+      "subtitle": "Ve como AI FileSense trae organizacion inteligente a tus archivos locales"
+    },
+    "aiClassification": {
+      "title": "Clasificacion con IA",
+      "subtitle": "La IA lee nombres de archivo y pequenos fragmentos de texto para entender cada archivo — luego sugiere la carpeta perfecta.",
+      "category1": "Proyectos de Trabajo",
+      "category2": "Registros Medicos",
+      "category3": "Documentos Fiscales",
+      "category4": "Recibos",
+      "category5": "Fotos",
+      "category6": "Educacion",
+      "category7": "Personal",
+      "category8": "Archivo"
+    },
+    "organizationStyles": {
+      "title": "Tres Formas de Organizar",
+      "subtitle": "Elige el estilo que se adapte a tu flujo de trabajo",
+      "style1Title": "Areas de Vida",
+      "style1Desc": "Organiza por dominios de vida: Trabajo, Personal, Finanzas, Salud, etc.",
+      "style2Title": "Archivo Cronologico",
+      "style2Desc": "Ordena archivos por ano y mes para acceso cronologico.",
+      "style3Title": "Ordenamiento Rapido",
+      "style3Desc": "Categorizacion rapida en Documentos, Imagenes, Descargas, etc."
+    },
+    "privacy": {
+      "title": "Privacidad por Diseno",
+      "subtitle": "Tus archivos nunca salen de tu computadora",
+      "localTitle": "Lo que se Queda Local",
+      "localDesc": "Todos tus archivos reales, contenido completo y datos personales",
+      "aiTitle": "Lo que Va a la IA",
+      "aiDesc": "Solo nombres de archivo y pequenos fragmentos de texto para clasificacion"
+    },
+    "search": {
+      "title": "Encuentra Archivos Describiendolos",
+      "subtitle": "Busca usando lenguaje natural en lugar de nombres exactos",
+      "example": "\"ese documento fiscal del ano pasado\""
+    },
+    "technical": {
+      "title": "Detalles Tecnicos",
+      "subtitle": "Requisitos del sistema y especificaciones",
+      "minTitle": "Minimo",
+      "minOS": "Windows 10 (64-bit)",
+      "minRAM": "4GB RAM",
+      "minDisk": "200MB de espacio en disco",
+      "recTitle": "Recomendado",
+      "recOS": "Windows 11",
+      "recRAM": "8GB RAM",
+      "recDisk": "SSD para indexacion mas rapida"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Precios Simples y Transparentes",
+      "subtitle": "Comienza gratis, actualiza cuando necesites mas"
+    },
+    "tiers": {
+      "free": "Gratis",
+      "personal": "Personal",
+      "professional": "Profesional"
+    },
+    "apiCosts": {
+      "title": "Sobre Costos de API",
+      "subtitle": "Tu traes tu propia clave API de Anthropic",
+      "howItWorks": "Como Funciona",
+      "howItWorksDesc": "AI FileSense usa Claude AI para clasificacion inteligente. Tu proporcionas tu propia clave API, asi solo pagas por lo que usas.",
+      "estimatedCosts": "Costos Estimados",
+      "estimatedCostsDesc": "~$0.50-1.00 por 1,000 archivos clasificados"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes sobre Precios",
+      "q1": "¿Por que necesito mi propia clave API?",
+      "a1": "Esto mantiene tus costos bajos y te da control total. No hay cargos ocultos ni suscripciones mas alla del nivel Pro.",
+      "q2": "¿Como obtengo una clave API?",
+      "a2": "Registrate en anthropic.com, agrega informacion de facturacion y genera una clave API. Tenemos una guia paso a paso en la aplicacion.",
+      "q3": "¿Que pasa si alcanzo mi limite de archivos?",
+      "a3": "Aun puedes escanear y buscar, pero las nuevas clasificaciones de IA se pausaran hasta que actualices o el mes se reinicie.",
+      "q4": "¿Puedo obtener un reembolso?",
+      "a4": "Si, dentro de los 30 dias de la compra si no estas satisfecho.",
+      "q5": "¿Hay un plan de equipo?",
+      "a5": "Aun no, pero esta en nuestra hoja de ruta. Contactanos si estas interesado.",
+      "q6": "¿Ofrecen descuentos?",
+      "a6": "Ofrecemos descuentos para estudiantes, educadores y organizaciones sin fines de lucro. Contactanos con prueba de elegibilidad."
+    }
+  },
+  "download": {
+    "hero": {
+      "title": "Descargar AI FileSense",
+      "subtitle": "Comienza a organizar tus archivos en minutos"
+    },
+    "button": "Descargar para Windows",
+    "version": "Version {version}",
+    "requirements": {
+      "title": "Requisitos del Sistema",
+      "minTitle": "Minimo",
+      "recTitle": "Recomendado"
+    },
+    "quickStart": {
+      "title": "Guia de Inicio Rapido",
+      "step1": "Descarga y ejecuta el instalador",
+      "step2": "Ingresa tu clave API de Anthropic",
+      "step3": "Selecciona una carpeta para organizar",
+      "step4": "Previsualiza las sugerencias de IA",
+      "step5": "¡Haz clic en Organizar y disfruta!"
+    },
+    "apiKey": {
+      "title": "Obteniendo tu Clave API de Anthropic",
+      "step1": "Ve a console.anthropic.com",
+      "step2": "Crea una cuenta o inicia sesion",
+      "step3": "Agrega informacion de facturacion",
+      "step4": "Genera una nueva clave API",
+      "step5": "Copia y pega en AI FileSense"
+    },
+    "help": {
+      "title": "¿Necesitas Ayuda?",
+      "gettingStarted": "Guia de Primeros Pasos",
+      "faq": "Preguntas Frecuentes",
+      "contact": "Contactar Soporte"
+    }
+  },
+  "support": {
+    "hero": {
+      "title": "¿Como Podemos Ayudarte?",
+      "subtitle": "Encuentra respuestas, guias y soporte"
+    },
+    "cards": {
+      "gettingStarted": "Primeros Pasos",
+      "gettingStartedDesc": "Guia paso a paso para configurar AI FileSense",
+      "faq": "Preguntas Frecuentes",
+      "faqDesc": "Respuestas a preguntas comunes",
+      "contact": "Contactanos",
+      "contactDesc": "Comunicate con nuestro equipo de soporte"
+    },
+    "quickLinks": {
+      "title": "Enlaces Rapidos",
+      "downloadApp": "Descargar la Aplicacion",
+      "pricingPlans": "Planes de Precios",
+      "privacyPolicy": "Politica de Privacidad"
+    }
+  },
+  "faq": {
+    "hero": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber sobre AI FileSense"
+    },
+    "categories": {
+      "general": "General",
+      "privacy": "Privacidad y Seguridad",
+      "features": "Funciones y Uso",
+      "pricing": "Precios y API",
+      "troubleshooting": "Solucion de Problemas"
+    },
+    "general": {
+      "q1": "¿Que es AI FileSense?",
+      "a1": "AI FileSense es una aplicacion de escritorio para Windows que usa IA para organizar inteligentemente tus archivos. Analiza nombres de archivo y pequenos fragmentos de texto para sugerir la mejor estructura de carpetas para tus documentos.",
+      "q2": "¿Es realmente gratis?",
+      "a2": "¡Si! El nivel gratuito incluye clasificacion IA para hasta 1,000 archivos, escaneo local ilimitado, todos los estilos de organizacion y deshacer con un clic. Solo pagas por el uso de la API de IA.",
+      "q3": "¿Que versiones de Windows son compatibles?",
+      "a3": "AI FileSense es compatible con Windows 10 (64-bit) y Windows 11."
+    },
+    "privacy": {
+      "q1": "¿Mis archivos se suben a la nube?",
+      "a1": "No. Tus archivos nunca salen de tu computadora. Solo los nombres de archivo y pequenos fragmentos de texto se envian a la IA para clasificacion.",
+      "q2": "¿Que datos ve la IA?",
+      "a2": "La IA recibe nombres de archivo y pequenos fragmentos de texto opcionales (primeros 500 caracteres). Nunca ve el contenido completo de archivos, imagenes o documentos personales.",
+      "q3": "¿Mi clave API se almacena de forma segura?",
+      "a3": "Si. Tu clave API esta encriptada y almacenada localmente en tu maquina. Nunca se envia a nuestros servidores."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Iniciemos una Conversacion",
+      "subtitle": "¿Tienes una pregunta o comentario? Nos encantaria escucharte."
+    },
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Maria Garcia",
+      "email": "Correo de Trabajo",
+      "emailPlaceholder": "maria@empresa.com",
+      "company": "Empresa (Opcional)",
+      "companyPlaceholder": "Industrias Acme",
+      "website": "Sitio Web de la Empresa",
+      "websitePlaceholder": "empresa.com",
+      "interest": "¿En que estas interesado?",
+      "webDev": "Soporte Tecnico",
+      "design": "Solicitud de Funcion",
+      "strategy": "Asociacion",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuentanos como podemos ayudarte...",
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "successTitle": "¡Mensaje Recibido!",
+      "successMessage": "Gracias por contactarnos. Te responderemos dentro de 48 horas.",
+      "sendAnother": "Enviar otro mensaje",
+      "error": "Algo salio mal. Por favor intenta de nuevo."
+    },
+    "process": {
+      "title": "¿Que sigue?",
+      "step1": "Revisaremos tu mensaje",
+      "step2": "Nuestro equipo respondera dentro de 48 horas",
+      "step3": "Trabajaremos juntos para resolver tu problema"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Acerca de AI FileSense",
+      "subtitle": "Construyendo herramientas que respetan tu privacidad"
+    },
+    "mission": {
+      "title": "Nuestra Mision",
+      "description": "Creemos que la organizacion de archivos no deberia requerir subir tus datos personales a la nube. AI FileSense trae el poder de la IA a tus archivos locales, manteniendo tus datos donde pertenecen — en tu computadora."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "privacy": "Privacidad Primero",
+      "privacyDesc": "Tus archivos nunca salen de tu computadora",
+      "simplicity": "Simplicidad",
+      "simplicityDesc": "Funciones poderosas, interfaz simple",
+      "transparency": "Transparencia",
+      "transparencyDesc": "Tu controlas tus costos de IA y datos"
+    }
+  },
+  "changelog": {
+    "hero": {
+      "title": "Historial de Cambios",
+      "subtitle": "Que hay de nuevo en AI FileSense"
+    }
+  },
+  "privacy": {
+    "hero": {
+      "title": "Politica de Privacidad",
+      "subtitle": "Como manejamos tus datos"
+    }
+  },
+  "terms": {
+    "hero": {
+      "title": "Terminos de Servicio",
+      "subtitle": "Terminos y condiciones para usar AI FileSense"
+    }
+  },
+  "notFound": {
+    "title": "Pagina No Encontrada",
+    "description": "La pagina que buscas no existe o ha sido movida.",
+    "backHome": "Volver al Inicio"
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Perspectivas, actualizaciones y consejos del equipo de AI FileSense"
+    },
+    "empty": "Aun no hay publicaciones. ¡Vuelve pronto!"
+  },
+  "work": {
+    "hero": {
+      "title": "Nuestro Trabajo",
+      "subtitle": "Estudios de caso y proyectos"
+    },
+    "empty": "Aun no hay estudios de caso. ¡Vuelve pronto!"
+  }
+}

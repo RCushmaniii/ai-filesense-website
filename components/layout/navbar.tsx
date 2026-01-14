@@ -3,28 +3,32 @@
 import { useState, useEffect } from 'react'
 import NextLink from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useLocale, useTranslations } from 'next-intl'
 import { Container } from './container'
+import { LanguageSwitcher } from './language-switcher'
 import { Button } from '@/components/ui/button'
+import { SunIcon, MoonIcon, MenuIcon, CloseIcon } from '@/components/icons'
 import { cn } from '@/lib/utils'
-
-const navItems = [
-  { label: 'Features', href: '/features' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Download', href: '/download' },
-  { label: 'Support', href: '/support' },
-]
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
+  const locale = useLocale()
+  const t = useTranslations('nav')
+
+  const navItems = [
+    { label: t('features'), href: `/${locale}/features` },
+    { label: t('pricing'), href: `/${locale}/pricing` },
+    { label: t('download'), href: `/${locale}/download` },
+    { label: t('support'), href: `/${locale}/support` },
+  ]
 
   useEffect(() => {
-    const isDark = localStorage.getItem('darkMode') === 'true'
-    setDarkMode(isDark)
-    if (isDark) {
-      document.documentElement.classList.add('dark')
-    }
+    // Sync state with actual DOM state set by inline script
+    setDarkMode(document.documentElement.classList.contains('dark'))
+    setMounted(true)
   }, [])
 
   const toggleDarkMode = () => {
@@ -46,7 +50,7 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        'sticky top-0 z-50 border-b',
+        'sticky top-0 z-50 border-b transition-colors',
         darkMode
           ? 'border-white/10 bg-black text-white'
           : 'border-foreground/10 bg-white text-foreground'
@@ -56,22 +60,20 @@ export function Navbar() {
         <div className="flex h-16 md:h-20 items-center justify-between">
           {/* Logo */}
           <NextLink
-            href="/"
+            href={`/${locale}`}
             className="flex items-center gap-2 hover:opacity-90 transition-opacity"
           >
             <span className="sr-only">AI FileSense</span>
-            {/* Logo Icon */}
             <div className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary text-white font-bold text-sm md:text-base">
               AI
             </div>
-            {/* Logo Text */}
             <span className="text-lg md:text-xl font-semibold tracking-tight">
               <span className="text-primary">File</span>Sense
             </span>
           </NextLink>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
             {navItems.map((item) => (
               <NextLink
                 key={item.href}
@@ -90,11 +92,14 @@ export function Navbar() {
             ))}
 
             {/* Download CTA */}
-            <NextLink href="/download">
+            <NextLink href={`/${locale}/download`}>
               <Button variant="primary" className="text-sm">
-                Download Free
+                {t('download')}
               </Button>
             </NextLink>
+
+            {/* Language Switcher */}
+            <LanguageSwitcher />
 
             {/* Dark Mode Toggle */}
             <button
@@ -103,118 +108,40 @@ export function Navbar() {
                 'p-2 rounded-lg transition-colors',
                 darkMode ? 'hover:bg-white/10' : 'hover:bg-foreground/5'
               )}
-              aria-label="Toggle dark mode"
+              aria-label={t('toggleDarkMode')}
             >
-              {darkMode ? (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  />
-                </svg>
-              )}
+              {mounted && (darkMode ? <SunIcon /> : <MoonIcon />)}
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Controls */}
           <div className="flex md:hidden items-center gap-2">
+            {/* Language Switcher - Mobile */}
+            <LanguageSwitcher className="mr-1" />
+
+            {/* Dark Mode Toggle - Mobile */}
             <button
               onClick={toggleDarkMode}
               className={cn(
                 'p-2 rounded-lg transition-colors',
                 darkMode ? 'hover:bg-white/10' : 'hover:bg-foreground/5'
               )}
-              aria-label="Toggle dark mode"
+              aria-label={t('toggleDarkMode')}
             >
-              {darkMode ? (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  />
-                </svg>
-              )}
+              {mounted && (darkMode ? <SunIcon /> : <MoonIcon />)}
             </button>
 
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className={cn(
                 'p-2 rounded-lg transition-colors',
                 darkMode ? 'hover:bg-white/10' : 'hover:bg-foreground/5'
               )}
-              aria-label="Toggle menu"
+              aria-label={t('toggleMenu')}
+              aria-expanded={mobileMenuOpen}
             >
-              {mobileMenuOpen ? (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
+              {mobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
             </button>
           </div>
         </div>
@@ -244,9 +171,9 @@ export function Navbar() {
                   {item.label}
                 </NextLink>
               ))}
-              <NextLink href="/download" className="mt-2">
+              <NextLink href={`/${locale}/download`} className="mt-2">
                 <Button variant="primary" className="w-full">
-                  Download Free
+                  {t('download')}
                 </Button>
               </NextLink>
             </div>

@@ -1,3 +1,4 @@
+import { cache } from 'react'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -29,9 +30,9 @@ export interface Work {
 }
 
 /**
- * Get all blog posts
+ * Get all blog posts (cached for performance)
  */
-export function getAllPosts(): Post[] {
+export const getAllPosts = cache((): Post[] => {
   const blogDir = path.join(contentDirectory, 'blog')
 
   if (!fs.existsSync(blogDir)) {
@@ -62,12 +63,12 @@ export function getAllPosts(): Post[] {
     .sort((a, b) => (a.date > b.date ? -1 : 1))
 
   return posts
-}
+})
 
 /**
- * Get a single blog post by slug
+ * Get a single blog post by slug (cached to prevent double reads)
  */
-export function getPostBySlug(slug: string): Post | null {
+export const getPostBySlug = cache((slug: string): Post | null => {
   const fullPath = path.join(contentDirectory, 'blog', `${slug}.mdx`)
 
   if (!fs.existsSync(fullPath)) {
@@ -87,12 +88,12 @@ export function getPostBySlug(slug: string): Post | null {
     coverImage: data.coverImage,
     content,
   }
-}
+})
 
 /**
- * Get all work/case studies
+ * Get all work/case studies (cached for performance)
  */
-export function getAllWork(): Work[] {
+export const getAllWork = cache((): Work[] => {
   const workDir = path.join(contentDirectory, 'work')
 
   if (!fs.existsSync(workDir)) {
@@ -125,12 +126,12 @@ export function getAllWork(): Work[] {
     .sort((a, b) => (a.date > b.date ? -1 : 1))
 
   return work
-}
+})
 
 /**
- * Get a single work/case study by slug
+ * Get a single work/case study by slug (cached to prevent double reads)
  */
-export function getWorkBySlug(slug: string): Work | null {
+export const getWorkBySlug = cache((slug: string): Work | null => {
   const fullPath = path.join(contentDirectory, 'work', `${slug}.mdx`)
 
   if (!fs.existsSync(fullPath)) {
@@ -152,4 +153,4 @@ export function getWorkBySlug(slug: string): Work | null {
     draft: data.draft || false,
     content,
   }
-}
+})
