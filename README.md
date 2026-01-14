@@ -259,5 +259,5 @@ Built with ❤️ using **Next.js, TypeScript, and Tailwind CSS**
 
 For questions about AI FileSense or this website:
 
-- Email: privacy@aifilesense.com
-- Website: https://aifilesense.com/contact
+- Email: support@aifilesense.com
+- Website: [aifilesense.com/support/contact](https://aifilesense.com/support/contact)
