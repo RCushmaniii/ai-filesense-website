@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const siteUrl = process.env.SITE_URL || 'http://localhost:3000'
+const siteUrl = process.env.SITE_URL || 'https://aifilesense.com'
 
 export default function robots(): MetadataRoute.Robots {
   return {

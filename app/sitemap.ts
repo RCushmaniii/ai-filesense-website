@@ -1,26 +1,8 @@
 import { MetadataRoute } from 'next'
-import { getAllPosts, getAllWork } from '@/lib/mdx'
 
-const siteUrl = process.env.SITE_URL || 'http://localhost:3000'
+const siteUrl = process.env.SITE_URL || 'https://aifilesense.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getAllPosts()
-  const work = getAllWork()
-
-  const blogUrls = posts.map((post) => ({
-    url: `${siteUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }))
-
-  const workUrls = work.map((item) => ({
-    url: `${siteUrl}/work/${item.slug}`,
-    lastModified: new Date(item.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
-
   return [
     {
       url: siteUrl,
@@ -29,28 +11,52 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${siteUrl}/work`,
+      url: `${siteUrl}/features`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${siteUrl}/blog`,
+      url: `${siteUrl}/pricing`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${siteUrl}/about`,
+      url: `${siteUrl}/download`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/support`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/support/faq`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/support/getting-started`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${siteUrl}/support/contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,
     },
     {
-      url: `${siteUrl}/contact`,
+      url: `${siteUrl}/changelog`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      changeFrequency: 'weekly',
+      priority: 0.6,
     },
     {
       url: `${siteUrl}/privacy`,
@@ -58,7 +64,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
-    ...workUrls,
-    ...blogUrls,
+    {
+      url: `${siteUrl}/terms`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
   ]
 }

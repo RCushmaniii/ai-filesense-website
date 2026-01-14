@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Customize these for each client */
-    --color-primary: 59 130 246; /* Blue-500 */
-    --color-secondary: 16 185 129; /* Green-500 */
+    /* AI FileSense Brand Colors */
+    --color-primary: 37 99 235; /* Blue-600 #2563eb - trust, technology */
+    --color-secondary: 16 185 129; /* Green-500 #10b981 - success, go */
 
     /* Light Mode Colors */
     --color-background: 255 255 255; /* White */

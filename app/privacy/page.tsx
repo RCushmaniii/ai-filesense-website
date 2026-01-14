@@ -1,123 +1,129 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import { Container } from '@/components/layout/container'
 import { Section } from '@/components/layout/section'
 import { PageHero } from '@/components/layout/page-hero'
 import { Prose } from '@/components/content/prose'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Company Name',
-  description: 'How we collect, use, and protect your information.',
+  title: 'Privacy Policy',
+  description: 'AI FileSense Privacy Policy. Learn how we protect your data and respect your privacy.',
 }
 
 export default function PrivacyPage() {
-  // Automatically formats the date to "October 24, 2025" style
-  const currentDate = new Date().toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-
   return (
     <>
       <PageHero
         title="Privacy Policy"
-        subtitle="How we collect, use, and protect your information."
-        imageSrc="/images/hero/home-hero.jpg"
-        imageAlt="Privacy policy hero"
-        containerSize="md"
+        subtitle="Last Updated: January 2025"
       />
 
       <Section spacing="lg">
-        <Container size="md">
-          <p className="text-sm text-foreground/60 mb-10 border-b border-border/50 pb-4">
-            Last updated: {currentDate}
-          </p>
-
+        <Container size="sm">
           <Prose>
-            <h2>1. Introduction</h2>
+            <div className="not-prose p-6 bg-secondary/10 rounded-xl mb-8">
+              <h2 className="text-lg font-semibold text-secondary mb-2">Summary</h2>
+              <p className="text-foreground/70">
+                <strong>Your files stay on your computer.</strong> AI FileSense is a local-first application. We do not upload, store, or have access to your files.
+              </p>
+            </div>
+
             <p>
-              Welcome to <strong>Company Name</strong> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). 
-              We respect your privacy and are committed to protecting your personal data. 
-              This privacy policy will inform you as to how we look after your personal data 
-              when you visit our website (regardless of where you visit it from) and tell 
-              you about your privacy rights and how the law protects you.
+              AI FileSense (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how our desktop application handles your information.
             </p>
 
-            <h2>2. The Data We Collect</h2>
-            <p>
-              We may collect, use, store, and transfer different kinds of personal data about 
-              you which we have grouped together as follows:
-            </p>
+            <h2>What Data We Process</h2>
+
+            <h3>Local Processing (On Your Computer)</h3>
             <ul>
-              <li>
-                <strong>Identity Data:</strong> Includes first name, last name, username or similar identifier.
-              </li>
-              <li>
-                <strong>Contact Data:</strong> Includes billing address, email address, and telephone number.
-              </li>
-              <li>
-                <strong>Technical Data:</strong> Includes internet protocol (IP) address, browser type and version, 
-                time zone setting and location, browser plug-in types and versions, operating system and platform 
-                on the devices you use to access this website.
-              </li>
-              <li>
-                <strong>Usage Data:</strong> Includes information about how you use our website and services.
-              </li>
+              <li><strong>File metadata:</strong> Filenames, file sizes, dates, and folder locations</li>
+              <li><strong>File content snippets:</strong> Small text excerpts (first ~500 characters) for AI classification</li>
+              <li><strong>Organization history:</strong> Records of file movements for undo functionality</li>
+            </ul>
+            <p>
+              All of this data is stored <strong>locally</strong> in a SQLite database on your computer at:<br />
+              <code>%APPDATA%/com.aifilesense.app/filesense.db</code>
+            </p>
+
+            <h3>Data Sent to AI Providers</h3>
+            <p>When you use AI-powered features, the following is sent to your configured AI provider (Anthropic):</p>
+            <ul>
+              <li>Filenames</li>
+              <li>File extensions</li>
+              <li>Small text snippets (for document classification)</li>
             </ul>
 
-            <h2>3. How We Use Your Data</h2>
-            <p>
-              We will only use your personal data when the law allows us to. Most commonly, 
-              we will use your personal data in the following circumstances:
-            </p>
+            <p><strong>We never send:</strong></p>
             <ul>
-              <li>
-                <strong>To provide services:</strong> Processing your requests, managing your account, 
-                and delivering the work you commissioned.
-              </li>
-              <li>
-                <strong>To communicate:</strong> Sending you updates regarding your project, 
-                security alerts, or administrative messages.
-              </li>
-              <li>
-                <strong>To improve our platform:</strong> Using analytics to understand how users 
-                interact with our site to enhance user experience.
-              </li>
+              <li>Full file contents</li>
+              <li>Personal identification information</li>
+              <li>File paths containing usernames (paths are anonymized)</li>
             </ul>
 
-            <h2>4. Third-Party Services</h2>
+            <h2>Third-Party Services</h2>
+
+            <h3>Anthropic API</h3>
             <p>
-              We may share your data with trusted third-party service providers who assist us 
-              in operating our website, conducting our business, or serving our users, so long 
-              as those parties agree to keep this information confidential. These may include:
+              AI FileSense uses the Anthropic API for document classification. When you use AI features:
             </p>
             <ul>
-              <li>Hosting Providers (e.g., Vercel, AWS)</li>
-              <li>Email Services (e.g., Resend)</li>
-              <li>Analytics Providers (e.g., Google Analytics, Vercel Analytics)</li>
+              <li>You provide your own API key</li>
+              <li>Data is sent directly from your computer to Anthropic</li>
+              <li>Anthropic&apos;s privacy policy applies: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener noreferrer">https://www.anthropic.com/privacy</a></li>
+            </ul>
+            <p>We do not have access to your API key or the data you send to Anthropic.</p>
+
+            <h2>Data Storage</h2>
+
+            <h3>Local Storage Only</h3>
+            <ul>
+              <li>All file indexes are stored locally on your computer</li>
+              <li>Organization plans and history are stored locally</li>
+              <li>Settings (including your API key) are stored locally and encrypted</li>
             </ul>
 
-            <h2>5. Data Security</h2>
+            <h3>No Cloud Storage</h3>
+            <ul>
+              <li>We do not operate servers that store your data</li>
+              <li>We do not have user accounts or cloud sync</li>
+              <li>Your data never passes through our systems</li>
+            </ul>
+
+            <h2>Data Retention</h2>
+            <ul>
+              <li>All data is stored locally until you delete it</li>
+              <li>Uninstalling the application removes all local data</li>
+              <li>You can delete the database file at any time</li>
+            </ul>
+
+            <h2>Your Rights</h2>
+            <p>You have complete control over your data:</p>
+            <ul>
+              <li><strong>Access:</strong> All data is stored locally and accessible to you</li>
+              <li><strong>Deletion:</strong> Delete the app data folder to remove all data</li>
+              <li><strong>Portability:</strong> The SQLite database can be exported or backed up</li>
+            </ul>
+
+            <h2>Children&apos;s Privacy</h2>
             <p>
-              We have put in place appropriate security measures to prevent your personal data 
-              from being accidentally lost, used, or accessed in an unauthorized way, altered, 
-              or disclosed. In addition, we limit access to your personal data to those employees, 
-              agents, contractors, and other third parties who have a business need to know.
+              AI FileSense is not intended for children under 13. We do not knowingly collect information from children.
             </p>
 
-            <h2>6. Your Legal Rights</h2>
+            <h2>Changes to This Policy</h2>
             <p>
-              Under certain circumstances, you have rights under data protection laws in relation 
-              to your personal data, including the right to access, correct, erase, restrict, 
-              transfer, or object to the processing of your personal data.
+              We may update this Privacy Policy from time to time. We will notify you of any changes by updating the &quot;Last Updated&quot; date.
             </p>
 
-            <h2>7. Contact Us</h2>
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy, please contact us at:</p>
+            <ul>
+              <li>Email: privacy@aifilesense.com</li>
+              <li>Website: <a href="/support/contact">https://aifilesense.com/support/contact</a></li>
+            </ul>
+
+            <hr />
+
             <p>
-              If you have any questions about this privacy policy or our privacy practices, 
-              please contact us through our <Link href="/contact">contact form</Link> or via email 
-              at <strong>support@companyname.com</strong>.
+              <strong>Key Takeaway:</strong> AI FileSense is designed with privacy at its core. Your files never leave your computer, and you maintain complete control over your data at all times.
             </p>
           </Prose>
         </Container>

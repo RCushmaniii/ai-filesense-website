@@ -7,47 +7,48 @@ import '@/styles/globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://agency.com'),
+  metadataBase: new URL('https://aifilesense.com'),
   title: {
-    default: 'Agency - Production-Grade Web Solutions',
-    template: '%s | Agency',
+    default: 'AI FileSense - AI-Powered File Organization for Windows',
+    template: '%s | AI FileSense',
   },
   description:
-    'We build exceptional web experiences with Next.js, TypeScript, and modern design principles.',
+    'Finally organize your Desktop, Documents, and Downloads without uploading anything to the cloud. Smart AI classification that respects your privacy.',
   keywords: [
-    'web development',
-    'Next.js',
-    'TypeScript',
-    'agency',
-    'design',
-    'development',
+    'file organization',
+    'AI file manager',
+    'Windows file organizer',
+    'local file organization',
+    'desktop organizer',
+    'document management',
+    'privacy-first',
+    'AI classification',
   ],
-  authors: [{ name: 'Agency' }],
-  creator: 'Agency',
+  authors: [{ name: 'AI FileSense' }],
+  creator: 'AI FileSense',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://agency.com',
-    siteName: 'Agency',
-    title: 'Agency - Production-Grade Web Solutions',
+    url: 'https://aifilesense.com',
+    siteName: 'AI FileSense',
+    title: 'AI FileSense - AI-Powered File Organization for Windows',
     description:
-      'We build exceptional web experiences with Next.js, TypeScript, and modern design principles.',
+      'Finally organize your Desktop, Documents, and Downloads without uploading anything to the cloud. Smart AI classification that respects your privacy.',
     images: [
       {
-        url: '/images/logos/logo-square-black.jpg',
+        url: '/images/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Agency',
+        alt: 'AI FileSense - Smart File Organization',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Agency - Production-Grade Web Solutions',
+    title: 'AI FileSense - AI-Powered File Organization for Windows',
     description:
-      'We build exceptional web experiences with Next.js, TypeScript, and modern design principles.',
-    creator: '@agency',
-    images: ['/images/logos/logo-square-black.jpg'],
+      'Finally organize your Desktop, Documents, and Downloads without uploading anything to the cloud.',
+    images: ['/images/og-image.png'],
   },
   robots: {
     index: true,

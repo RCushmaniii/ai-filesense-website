@@ -3,16 +3,15 @@
 import { useState, useEffect } from 'react'
 import NextLink from 'next/link'
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 import { Container } from './container'
+import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
 const navItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Work', href: '/work' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Features', href: '/features' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Download', href: '/download' },
+  { label: 'Support', href: '/support' },
 ]
 
 export function Navbar() {
@@ -20,7 +19,6 @@ export function Navbar() {
   const [darkMode, setDarkMode] = useState(false)
   const pathname = usePathname()
 
-  // Initialize dark mode from localStorage
   useEffect(() => {
     const isDark = localStorage.getItem('darkMode') === 'true'
     setDarkMode(isDark)
@@ -29,7 +27,6 @@ export function Navbar() {
     }
   }, [])
 
-  // Toggle dark mode
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
     setDarkMode(newDarkMode)
@@ -42,7 +39,6 @@ export function Navbar() {
     }
   }
 
-  // Close mobile menu when route changes
   useEffect(() => {
     setMobileMenuOpen(false)
   }, [pathname])
@@ -57,29 +53,21 @@ export function Navbar() {
       )}
     >
       <Container>
-        <div className="flex h-20 md:h-24 items-center justify-between">
+        <div className="flex h-16 md:h-20 items-center justify-between">
           {/* Logo */}
           <NextLink
             href="/"
-            className="flex items-center gap-3 hover:opacity-90 transition-opacity"
+            className="flex items-center gap-2 hover:opacity-90 transition-opacity"
           >
-            <span className="sr-only">Company Name</span>
-            <Image
-              src="/images/logos/company-name-white-logo.jpg"
-              alt="Company Name"
-              width={420}
-              height={96}
-              className="h-14 md:h-24 w-auto dark:hidden"
-              priority
-            />
-            <Image
-              src="/images/logos/company-name-black-logo.jpg"
-              alt="Company Name"
-              width={420}
-              height={96}
-              className="hidden h-14 md:h-24 w-auto dark:block"
-              priority
-            />
+            <span className="sr-only">AI FileSense</span>
+            {/* Logo Icon */}
+            <div className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary text-white font-bold text-sm md:text-base">
+              AI
+            </div>
+            {/* Logo Text */}
+            <span className="text-lg md:text-xl font-semibold tracking-tight">
+              <span className="text-primary">File</span>Sense
+            </span>
           </NextLink>
 
           {/* Desktop Navigation */}
@@ -100,6 +88,13 @@ export function Navbar() {
                 {item.label}
               </NextLink>
             ))}
+
+            {/* Download CTA */}
+            <NextLink href="/download">
+              <Button variant="primary" className="text-sm">
+                Download Free
+              </Button>
+            </NextLink>
 
             {/* Dark Mode Toggle */}
             <button
@@ -143,7 +138,7 @@ export function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex md:hidden items-center gap-4">
+          <div className="flex md:hidden items-center gap-2">
             <button
               onClick={toggleDarkMode}
               className={cn(
@@ -249,6 +244,11 @@ export function Navbar() {
                   {item.label}
                 </NextLink>
               ))}
+              <NextLink href="/download" className="mt-2">
+                <Button variant="primary" className="w-full">
+                  Download Free
+                </Button>
+              </NextLink>
             </div>
           </div>
         )}
