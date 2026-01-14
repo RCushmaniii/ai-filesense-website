@@ -4,7 +4,7 @@
 
 A modern, production-ready Next.js website showcasing AI FileSense, the desktop application that uses AI to intelligently organize your files and folders.
 
-🌐 **Live Demo:** Coming soon
+🌐 **Live Demo:** [ai-filesense-website.vercel.app](https://ai-filesense-website.vercel.app/)
 
 ---
 
@@ -216,11 +216,11 @@ This project is optimized for Vercel.
 ## 🔧 Environment Variables
 
 ```env
-SITE_URL=https://yourdomain.com
+SITE_URL=https://aifilesense.com
 
-RESEND_API_KEY=your_api_key
-CONTACT_EMAIL=you@yourdomain.com
-CONTACT_FROM="Your Studio <hello@yourdomain.com>"
+RESEND_API_KEY=your_resend_api_key
+CONTACT_EMAIL=support@aifilesense.com
+CONTACT_FROM="AI FileSense <noreply@aifilesense.com>"
 ```
 
 ---
