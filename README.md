@@ -1,88 +1,65 @@
-# Next.js Agency Starter
+# AI FileSense Website
 
-**A production-grade starter kit for modern agency, marketing, and portfolio websites.**
+**The official marketing website for AI FileSense - Intelligent File Organization Made Simple**
 
-Designed for real client work — not demos, not tutorials. For real clients, not fake clients.
-This starter gives you a clean, scalable foundation so you can focus on **content, conversion, and delivery**, not wiring.
+A modern, production-ready Next.js website showcasing AI FileSense, the desktop application that uses AI to intelligently organize your files and folders.
 
-🌐 **Live Demo:**
-👉 [https://vercel.com/rcushmaniii-projects/nextjs-react-agency-starter](https://vercel.com/rcushmaniii-projects/nextjs-react-agency-starter)
-_(Replace with your custom domain when ready)_
+🌐 **Live Demo:** Coming soon
 
 ---
 
-## Why this starter exists
+## About AI FileSense
 
-Most starters fall into one of two traps:
+AI FileSense is a desktop application that revolutionizes file organization using artificial intelligence. This website serves as the marketing and information hub for the product.
 
-- ❌ Over-engineered and hard to customize
-- ❌ Under-built and not production-ready
+**Key Features:**
 
-**This starter is the middle ground done right.**
+- 🤖 AI-powered file organization
+- 📁 Intelligent folder structure suggestions
+- 🔒 Privacy-first: all processing happens locally
+- ⚡ Fast and efficient file indexing
+- 🎯 Smart tagging and categorization
 
-It gives you:
+**This website provides:**
 
-- A polished agency-style UI
-- A real content workflow
-- A real contact pipeline
-- Real-world defaults you don’t have to rip out later
-
-This is the starter you reach for when:
-
-- You’re building client sites
-- You care about quality and maintainability
-- You want to ship fast **without cutting corners**
+- Product information and features
+- Documentation and guides
+- Blog posts about file organization and productivity
+- Legal information (Privacy Policy, Terms of Service)
+- Contact and support resources
 
 ---
 
-## ✨ What you get out of the box
+## ✨ Website Features
 
-### 🧱 A cohesive, reusable UI system
+### 🎨 Modern UI/UX
 
-- Clean layout primitives (Container, Section, Stack)
-- Consistent hero and section patterns
-- Card, badge, button, and form components
-- Mobile-first, responsive by default
+- Clean, professional design system
+- Responsive layout optimized for all devices
+- Dark mode support with localStorage persistence
+- Accessible components (WCAG AA compliant)
+- Smooth animations and transitions
 
-Everything is designed to feel like **one system**, not a pile of components.
+### 📝 Content Management
 
----
+- **MDX-powered** blog for product updates and tips
+- Legal pages (Privacy Policy, Terms of Service)
+- Comprehensive documentation
+- Easy-to-update content structure
 
-### ✍️ A content workflow that actually scales
+### 📬 Contact & Support
 
-- **MDX-powered** blog posts and case studies
-- Drop-in content via `content/blog` and `content/work`
-- Beautiful long-form typography using Tailwind Typography
-- A reusable `Prose` wrapper for blogs, legal pages, and case studies
+- Functional contact form with validation
+- Server-side processing via Next.js Server Actions
+- Email delivery via Resend
+- Professional email templates
 
-Perfect for marketing sites that grow over time.
+### 🔍 SEO & Performance
 
----
-
-### 📬 A real contact flow (not a fake form)
-
-Most starters stop at the UI. This one doesn’t.
-
-Included:
-
-- Client-side validation
-- Server-side validation
-- Next.js Server Actions
-- Email delivery via **Resend**
-- Production-ready email templates (React Email)
-
-No placeholders. No TODOs. This works in production.
-
----
-
-### 🌗 Thoughtful UX details
-
-- Dark mode with localStorage persistence
-- Accessible components (WCAG AA friendly)
-- Polished typography for long-form reading
-- Smart navigation and mobile menu behavior
-
-The small things that make a site feel **finished**.
+- Optimized metadata and Open Graph tags
+- Fast page loads and excellent Core Web Vitals
+- Sitemap and robots.txt configured
+- Image optimization built-in
 
 ---
 
@@ -256,14 +233,15 @@ CONTACT_FROM="Your Studio <hello@yourdomain.com>"
 
 ---
 
-## 🎯 Who this is for
+## 🎯 Project Purpose
 
-This starter is ideal if you:
+This website serves as the official online presence for AI FileSense, providing:
 
-- Build agency or freelance sites
-- Want production-ready defaults
-- Care about UX, performance, and maintainability
-- Don’t want to reinvent the same patterns every project
+- Product information and feature highlights
+- Educational content about file organization
+- Support and documentation resources
+- Legal compliance (privacy policy, terms of service)
+- Lead generation and user acquisition
 
 ---
 
@@ -277,12 +255,9 @@ Built with ❤️ using **Next.js, TypeScript, and Tailwind CSS**
 
 ---
 
-If you want next, I can:
+## 📞 Contact
 
-- Tighten this for **open-source discovery**
-- Rewrite it for **sales / client-facing repos**
-- Add shields/badges without clutter
-- Create a **“Why not use X?”** comparison section
-- Optimize it for GitHub SEO
+For questions about AI FileSense or this website:
 
-Just tell me the direction.
+- Email: privacy@aifilesense.com
+- Website: https://aifilesense.com/contact
