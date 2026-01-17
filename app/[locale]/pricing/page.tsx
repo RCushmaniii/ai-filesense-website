@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { Container } from '@/components/layout/container'
 import { Section } from '@/components/layout/section'
 import { PageHero } from '@/components/layout/page-hero'
@@ -6,29 +7,37 @@ import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/ca
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import NextLink from 'next/link'
+import { CheckIcon } from '@/components/icons'
 
 export const metadata: Metadata = {
   title: 'Pricing',
   description: 'AI FileSense pricing plans. Start free with 1,000 files, upgrade when you need more.',
 }
 
-export default function PricingPage() {
+export default async function PricingPage({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
+  const t = await getTranslations('pricing')
+  const common = await getTranslations('common')
+
   return (
     <>
       <PageHero
-        title="Simple, Transparent Pricing"
-        subtitle="Start free and upgrade when you need more. No credit card required."
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
       />
 
       {/* Pricing Cards */}
       <Section spacing="lg">
         <Container>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Free Tier */}
             <Card className="relative">
               <CardHeader>
-                <Badge variant="secondary" className="w-fit mb-4">Available Now</Badge>
-                <CardTitle className="text-2xl">Free</CardTitle>
+                <Badge variant="secondary" className="w-fit mb-4">{common('current')}</Badge>
+                <CardTitle className="text-2xl">{t('tiers.free')}</CardTitle>
                 <div className="mt-4 mb-6">
                   <span className="text-5xl font-bold">$0</span>
                   <span className="text-foreground/60 ml-2">forever</span>
@@ -47,16 +56,14 @@ export default function PricingPage() {
                     'No account required',
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-2 text-sm">
-                      <svg className="w-5 h-5 text-secondary shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
+                      <CheckIcon className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
-                <NextLink href="/download" className="block">
+                <NextLink href={`/${locale}/download`} className="block">
                   <Button variant="primary" className="w-full">
-                    Download Free
+                    {common('downloadFree')}
                   </Button>
                 </NextLink>
               </CardHeader>
@@ -68,8 +75,8 @@ export default function PricingPage() {
                 <Badge variant="primary" className="shadow-sm">Most Popular</Badge>
               </div>
               <CardHeader>
-                <Badge variant="default" className="w-fit mb-4">Coming Soon</Badge>
-                <CardTitle className="text-2xl">Personal</CardTitle>
+                <Badge variant="default" className="w-fit mb-4">{common('comingSoon')}</Badge>
+                <CardTitle className="text-2xl">{t('tiers.personal')}</CardTitle>
                 <div className="mt-4 mb-6">
                   <span className="text-5xl font-bold">$9.99</span>
                   <span className="text-foreground/60 ml-2">/year</span>
@@ -86,15 +93,13 @@ export default function PricingPage() {
                     'Multiple folder profiles',
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-2 text-sm">
-                      <svg className="w-5 h-5 text-secondary shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
+                      <CheckIcon className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
                 <Button variant="outline" className="w-full" disabled>
-                  Coming Soon
+                  {common('comingSoon')}
                 </Button>
               </CardHeader>
             </Card>
@@ -102,8 +107,8 @@ export default function PricingPage() {
             {/* Professional Tier */}
             <Card className="relative">
               <CardHeader>
-                <Badge variant="default" className="w-fit mb-4">Coming Soon</Badge>
-                <CardTitle className="text-2xl">Professional</CardTitle>
+                <Badge variant="default" className="w-fit mb-4">{common('comingSoon')}</Badge>
+                <CardTitle className="text-2xl">{t('tiers.professional')}</CardTitle>
                 <div className="mt-4 mb-6">
                   <span className="text-5xl font-bold">$29.99</span>
                   <span className="text-foreground/60 ml-2">/year</span>
@@ -120,15 +125,13 @@ export default function PricingPage() {
                     'Batch processing priority',
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-2 text-sm">
-                      <svg className="w-5 h-5 text-secondary shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
+                      <CheckIcon className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
                 <Button variant="outline" className="w-full" disabled>
-                  Coming Soon
+                  {common('comingSoon')}
                 </Button>
               </CardHeader>
             </Card>
@@ -141,17 +144,17 @@ export default function PricingPage() {
         <Container>
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-2xl font-bold mb-4">About AI Costs</h2>
+              <h2 className="text-2xl font-bold mb-4">{t('apiCosts.title')}</h2>
               <p className="text-foreground/70">
-                AI FileSense uses Anthropic&apos;s Claude AI for intelligent file classification. You provide your own API key, giving you full control and transparency over costs.
+                {t('apiCosts.subtitle')}
               </p>
             </div>
 
             <Card>
               <CardHeader>
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="font-semibold mb-3">How It Works</h3>
+                    <h3 className="font-semibold mb-3">{t('apiCosts.howItWorks')}</h3>
                     <ol className="space-y-2 text-sm text-foreground/70">
                       <li className="flex gap-2">
                         <span className="font-medium text-primary">1.</span>
@@ -172,7 +175,7 @@ export default function PricingPage() {
                     </ol>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-3">Estimated Costs</h3>
+                    <h3 className="font-semibold mb-3">{t('apiCosts.estimatedCosts')}</h3>
                     <ul className="space-y-2 text-sm text-foreground/70">
                       <li className="flex justify-between">
                         <span>1,000 files</span>
@@ -188,7 +191,7 @@ export default function PricingPage() {
                       </li>
                     </ul>
                     <p className="text-xs text-foreground/50 mt-3">
-                      Costs vary based on file types and content length. Batch processing keeps costs low.
+                      {t('apiCosts.estimatedCostsDesc')}
                     </p>
                   </div>
                 </div>
@@ -202,34 +205,16 @@ export default function PricingPage() {
       <Section spacing="lg">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+            <h2 className="text-2xl font-bold mb-8 text-center">{t('faq.title')}</h2>
 
             <div className="space-y-6">
               {[
-                {
-                  q: 'What counts as a "file" in the limit?',
-                  a: 'Only files that are processed by AI for classification count toward your limit. Local scanning and indexing is always unlimited.',
-                },
-                {
-                  q: 'Do I need to pay for AI separately?',
-                  a: 'Yes, AI classification uses Anthropic\'s Claude API, which requires your own API key. This gives you transparency and control over costs — typically $0.50-1.00 per 1,000 files.',
-                },
-                {
-                  q: 'What happens when I hit my file limit?',
-                  a: 'You can still use all features for files already classified. New files will need to wait until you upgrade or until we launch paid tiers.',
-                },
-                {
-                  q: 'Can I use my own API key with any plan?',
-                  a: 'Yes! All plans (including Free) use your own Anthropic API key. This ensures your data goes directly to Anthropic without any middleman.',
-                },
-                {
-                  q: 'Is there a refund policy?',
-                  a: 'Paid plans (when available) will have a 30-day money-back guarantee. But try the free tier first — it has all the features!',
-                },
-                {
-                  q: 'Do I need an internet connection?',
-                  a: 'Only for AI classification. Scanning, searching, and organizing already-classified files works completely offline.',
-                },
+                { q: t('faq.q1'), a: t('faq.a1') },
+                { q: t('faq.q2'), a: t('faq.a2') },
+                { q: t('faq.q3'), a: t('faq.a3') },
+                { q: t('faq.q4'), a: t('faq.a4') },
+                { q: t('faq.q5'), a: t('faq.a5') },
+                { q: t('faq.q6'), a: t('faq.a6') },
               ].map((faq, i) => (
                 <div key={i} className="border-b border-foreground/10 pb-6 last:border-0">
                   <h3 className="font-semibold mb-2">{faq.q}</h3>
@@ -249,9 +234,9 @@ export default function PricingPage() {
             <p className="text-lg text-foreground/70 mb-8">
               No credit card required. Get started in minutes with 1,000 free file classifications.
             </p>
-            <NextLink href="/download">
+            <NextLink href={`/${locale}/download`}>
               <Button variant="primary" className="text-lg px-8 py-4">
-                Download Free
+                {common('downloadFree')}
               </Button>
             </NextLink>
           </div>

@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
-import { locales } from '@/i18n/config'
+import { routing } from '@/i18n/routing'
+
+const locales = routing.locales
 
 const siteUrl = process.env.SITE_URL || 'https://aifilesense.com'
 
@@ -15,6 +17,7 @@ const pages = [
   { path: '/about', priority: 0.7, changeFrequency: 'monthly' as const },
   { path: '/contact', priority: 0.7, changeFrequency: 'monthly' as const },
   { path: '/blog', priority: 0.8, changeFrequency: 'weekly' as const },
+  { path: '/work', priority: 0.7, changeFrequency: 'monthly' as const },
   { path: '/changelog', priority: 0.6, changeFrequency: 'weekly' as const },
   { path: '/privacy', priority: 0.5, changeFrequency: 'yearly' as const },
   { path: '/terms', priority: 0.5, changeFrequency: 'yearly' as const },
@@ -31,9 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: page.changeFrequency,
         priority: page.priority,
         alternates: {
-          languages: Object.fromEntries(
-            locales.map((l) => [l, `${siteUrl}/${l}${page.path}`])
-          ),
+          languages: {
+            ...Object.fromEntries(
+              locales.map((l) => [l, `${siteUrl}/${l}${page.path}`])
+            ),
+            'x-default': `${siteUrl}/en${page.path}`,
+          },
         },
       })
     }

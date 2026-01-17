@@ -1,43 +1,93 @@
 import { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { Container } from '@/components/layout/container'
 import { Section } from '@/components/layout/section'
 import { PageHero } from '@/components/layout/page-hero'
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import NextLink from 'next/link'
+import { FolderIcon, UndoIcon, CheckIcon } from '@/components/icons'
 
 export const metadata: Metadata = {
   title: 'Getting Started',
-  description: 'Learn how to install and use AI FileSense. Step-by-step guide to organizing your files with AI.',
+  description: 'Get organized in 5 minutes. Follow this step-by-step guide to set up AI FileSense and organize your files.',
 }
 
-export default function GettingStartedPage() {
+export default async function GettingStartedPage({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
+  const t = await getTranslations('support.gettingStarted')
+  const homeT = await getTranslations('home')
+
+  const steps = [
+    'selectFolders',
+    'scanning',
+    'personalization',
+    'resultsPreview',
+    'detailedReview',
+    'quickClarifications',
+    'applyingChanges',
+    'success',
+  ] as const
+
+  const folders = [
+    { key: 'work', name: homeT('folders.work'), desc: homeT('folders.workDesc') },
+    { key: 'money', name: homeT('folders.money'), desc: homeT('folders.moneyDesc') },
+    { key: 'home', name: homeT('folders.home'), desc: homeT('folders.homeDesc') },
+    { key: 'health', name: homeT('folders.health'), desc: homeT('folders.healthDesc') },
+    { key: 'legal', name: homeT('folders.legal'), desc: homeT('folders.legalDesc') },
+    { key: 'school', name: homeT('folders.school'), desc: homeT('folders.schoolDesc') },
+    { key: 'family', name: homeT('folders.family'), desc: homeT('folders.familyDesc') },
+    { key: 'clients', name: homeT('folders.clients'), desc: homeT('folders.clientsDesc') },
+    { key: 'projects', name: homeT('folders.projects'), desc: homeT('folders.projectsDesc') },
+    { key: 'archive', name: homeT('folders.archive'), desc: homeT('folders.archiveDesc') },
+    { key: 'review', name: homeT('folders.review'), desc: homeT('folders.reviewDesc') },
+  ]
+
+  const tips = [
+    { title: t('tips.tip1Title'), desc: t('tips.tip1Desc') },
+    { title: t('tips.tip2Title'), desc: t('tips.tip2Desc') },
+    { title: t('tips.tip3Title'), desc: t('tips.tip3Desc') },
+    { title: t('tips.tip4Title'), desc: t('tips.tip4Desc') },
+  ]
+
   return (
     <>
       <PageHero
-        title="Getting Started with AI FileSense"
-        subtitle="Follow this guide to start organizing your files in minutes."
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
       />
 
       {/* Overview */}
       <Section spacing="lg">
         <Container size="md">
-          <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-foreground/70 mb-8">
-              AI FileSense helps you organize your files using AI. The setup takes about 5-10 minutes, and you&apos;ll be organizing files right away.
-            </p>
+          <p className="text-xl text-foreground/70 text-center mb-12">
+            {t('overview')}
+          </p>
 
-            <div className="not-prose grid grid-cols-3 gap-4 mb-12">
+          {/* Timeline */}
+          <div className="mb-16">
+            <h2 className="text-xl font-semibold text-center mb-8">{t('timeline.title')}</h2>
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
               {[
-                { number: '1', label: 'Download & Install' },
-                { number: '2', label: 'Set Up API Key' },
-                { number: '3', label: 'Start Organizing' },
-              ].map((step) => (
-                <div key={step.number} className="text-center p-4 bg-foreground/5 rounded-lg">
-                  <div className="w-8 h-8 mx-auto mb-2 rounded-full bg-primary text-white flex items-center justify-center font-bold">
-                    {step.number}
-                  </div>
-                  <span className="text-sm font-medium">{step.label}</span>
+                t('timeline.step1'),
+                t('timeline.step2'),
+                t('timeline.step3'),
+                t('timeline.step4'),
+                t('timeline.step5'),
+                t('timeline.step6'),
+                t('timeline.step7'),
+                t('timeline.step8'),
+              ].map((step, i) => (
+                <div key={i} className="flex items-center">
+                  <span className="px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                    {step}
+                  </span>
+                  {i < 7 && (
+                    <span className="hidden sm:block mx-2 text-foreground/30">&rarr;</span>
+                  )}
                 </div>
               ))}
             </div>
@@ -45,204 +95,97 @@ export default function GettingStartedPage() {
         </Container>
       </Section>
 
-      {/* Step 1: Download & Install */}
+      {/* The 8 Steps */}
       <Section spacing="lg" className="bg-foreground/[0.02]">
         <Container size="md">
-          <div className="flex gap-4 items-start mb-6">
-            <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-              1
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold">Download & Install</h2>
-              <p className="text-foreground/70">Get AI FileSense on your Windows computer</p>
-            </div>
-          </div>
-
-          <Card>
-            <CardHeader>
-              <ol className="space-y-4">
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">a</span>
-                  <div>
-                    <p className="font-medium">Download the installer</p>
-                    <p className="text-sm text-foreground/60">Visit the <NextLink href="/download" className="text-primary hover:underline">download page</NextLink> and click &quot;Download Free&quot;</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">b</span>
-                  <div>
-                    <p className="font-medium">Run the installer</p>
-                    <p className="text-sm text-foreground/60">Double-click the downloaded .exe file. If Windows shows a SmartScreen warning, click &quot;More info&quot; then &quot;Run anyway&quot;</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">c</span>
-                  <div>
-                    <p className="font-medium">Follow the setup wizard</p>
-                    <p className="text-sm text-foreground/60">Accept the license agreement and choose your installation location (default is fine)</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">d</span>
-                  <div>
-                    <p className="font-medium">Launch AI FileSense</p>
-                    <p className="text-sm text-foreground/60">The app will open automatically after installation, or find it in your Start menu</p>
-                  </div>
-                </li>
-              </ol>
-            </CardHeader>
-          </Card>
-        </Container>
-      </Section>
-
-      {/* Step 2: API Key Setup */}
-      <Section spacing="lg">
-        <Container size="md">
-          <div className="flex gap-4 items-start mb-6">
-            <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-              2
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold">Set Up Your API Key</h2>
-              <p className="text-foreground/70">Connect to Anthropic&apos;s AI for smart file classification</p>
-            </div>
-          </div>
-
-          <Card>
-            <CardHeader>
-              <p className="text-foreground/70 mb-6">
-                AI FileSense uses Claude AI from Anthropic to understand and classify your files. You&apos;ll need a free Anthropic account and API key.
-              </p>
-
-              <ol className="space-y-4">
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">a</span>
-                  <div>
-                    <p className="font-medium">Create an Anthropic account</p>
-                    <p className="text-sm text-foreground/60">Go to <a href="https://console.anthropic.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">console.anthropic.com</a> and sign up (it&apos;s free)</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">b</span>
-                  <div>
-                    <p className="font-medium">Create an API key</p>
-                    <p className="text-sm text-foreground/60">In the Anthropic console, go to &quot;API Keys&quot; and create a new key. Name it something like &quot;AI FileSense&quot;</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">c</span>
-                  <div>
-                    <p className="font-medium">Add credit to your account</p>
-                    <p className="text-sm text-foreground/60">Add $5 of credit (minimum). This is enough for 5,000-10,000 files typically</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">d</span>
-                  <div>
-                    <p className="font-medium">Paste into AI FileSense</p>
-                    <p className="text-sm text-foreground/60">Copy your API key and paste it into AI FileSense when prompted (or go to Settings)</p>
-                  </div>
-                </li>
-              </ol>
-
-              <div className="mt-6 p-4 bg-secondary/10 rounded-lg">
-                <p className="text-sm text-secondary font-medium flex items-center gap-2">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                  </svg>
-                  Your API key is stored locally and encrypted. It never leaves your computer.
-                </p>
+          <div className="space-y-6">
+            {steps.map((stepKey) => (
+              <div
+                key={stepKey}
+                className="flex gap-4 p-6 bg-background rounded-xl border border-foreground/10"
+              >
+                <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
+                  {t(`steps.${stepKey}.number`)}
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-1">
+                    {t(`steps.${stepKey}.title`)}
+                  </h3>
+                  <p className="text-foreground/70">
+                    {t(`steps.${stepKey}.description`)}
+                  </p>
+                </div>
               </div>
-            </CardHeader>
-          </Card>
+            ))}
+          </div>
         </Container>
       </Section>
 
-      {/* Step 3: Start Organizing */}
-      <Section spacing="lg" className="bg-foreground/[0.02]">
-        <Container size="md">
-          <div className="flex gap-4 items-start mb-6">
-            <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-              3
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold">Start Organizing</h2>
-              <p className="text-foreground/70">Use AI FileSense to clean up your files</p>
-            </div>
+      {/* 11 Smart Folders */}
+      <Section spacing="lg">
+        <Container>
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold mb-2">{t('folders.title')}</h2>
+            <p className="text-foreground/70">{t('folders.description')}</p>
           </div>
 
-          <Card>
-            <CardHeader>
-              <ol className="space-y-4">
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">a</span>
-                  <div>
-                    <p className="font-medium">Select a folder to scan</p>
-                    <p className="text-sm text-foreground/60">Start with your Desktop, Documents, or Downloads folder. Click &quot;Add Folder&quot; and browse to select it</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">b</span>
-                  <div>
-                    <p className="font-medium">Wait for scanning to complete</p>
-                    <p className="text-sm text-foreground/60">AI FileSense will index all files in the folder. Large folders may take a few minutes</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">c</span>
-                  <div>
-                    <p className="font-medium">Run AI classification</p>
-                    <p className="text-sm text-foreground/60">Click &quot;Classify Files&quot; to have the AI analyze and categorize your files</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">d</span>
-                  <div>
-                    <p className="font-medium">Choose an organization style</p>
-                    <p className="text-sm text-foreground/60">Pick Life Areas (by category), Timeline (by date), or Quick Sort (fast cleanup)</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">e</span>
-                  <div>
-                    <p className="font-medium">Preview and apply</p>
-                    <p className="text-sm text-foreground/60">Review the proposed organization, then click &quot;Apply&quot; to move files. You can always undo!</p>
-                  </div>
-                </li>
-              </ol>
-            </CardHeader>
-          </Card>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            {folders.map((folder) => (
+              <div
+                key={folder.key}
+                className="p-3 rounded-lg bg-foreground/5 border border-foreground/10"
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <FolderIcon className="w-4 h-4 text-primary" />
+                  <span className="font-medium text-sm">{folder.name}</span>
+                </div>
+                <p className="text-xs text-foreground/60">{folder.desc}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Activity Log & Undo */}
+      <Section spacing="lg" className="bg-foreground/[0.02]">
+        <Container size="md">
+          <div className="text-center mb-8">
+            <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+              <UndoIcon className="w-8 h-8" />
+            </div>
+            <h2 className="text-2xl font-bold mb-2">{t('activityLog.title')}</h2>
+            <p className="text-foreground/70 max-w-xl mx-auto">
+              {t('activityLog.description')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            {[
+              t('activityLog.features.singleUndo'),
+              t('activityLog.features.sessionUndo'),
+              t('activityLog.features.fullRollback'),
+              t('activityLog.features.crashRecovery'),
+            ].map((feature, i) => (
+              <div key={i} className="flex items-center gap-3 p-3 bg-background rounded-lg border border-foreground/10">
+                <CheckIcon className="w-5 h-5 text-secondary shrink-0" />
+                <span className="text-sm">{feature}</span>
+              </div>
+            ))}
+          </div>
         </Container>
       </Section>
 
       {/* Tips */}
       <Section spacing="lg">
         <Container size="md">
-          <h2 className="text-2xl font-bold mb-6">Tips for Best Results</h2>
+          <h2 className="text-2xl font-bold mb-8 text-center">{t('tips.title')}</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                title: 'Start Small',
-                description: 'Begin with a single folder like Downloads. Get comfortable with the workflow before tackling larger folders.',
-              },
-              {
-                title: 'Always Preview First',
-                description: 'Use the preview feature to see exactly what will happen before applying any organization.',
-              },
-              {
-                title: 'Back Up Important Files',
-                description: 'While AI FileSense has full undo support, it\'s always good practice to back up critical files.',
-              },
-              {
-                title: 'Use Search',
-                description: 'After organizing, use natural language search to find files. Try "that tax document from last year".',
-              },
-            ].map((tip, i) => (
+            {tips.map((tip, i) => (
               <Card key={i}>
                 <CardHeader>
                   <CardTitle className="text-lg">{tip.title}</CardTitle>
-                  <CardDescription>{tip.description}</CardDescription>
+                  <CardDescription>{tip.desc}</CardDescription>
                 </CardHeader>
               </Card>
             ))}
@@ -254,16 +197,16 @@ export default function GettingStartedPage() {
       <Section spacing="lg" className="bg-primary/5">
         <Container>
           <div className="text-center max-w-xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Need More Help?</h2>
+            <h2 className="text-2xl font-bold mb-4">{t('needHelp.title')}</h2>
             <p className="text-foreground/70 mb-6">
-              Check our FAQ for common questions or contact support if you&apos;re stuck.
+              {t('needHelp.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <NextLink href="/support/faq">
-                <Button variant="outline">View FAQ</Button>
+              <NextLink href={`/${locale}/support/faq`}>
+                <Button variant="outline">{t('needHelp.viewFaq')}</Button>
               </NextLink>
-              <NextLink href="/support/contact">
-                <Button variant="primary">Contact Support</Button>
+              <NextLink href={`/${locale}/support/contact`}>
+                <Button variant="primary">{t('needHelp.contactSupport')}</Button>
               </NextLink>
             </div>
           </div>

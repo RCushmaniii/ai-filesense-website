@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { Container } from '@/components/layout/container'
 import { Section } from '@/components/layout/section'
 import { PageHero } from '@/components/layout/page-hero'
@@ -9,12 +10,18 @@ export const metadata: Metadata = {
   description: 'AI FileSense Privacy Policy. Learn how we protect your data and respect your privacy.',
 }
 
-export default function PrivacyPage() {
+export default async function PrivacyPage({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
+  const t = await getTranslations('privacy')
+
   return (
     <>
       <PageHero
-        title="Privacy Policy"
-        subtitle="Last Updated: January 2025"
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
       />
 
       <Section spacing="lg">
@@ -88,43 +95,12 @@ export default function PrivacyPage() {
               <li>Your data never passes through our systems</li>
             </ul>
 
-            <h2>Data Retention</h2>
-            <ul>
-              <li>All data is stored locally until you delete it</li>
-              <li>Uninstalling the application removes all local data</li>
-              <li>You can delete the database file at any time</li>
-            </ul>
-
-            <h2>Your Rights</h2>
-            <p>You have complete control over your data:</p>
-            <ul>
-              <li><strong>Access:</strong> All data is stored locally and accessible to you</li>
-              <li><strong>Deletion:</strong> Delete the app data folder to remove all data</li>
-              <li><strong>Portability:</strong> The SQLite database can be exported or backed up</li>
-            </ul>
-
-            <h2>Children&apos;s Privacy</h2>
-            <p>
-              AI FileSense is not intended for children under 13. We do not knowingly collect information from children.
-            </p>
-
-            <h2>Changes to This Policy</h2>
-            <p>
-              We may update this Privacy Policy from time to time. We will notify you of any changes by updating the &quot;Last Updated&quot; date.
-            </p>
-
             <h2>Contact Us</h2>
             <p>If you have questions about this Privacy Policy, please contact us at:</p>
             <ul>
               <li>Email: privacy@aifilesense.com</li>
-              <li>Website: <a href="/support/contact">https://aifilesense.com/support/contact</a></li>
+              <li>Website: <a href={`/${locale}/support/contact`}>https://aifilesense.com/support/contact</a></li>
             </ul>
-
-            <hr />
-
-            <p>
-              <strong>Key Takeaway:</strong> AI FileSense is designed with privacy at its core. Your files never leave your computer, and you maintain complete control over your data at all times.
-            </p>
           </Prose>
         </Container>
       </Section>

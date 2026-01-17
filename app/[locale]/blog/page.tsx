@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import NextLink from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/layout/container'
@@ -11,35 +12,34 @@ import { PageHero } from '@/components/layout/page-hero'
 
 export const metadata: Metadata = {
   title: 'Blog',
-  description: 'Read our latest articles on web development, design, and technology.',
+  description: 'Read our latest articles on file organization, productivity, and AI technology.',
 }
 
-export default function BlogPage() {
+export default async function BlogPage({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
+  const t = await getTranslations('blog')
   const posts = getAllPosts()
 
   return (
     <>
       <PageHero
-        title="Blog"
-        subtitle="Insights, tutorials, and thoughts on web development, design, and building great products."
-        imageSrc="/images/hero/blog-hero.jpg"
-        imageAlt="Blog page hero"
-        priorityImage
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
       />
 
       <Section spacing="lg">
         <Container>
-
           {posts.length === 0 ? (
             <div className="text-center py-12">
-              <p className="text-lg text-foreground/70">
-                No blog posts found. Check back soon!
-              </p>
+              <p className="text-lg text-foreground/70">{t('empty')}</p>
             </div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {posts.map((post) => (
-                <NextLink key={post.slug} href={`/blog/${post.slug}`}>
+                <NextLink key={post.slug} href={`/${locale}/blog/${post.slug}`}>
                   <Card className="h-full p-0 overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
                     <div className="relative aspect-[16/9] bg-foreground/5">
                       <Image
@@ -54,16 +54,12 @@ export default function BlogPage() {
                       <CardHeader className="mb-0">
                         <div className="flex flex-wrap gap-2 mb-3">
                           {post.tags?.slice(0, 2).map((tag) => (
-                            <Badge key={tag} variant="default">
-                              {tag}
-                            </Badge>
+                            <Badge key={tag} variant="default">{tag}</Badge>
                           ))}
                         </div>
                         <CardTitle>{post.title}</CardTitle>
                         <CardDescription>{post.description}</CardDescription>
-                        <p className="text-sm text-foreground/50 mt-4">
-                          {formatDate(post.date)}
-                        </p>
+                        <p className="text-sm text-foreground/50 mt-4">{formatDate(post.date)}</p>
                       </CardHeader>
                     </div>
                   </Card>
