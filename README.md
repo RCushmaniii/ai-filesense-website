@@ -11,7 +11,7 @@
 
 [**Live Site**](https://aifilesense.com) · [**Features**](https://aifilesense.com/features) · [**Support**](https://aifilesense.com/support)
 
-![AI FileSense Application Interface](./public/images/home/screenshot.jpg)
+![AI FileSense Application Interface](./public/images/home/Screenshot.jpg)
 
 </div>
 
