@@ -25,35 +25,43 @@ export default async function ChangelogPage({
       tag: 'Latest',
       sections: [
         {
-          title: 'Added',
+          title: 'Core Features',
           items: [
-            'Initial release of AI FileSense',
-            'AI-powered file classification using Claude',
-            '11 smart folders: Work, Money, Home, Health, Legal, School, Family, Clients, Projects, Archive, Review',
-            'Three organization styles: Simple (by topic), Timeline (by date), Smart Groups (by project)',
-            'Full Activity Log with complete undo support',
-            'Preview mode—see exactly where files will go before applying',
-            'Personalization wizard for recommended organization style',
-            'Bilingual support (English + Spanish)',
-            'Local SQLite database for file indexing',
-            'Incremental scanning for performance',
-            'Batch AI processing for cost efficiency',
+            'AI-powered file classification using Claude Haiku',
+            '11 numbered smart folders (01-11): Work, Money, Home, Health, Legal, School, Family, Clients, Projects, Archive, Review',
+            '3-level organization depth: light (top folders), moderate (subfolders), detailed (date-based)',
+            'Preview all changes before applying—nothing moves until you approve',
+            'One-click undo for any file or entire sessions',
+            'Crash recovery with full activity log',
+            'Personalization wizard based on your work style',
           ],
         },
         {
-          title: 'Security',
+          title: 'File Support',
           items: [
-            '100% local processing—files never leave your computer',
-            'Only filenames and ~500 char snippets sent to AI',
+            'PDF documents (first page text extraction)',
+            'Word documents (.doc, .docx) with full text parsing',
+            'PowerPoint presentations (.pptx) with slide text',
+            'Text files (.txt, .md, .log, .csv) first 100 lines',
+            'Any file can be classified by filename alone',
+          ],
+        },
+        {
+          title: 'Bilingual Support',
+          items: [
+            'Complete English interface and AI classification',
+            'Complete Spanish (Mexico) interface and AI classification',
+            'Documents in either language are understood and categorized correctly',
+          ],
+        },
+        {
+          title: 'Privacy & Security',
+          items: [
+            'Files never leave your computer—100% local processing',
+            'Only ~500 character text snippets sent to AI for classification',
+            'Username stripped from file paths before AI processing',
             'Encrypted API key storage',
-            'Anonymized file paths (username removed)',
             'No user accounts, no cloud sync, no telemetry',
-          ],
-        },
-        {
-          title: 'Coming Soon',
-          items: [
-            'Auto-Organize: Watch folders and organize new files automatically',
           ],
         },
       ],
@@ -82,9 +90,10 @@ export default async function ChangelogPage({
                   {release.sections.map((section) => (
                     <div key={section.title}>
                       <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                        {section.title === 'Added' && <span className="w-2 h-2 rounded-full bg-secondary" />}
-                        {section.title === 'Security' && <span className="w-2 h-2 rounded-full bg-purple-500" />}
-                        {section.title === 'Coming Soon' && <span className="w-2 h-2 rounded-full bg-primary" />}
+                        {section.title === 'Core Features' && <span className="w-2 h-2 rounded-full bg-secondary" />}
+                        {section.title === 'File Support' && <span className="w-2 h-2 rounded-full bg-primary" />}
+                        {section.title === 'Bilingual Support' && <span className="w-2 h-2 rounded-full bg-blue-500" />}
+                        {section.title === 'Privacy & Security' && <span className="w-2 h-2 rounded-full bg-purple-500" />}
                         {section.title}
                       </h3>
                       <ul className="space-y-2">

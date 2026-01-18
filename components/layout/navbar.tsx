@@ -10,6 +10,8 @@ import { Button } from '@/components/ui/button'
 import { SunIcon, MoonIcon, MenuIcon, CloseIcon } from '@/components/icons'
 import { cn } from '@/lib/utils'
 
+const DOWNLOAD_URL = 'https://github.com/RCushmaniii/ai-filesense-website/releases/download/v1.0.0/AI.FileSense_1.0.0_x64-setup.exe'
+
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
@@ -92,11 +94,11 @@ export function Navbar() {
             ))}
 
             {/* Download CTA */}
-            <NextLink href={`/${locale}/download`}>
+            <a href={DOWNLOAD_URL} download>
               <Button variant="primary" className="text-sm">
                 {t('download')}
               </Button>
-            </NextLink>
+            </a>
 
             {/* Language Switcher */}
             <LanguageSwitcher />
@@ -171,11 +173,11 @@ export function Navbar() {
                   {item.label}
                 </NextLink>
               ))}
-              <NextLink href={`/${locale}/download`} className="mt-2">
+              <a href={DOWNLOAD_URL} download className="mt-2">
                 <Button variant="primary" className="w-full">
                   {t('download')}
                 </Button>
-              </NextLink>
+              </a>
             </div>
           </div>
         )}

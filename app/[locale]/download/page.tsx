@@ -22,13 +22,14 @@ export const metadata: Metadata = {
   description: 'Download AI FileSense for Windows. Free AI-powered file organization that keeps your files private.',
 }
 
+const DOWNLOAD_URL = 'https://github.com/RCushmaniii/ai-filesense-website/releases/download/v1.0.0/AI.FileSense_1.0.0_x64-setup.exe'
+
 export default async function DownloadPage({
   params: { locale },
 }: {
   params: { locale: string }
 }) {
   const t = await getTranslations('download')
-  const common = await getTranslations('common')
 
   const quickStartSteps = [
     { title: t('quickStart.step1'), desc: t('quickStart.step1Desc') },
@@ -68,9 +69,11 @@ export default async function DownloadPage({
                   <span className="text-sm text-foreground/60">{t('size')}</span>
                 </div>
 
-                <Button variant="primary" className="text-lg px-10 py-4 mb-4" disabled>
-                  {t('button')} - {common('comingSoon')}
-                </Button>
+                <a href={DOWNLOAD_URL} download>
+                  <Button variant="primary" className="text-lg px-10 py-4 mb-4">
+                    {t('button')}
+                  </Button>
+                </a>
 
                 <p className="text-sm text-foreground/50 mb-6">
                   {t('platform')}

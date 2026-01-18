@@ -7,6 +7,7 @@
 **Framework:** Next.js 14 (App Router)
 **Language:** TypeScript (strict mode)
 **Styling:** Tailwind CSS with CSS variables
+**i18n:** next-intl (English + Spanish)
 
 AI FileSense is a Windows desktop application that uses Claude AI to intelligently organize files locally. This website serves as the marketing/documentation hub.
 
@@ -23,31 +24,29 @@ npm run format     # Prettier formatting
 
 ```
 ai-filesense-website/
-├── app/                    # Next.js App Router pages
-│   ├── layout.tsx         # Root layout with navbar/footer
-│   ├── page.tsx           # Home page (hero, features, pricing)
-│   ├── actions/           # Server actions (contact form)
-│   ├── blog/[slug]/       # Dynamic blog posts
-│   ├── work/[slug]/       # Dynamic case studies
-│   └── support/           # Support hub pages
+├── app/
+│   ├── [locale]/              # Locale-based routing (en, es)
+│   │   ├── layout.tsx         # Root layout with navbar/footer
+│   │   ├── page.tsx           # Home page (hero, features, folders)
+│   │   ├── features/          # Features page with differentiators
+│   │   ├── support/           # Support hub (FAQ, Getting Started, Contact)
+│   │   └── ...                # Other pages
+│   ├── actions/               # Server actions (contact form)
+│   └── sitemap.ts             # Auto-generated sitemap
 ├── components/
-│   ├── ui/                # Atomic components (button, card, input)
-│   ├── layout/            # Layout components (navbar, footer, container)
-│   ├── content/           # MDX rendering components
-│   ├── contact/           # Contact form
-│   └── emails/            # React Email templates
-├── content/
-│   ├── blog/              # MDX blog posts
-│   ├── work/              # MDX case studies
-│   └── legal/             # Privacy policy, terms
+│   ├── ui/                    # Atomic components (button, card, input)
+│   ├── layout/                # Layout components (navbar, footer, container)
+│   ├── contact/               # Contact form
+│   └── emails/                # React Email templates
+├── messages/
+│   ├── en.json                # English translations
+│   └── es.json                # Spanish translations
 ├── lib/
-│   ├── mdx.ts             # Content loading utilities
-│   ├── schemas.ts         # Zod validation schemas
-│   ├── seo.ts             # Structured data helpers
-│   └── utils.ts           # cn(), formatDate(), etc.
-├── public/images/         # Static assets
-├── styles/globals.css     # Tailwind + CSS variables
-└── docs/                  # Internal documentation
+│   ├── schemas.ts             # Zod validation schemas
+│   ├── utils.ts               # cn(), formatDate(), etc.
+│   └── ...
+├── public/images/             # Static assets
+└── styles/globals.css         # Tailwind + CSS variables
 ```
 
 ## Key Technologies
@@ -55,22 +54,21 @@ ai-filesense-website/
 - **Next.js 14** - App Router, Server Components, Server Actions
 - **TypeScript** - Strict mode enabled
 - **Tailwind CSS** - Utility-first styling with `cn()` helper
-- **MDX** - Blog posts and case studies via `next-mdx-remote`
+- **next-intl** - Internationalization (EN + ES-MX)
 - **React Hook Form + Zod** - Form validation
 - **Resend** - Transactional emails
-- **Framer Motion** - Animations (available but lightly used)
 
 ## Architecture Patterns
 
 ### Server vs Client Components
 - Pages are Server Components by default
-- Client Components marked with `'use client'` (navbar, forms)
+- Client Components marked with `'use client'` (navbar, forms, language switcher)
 
-### Content Management
-- MDX files in `/content` directory
-- Frontmatter parsed with `gray-matter`
-- Draft posts excluded in production (`draft: true`)
-- Sorted by date (newest first)
+### Internationalization
+- Translations in `/messages/*.json`
+- Locale routing via `[locale]` dynamic segment
+- `getTranslations()` for server components
+- `useTranslations()` for client components
 
 ### Styling
 - CSS variables for theme colors (`--color-primary`, etc.)
@@ -87,14 +85,15 @@ ai-filesense-website/
 
 | File | Purpose |
 |------|---------|
-| `app/layout.tsx` | Root layout, metadata, providers |
-| `app/page.tsx` | Home page (~19KB, main marketing) |
-| `components/layout/navbar.tsx` | Navigation with dark mode toggle |
+| `app/[locale]/layout.tsx` | Root layout, metadata, providers |
+| `app/[locale]/page.tsx` | Home page (hero, features, folders) |
+| `app/[locale]/features/page.tsx` | Features, differentiators, roadmap |
+| `app/[locale]/support/faq/page.tsx` | 10 FAQs (flat list) |
+| `app/[locale]/support/getting-started/page.tsx` | 8-step user journey |
 | `components/contact/contact-form.tsx` | Contact form with validation |
 | `app/actions/contact.ts` | Server action for email submission |
-| `lib/mdx.ts` | getAllPosts(), getPostBySlug() |
-| `lib/utils.ts` | cn(), formatDate(), calculateReadingTime() |
-| `tailwind.config.ts` | Theme configuration |
+| `messages/en.json` | English translations |
+| `messages/es.json` | Spanish translations |
 
 ## Component Variants
 
@@ -107,33 +106,23 @@ ai-filesense-website/
 ```env
 SITE_URL=https://aifilesense.com
 RESEND_API_KEY=your_resend_api_key
-CONTACT_EMAIL=support@aifilesense.com
+NOTIFICATION_EMAIL=your-email@example.com
 CONTACT_FROM="AI FileSense <noreply@aifilesense.com>"
 ```
 
-## Content Schema
+## Key Content
 
-### Blog Posts (`content/blog/*.mdx`)
-```yaml
-title: string        # Required
-description: string  # Required
-date: YYYY-MM-DD     # Required
-tags: string[]       # Optional
-draft: boolean       # Optional (default: false)
-coverImage: string   # Optional
-```
+### 11 Smart Folders (numbered 01-11)
+Work, Money, Home, Health, Legal, School, Family, Clients, Projects, Archive, Review
 
-### Case Studies (`content/work/*.mdx`)
-```yaml
-title: string        # Required
-description: string  # Required
-date: YYYY-MM-DD     # Required
-client: string       # Optional
-role: string         # Optional
-tech: string[]       # Optional
-coverImage: string   # Optional
-draft: boolean       # Optional
-```
+### 6 Phase 1 Core Features
+AI-Powered Classification, 11-Folder Smart System, 3-Level Organization, Safe & Reversible, Privacy First, Fully Bilingual
+
+### 10 FAQs (flat structure)
+Data safety, undo changes, Review folder, file exclusion, bilingual support, file types, organized file location, re-running, incorrect categorization, internet requirement
+
+### 8-Step User Journey
+Select Folders, Scanning, Personalization, Results Preview, Detailed Review, Quick Clarifications, Applying Changes, Success
 
 ## Code Conventions
 
@@ -148,7 +137,6 @@ draft: boolean       # Optional
 
 - Dynamic metadata per page (`generateMetadata`)
 - Open Graph and Twitter cards
-- JSON-LD structured data (Organization, Article)
 - Auto-generated sitemap (`app/sitemap.ts`)
 - Auto-generated robots.txt (`app/robots.ts`)
 

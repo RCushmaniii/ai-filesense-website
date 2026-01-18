@@ -52,7 +52,7 @@ export function ContactForm() {
       <Card className="p-8 text-center bg-secondary/10 border-secondary">
         <h3 className="text-xl font-semibold">Message Received!</h3>
         <p className="mt-2 text-foreground/70">
-          Thanks for reaching out. We have received your inquiry and will reply within 48 hours.
+          Thanks for reaching out. We&apos;ll review your message and respond within 48 hours.
         </p>
         <button
           type="button"
@@ -76,9 +76,9 @@ export function ContactForm() {
         />
 
         <Input
-          label="Work Email"
+          label="Email"
           type="email"
-          placeholder="jane@acme.com"
+          placeholder="jane@example.com"
           error={errors.email?.message}
           {...register('email')}
         />
@@ -90,31 +90,9 @@ export function ContactForm() {
           {...register('company')}
         />
 
-        <Input
-          label="Company Website"
-          placeholder="company.com"
-          error={errors.website?.message}
-          {...register('website')}
-        />
-
-        <fieldset className="space-y-3">
-          <legend className="block text-sm font-medium text-foreground">What are you interested in?</legend>
-          <div className="flex flex-wrap gap-2">
-            {(['Web Dev', 'Design', 'Strategy'] as const).map((option) => (
-              <label key={option} className="cursor-pointer">
-                <input type="radio" value={option} className="sr-only" {...register('interest')} />
-                <span className="inline-flex px-4 py-2 rounded-full text-sm border border-foreground/20 hover:bg-foreground/5 transition-colors">
-                  {option}
-                </span>
-              </label>
-            ))}
-          </div>
-          {errors.interest?.message && <p className="text-sm text-red-500">{errors.interest.message}</p>}
-        </fieldset>
-
         <Textarea
-          label="Project Details"
-          placeholder="Tell us a bit about your project, timeline, and budget..."
+          label="Message"
+          placeholder="How can we help you? Tell us about your question or issue..."
           rows={6}
           error={errors.message?.message}
           {...register('message')}
@@ -132,7 +110,7 @@ export function ContactForm() {
         {serverError && <div className="text-sm text-red-500 font-medium">{serverError}</div>}
 
         <Button type="submit" variant="primary" className="w-full" disabled={isSubmitting}>
-          {isSubmitting ? 'Sending Request...' : 'Send Request'}
+          {isSubmitting ? 'Sending...' : 'Send Message'}
         </Button>
       </form>
     </Card>

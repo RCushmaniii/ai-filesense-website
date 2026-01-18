@@ -7,7 +7,7 @@ import { ContactEmail } from '@/components/emails/contact-template'
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 const CONTACT_FROM =
-  process.env.CONTACT_FROM || 'Portfolio Contact <system@your-verified-domain.com>'
+  process.env.CONTACT_FROM || 'AI FileSense <onboarding@resend.dev>'
 
 export async function submitContactForm(data: unknown): Promise<
   | { success: true }
@@ -32,15 +32,13 @@ export async function submitContactForm(data: unknown): Promise<
   try {
     const { error } = await resend.emails.send({
       from: CONTACT_FROM,
-      to: [process.env.CONTACT_EMAIL || 'your-email@example.com'],
+      to: [process.env.NOTIFICATION_EMAIL || 'your-email@example.com'],
       reply_to: cleanData.email,
-      subject: `New Inquiry: ${cleanData.name}`,
+      subject: `[AI FileSense Website] Support Request from ${cleanData.name}`,
       react: ContactEmail({
         name: cleanData.name,
         email: cleanData.email,
         company: cleanData.company,
-        website: cleanData.website,
-        interest: cleanData.interest,
         message: cleanData.message,
       }),
     })
