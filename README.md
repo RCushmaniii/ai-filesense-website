@@ -1,182 +1,318 @@
+<div align="center">
+
 # AI FileSense Website
 
-**The official marketing website for AI FileSense - Intelligent File Organization Made Simple**
+### Marketing website for AI FileSense — the Windows desktop app that organizes your files locally using Claude AI.
 
-A modern, production-ready Next.js website showcasing AI FileSense, the Windows desktop application that uses Claude AI to intelligently organize your files and folders.
+[![Live Site](https://img.shields.io/badge/site-live-success?style=for-the-badge)](https://aifilesense.com)
+[![License](https://img.shields.io/badge/license-Educational-blue?style=for-the-badge)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 
----
+[**Live Site**](https://aifilesense.com) · [**Features**](https://aifilesense.com/features) · [**Support**](https://aifilesense.com/support)
 
-## About AI FileSense
+![AI FileSense Application Interface](./public/images/home/screenshot.jpg)
 
-AI FileSense is a Windows desktop application that revolutionizes file organization using artificial intelligence. This website serves as the marketing and information hub for the product.
-
-**Phase 1 Core Features:**
-
-- **AI-Powered Classification** - Claude Haiku reads your documents and categorizes them based on actual content
-- **11-Folder Smart System** - Numbered folders (01-11) covering Work, Money, Home, Health, Legal, School, Family, Clients, Projects, Archive, and Review
-- **3-Level Organization** - Choose light, moderate, or detailed organization depth
-- **Safe & Reversible** - Preview all changes, one-click undo, crash recovery built-in
-- **Privacy First** - Files stay local, only small text snippets sent to AI
-- **Fully Bilingual** - Complete English and Spanish (Mexico) support
-
-**This website provides:**
-
-- Product information and features
-- 8-step getting started guide
-- FAQ with 10 common questions
-- Product roadmap (Phase 1/2/3)
-- Supported file types documentation
-- Contact and support resources
+</div>
 
 ---
 
-## Website Features
+## Overview
 
-### Modern UI/UX
+This repository contains the marketing website for AI FileSense, a Windows desktop application that uses Claude AI to intelligently organize files and folders. The website serves as the product information hub with bilingual support (English and Spanish), documentation, FAQ, and support resources.
 
-- Clean, professional design system
-- Responsive layout optimized for all devices
-- Dark mode support with localStorage persistence
-- Accessible components (WCAG AA compliant)
-- Smooth animations and transitions
+**Built for:** Windows users who want to organize their Desktop, Documents, and Downloads without uploading files to the cloud.
 
-### Bilingual Support
+---
 
-- Full English and Spanish (Mexico) translations
-- Locale-based routing (`/en`, `/es`)
-- Language switcher in navigation
+## Features
 
-### Content Management
-
-- MDX-powered blog for product updates
-- Legal pages (Privacy Policy, Terms of Service)
-- Comprehensive documentation
-- Easy-to-update content structure
-
-### Contact & Support
-
-- Streamlined contact form (name, email, company, message)
-- Server-side processing via Next.js Server Actions
-- Email delivery via Resend
-- Professional email templates
-
-### SEO & Performance
-
-- Optimized metadata and Open Graph tags
-- Fast page loads and excellent Core Web Vitals
-- Sitemap and robots.txt configured
-- Image optimization built-in
+| Feature | Benefit |
+|---------|---------|
+| **Bilingual Support** | Full English and Spanish (Mexico) via locale-based routing |
+| **Server Components** | Fast page loads with Next.js 14 App Router |
+| **Contact System** | Form validation with Zod, email delivery via Resend |
+| **SEO Optimized** | Dynamic metadata, Open Graph, auto-generated sitemap |
+| **Accessible** | WCAG AA compliant, semantic HTML, keyboard navigation |
+| **Dark Mode** | System preference detection with localStorage persistence |
 
 ---
 
 ## Tech Stack
 
-- **Next.js 14** (App Router)
-- **TypeScript** (strict mode)
-- **Tailwind CSS**
-- **next-intl** (i18n)
-- **MDX** for content
-- **Resend** for emails
-- **Zod** for validation
+- **Next.js 14** — App Router, Server Components, Server Actions
+- **TypeScript** — Strict mode enabled
+- **Tailwind CSS** — Utility-first styling with CSS variables
+- **next-intl** — Internationalization (EN + ES-MX)
+- **React Hook Form + Zod** — Form state and validation
+- **Resend** — Transactional email delivery
+- **Framer Motion** — Animations and transitions
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+- **Node.js** 20+ (check: `node -v`)
+- **npm** 8+ or equivalent package manager
+
+### 1. Clone & Install
+
+```powershell
+git clone https://github.com/yourusername/ai-filesense-website.git
+cd ai-filesense-website
+
+npm install
+```
+
+### 2. Environment Setup
+
+```powershell
+# Create environment file
+Copy-Item .env.example .env.local
+
+# Edit with your values
+notepad .env.local
+```
+
+Required variables:
+
+```bash
+# .env.local
+SITE_URL=https://aifilesense.com
+
+# Email (Resend)
+RESEND_API_KEY=re_xxxxx
+NOTIFICATION_EMAIL=support@aifilesense.com
+CONTACT_FROM="AI FileSense <noreply@aifilesense.com>"
+```
+
+### 3. Start Development Server
+
+```powershell
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+**Success indicator:** You should see the home page with the hero section and app screenshot.
 
 ---
 
 ## Project Structure
 
 ```
+ai-filesense-website/
 ├── app/
-│   ├── [locale]/           # Locale-based routing
-│   │   ├── page.tsx        # Home page
-│   │   ├── features/       # Features page
-│   │   ├── support/        # Support hub (FAQ, Getting Started, Contact)
-│   │   └── ...
-│   ├── actions/            # Server actions
-│   └── sitemap.ts          # Auto-generated sitemap
+│   ├── [locale]/              # Locale-based routing (en, es)
+│   │   ├── layout.tsx         # Root layout with navbar/footer
+│   │   ├── page.tsx           # Home page (hero, features, folders)
+│   │   ├── features/          # Features, differentiators, roadmap
+│   │   ├── download/          # Download page with system requirements
+│   │   ├── pricing/           # Pricing tiers and API cost info
+│   │   ├── support/           # Support hub
+│   │   │   ├── faq/           # 10 FAQs
+│   │   │   ├── getting-started/  # 8-step user journey
+│   │   │   └── contact/       # Contact form
+│   │   ├── privacy/           # Privacy policy
+│   │   └── terms/             # Terms of service
+│   ├── actions/               # Server actions (contact form)
+│   ├── sitemap.ts             # Auto-generated sitemap
+│   └── robots.ts              # Robots.txt configuration
 ├── components/
-│   ├── ui/                 # Buttons, inputs, cards
-│   ├── layout/             # Navbar, footer, sections
-│   ├── contact/            # Contact form
-│   └── emails/             # Email templates
+│   ├── ui/                    # Atomic components (button, card, input)
+│   ├── layout/                # Layout components (navbar, footer)
+│   ├── contact/               # Contact form with validation
+│   ├── emails/                # React Email templates
+│   └── icons/                 # SVG icon components
 ├── messages/
-│   ├── en.json             # English translations
-│   └── es.json             # Spanish translations
-├── lib/                    # Utilities and schemas
-└── public/                 # Static assets
+│   ├── en.json                # English translations
+│   └── es.json                # Spanish translations
+├── lib/
+│   ├── schemas.ts             # Zod validation schemas
+│   ├── seo.ts                 # SEO utilities
+│   ├── mdx.ts                 # MDX processing
+│   └── utils.ts               # cn() helper, formatDate()
+├── public/
+│   └── images/                # Static assets (hero, logos, blog)
+└── styles/
+    └── globals.css            # Tailwind config + CSS variables
 ```
 
 ---
 
-## Quick Start
+## Available Scripts
 
-### 1. Install dependencies
-
-```bash
-npm install
-```
-
-### 2. Configure environment variables
-
-Create a `.env.local` file:
-
-```env
-SITE_URL=https://aifilesense.com
-
-# Email (Resend)
-RESEND_API_KEY=your_resend_api_key
-NOTIFICATION_EMAIL=your-email@example.com
-CONTACT_FROM="AI FileSense <noreply@yourdomain.com>"
-```
-
-### 3. Start the dev server
-
-```bash
-npm run dev
-```
-
-Visit [http://localhost:3000](http://localhost:3000)
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server on port 3000 |
+| `npm run build` | Create production build |
+| `npm start` | Run production server |
+| `npm run check` | TypeScript + ESLint validation |
+| `npm run typecheck` | TypeScript type checking only |
+| `npm run lint` | ESLint validation only |
+| `npm run format` | Format code with Prettier |
 
 ---
 
-## Scripts
+## Configuration
 
-- `npm run dev` – Development server
-- `npm run build` – Production build
-- `npm start` – Run production server
-- `npm run lint` – ESLint
-- `npm run format` – Prettier
-- `npm run typecheck` – TypeScript check
-- `npm run check` – Lint + TypeScript
+### Internationalization
+
+Translations are stored in `/messages/*.json`. The app supports two locales:
+
+- `en` — English (default)
+- `es` — Spanish (Mexico)
+
+**Server Components:**
+```typescript
+import { getTranslations } from 'next-intl/server'
+
+const t = await getTranslations('home')
+return <h1>{t('hero.title')}</h1>
+```
+
+**Client Components:**
+```typescript
+'use client'
+import { useTranslations } from 'next-intl'
+
+const t = useTranslations('nav')
+return <span>{t('features')}</span>
+```
+
+### Component Variants
+
+**Button:** `primary`, `secondary`, `outline`, `ghost`
+
+```tsx
+<Button variant="primary">Download Free</Button>
+<Button variant="outline">Learn More</Button>
+```
+
+**Container:** `sm`, `md`, `lg`, `xl` (max-width)
+
+```tsx
+<Container size="lg">{children}</Container>
+```
+
+**Section:** `sm`, `md`, `lg`, `xl` (vertical padding)
+
+```tsx
+<Section spacing="lg">{children}</Section>
+```
 
 ---
 
-## Environment Variables
+## Content Structure
 
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `SITE_URL` | Production URL | `https://aifilesense.com` |
-| `RESEND_API_KEY` | Resend API key for emails | `re_xxxxx` |
-| `NOTIFICATION_EMAIL` | Where contact form emails go | `support@aifilesense.com` |
-| `CONTACT_FROM` | From address for emails | `AI FileSense <noreply@domain.com>` |
+### 11 Smart Folders
+
+The product organizes files into numbered folders:
+
+| # | Folder | Contents |
+|---|--------|----------|
+| 01 | Work | Resumes, job offers, payslips, employment contracts |
+| 02 | Money | Bank statements, tax returns, invoices, budgets |
+| 03 | Home | Mortgage docs, utility bills, warranties |
+| 04 | Health | Medical records, prescriptions, lab results |
+| 05 | Legal | Contracts, licenses, IDs, passports |
+| 06 | School | Certificates, transcripts, course materials |
+| 07 | Family | Family correspondence, kids' records |
+| 08 | Clients | Client documents, vendor contracts |
+| 09 | Projects | Project deliverables, active work |
+| 10 | Archive | Documents older than 3 years |
+| 11 | Review | Low-confidence items for manual sorting |
+
+### Page Content
+
+| Page | Key Content |
+|------|-------------|
+| Home | Hero, 3-step process, 6 features, 11 folders, CTA |
+| Features | 4-step how it works, 7 differentiators, file types, roadmap |
+| Support/FAQ | 10 questions covering data safety, undo, file types |
+| Support/Getting Started | 8-step user journey with tips |
 
 ---
 
 ## Deployment
 
-### Vercel (recommended)
+### Vercel (Recommended)
 
-1. Push to GitHub
-2. Import into Vercel
-3. Set environment variables
-4. Deploy
+```powershell
+# Install Vercel CLI
+npm i -g vercel
 
-[Deploy with Vercel](https://vercel.com/new)
+# Deploy
+vercel --prod
+```
+
+Set environment variables in Vercel dashboard:
+- `SITE_URL`
+- `RESEND_API_KEY`
+- `NOTIFICATION_EMAIL`
+- `CONTACT_FROM`
+
+### Manual Build
+
+```powershell
+npm run build
+npm start
+```
+
+Production server runs on port 3000 by default.
+
+---
+
+## Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `SITE_URL` | Yes | Production URL for SEO and sitemap |
+| `RESEND_API_KEY` | Yes | Resend API key for email delivery |
+| `NOTIFICATION_EMAIL` | Yes | Email address for contact form submissions |
+| `CONTACT_FROM` | Yes | From address for outgoing emails |
+
+---
+
+## Code Conventions
+
+- **Imports:** Use `@/` alias for absolute imports
+- **TypeScript:** Strict mode — no implicit any
+- **Exports:** Prefer named exports
+- **Styling:** Use `cn()` for conditional Tailwind classes
+- **Responsive:** Mobile-first design approach
+- **Accessibility:** Semantic HTML, ARIA labels where needed
+
+### Pre-Commit Checklist
+
+```powershell
+npm run check
+```
+
+Validates TypeScript types and ESLint rules. Must pass before committing.
 
 ---
 
 ## License
 
-See [LICENSE](./LICENSE).
+Educational Use License — see [LICENSE](./LICENSE) for details.
+
+Commercial use requires prior written permission from the copyright holder.
 
 ---
 
-Built with Next.js, TypeScript, and Tailwind CSS
+## Support
+
+- **Documentation:** [aifilesense.com/support](https://aifilesense.com/support)
+- **FAQ:** [aifilesense.com/support/faq](https://aifilesense.com/support/faq)
+- **Contact:** [aifilesense.com/contact](https://aifilesense.com/contact)
+
+---
+
+<div align="center">
+
+**Built by [Robert Cushman](https://cushlabs.ai) | [CushLabs.ai](https://cushlabs.ai)**
+
+</div>
