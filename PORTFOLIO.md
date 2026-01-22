@@ -8,7 +8,7 @@ portfolio_featured: true
 title: "AI Filesense Website"
 tagline: "Marketing website for AI FileSense - An ai-powered local file organization system for Windows. Landing page, downloads, privacy policy, terms of service, and changelog."
 slug: "ai-filesense-website"
-category: "AI Automation"
+category: "Marketing"
 tech_stack:
   - "TypeScript"
   - "Next.js"
