@@ -3,102 +3,101 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import { Container } from '@/components/layout/container'
+import { Section } from '@/components/layout/section'
 import { Button } from '@/components/ui/button'
-import { VideoPlayer } from '@/components/ui/video-player'
-import { AnimatedSection } from '@/components/shared/animated-section'
-import { ArrowRightIcon, PlayIcon } from '@/components/icons'
+import { LockFilledIcon, CheckIcon, ArrowRightIcon, PlayIcon } from '@/components/icons'
+import Image from 'next/image'
 
 export function Hero() {
   const t = useTranslations('home.hero')
+  const common = useTranslations('common')
 
   return (
-    <section className="relative min-h-[90vh] flex items-center py-16 md:py-24 lg:py-32 overflow-hidden bg-background">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card" />
-
-      {/* Accent glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full blur-[120px] pointer-events-none bg-primary/20" />
+    <Section spacing="xl" className="relative overflow-hidden">
+      {/* Creative textured background - mesh variant */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5 dark:from-primary/10 dark:via-background dark:to-secondary/10" />
+      {/* Floating gradient orbs */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 dark:bg-primary/30 rounded-full blur-3xl opacity-60" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-secondary/20 dark:bg-secondary/30 rounded-full blur-3xl opacity-50" />
+      <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-primary/10 dark:bg-primary/20 rounded-full blur-2xl opacity-40" />
+      {/* Subtle grid overlay */}
+      <div
+        className="absolute inset-0 opacity-[0.02] dark:opacity-[0.05]"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px',
+        }}
+      />
 
       <Container className="relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Content */}
-          <div className="text-center lg:text-left">
-            <AnimatedSection delay={0}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-                {t('title')}{' '}
-                <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                  {t('titleHighlight')}
-                </span>{' '}
-                {t('titleEnd')}
-              </h1>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.1}>
-              <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto lg:mx-0 text-muted-foreground">
-                {t('subtitle')}
-              </p>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="/download">
-                  <Button variant="primary" className="w-full sm:w-auto text-lg px-8 py-4 group">
-                    {t('cta')}
-                    <ArrowRightIcon className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
-                <Link href="/features">
-                  <Button variant="outline" className="w-full sm:w-auto text-lg px-8 py-4">
-                    <PlayIcon className="mr-2 w-5 h-5" />
-                    {t('ctaSecondary')}
-                  </Button>
-                </Link>
-              </div>
-            </AnimatedSection>
-
-            {/* Trust badges */}
-            <AnimatedSection delay={0.3}>
-              <div className="mt-12 flex items-center gap-6 md:gap-8 justify-center lg:justify-start text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-green-500" />
-                  <span>{t('badge1')}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-green-500" />
-                  <span>{t('badge2')}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-green-500" />
-                  <span>{t('badge3')}</span>
-                </div>
-              </div>
-            </AnimatedSection>
+        <div className="text-center max-w-4xl mx-auto">
+          {/* Trust Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-8">
+            <LockFilledIcon className="w-4 h-4" />
+            {t('badge')}
           </div>
 
-          {/* App Video Demo */}
-          <AnimatedSection delay={0.2} direction="right">
-            <div className="relative">
-              <div className="relative rounded-2xl p-4 shadow-2xl bg-muted border border-border">
-                {/* Window chrome */}
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-3 h-3 rounded-full bg-red-500" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                  <div className="w-3 h-3 rounded-full bg-green-500" />
-                </div>
-                {/* Video player */}
-                <VideoPlayer
-                  url="/videos/ai-filesense-demo.mp4"
-                  poster="/images/home/Screenshot.jpg"
-                  className="aspect-[16/10] rounded-lg overflow-hidden bg-card"
-                />
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full blur-2xl bg-primary/30" />
-              <div className="absolute -top-4 -left-4 w-32 h-32 rounded-full blur-3xl bg-primary/20" />
-            </div>
-          </AnimatedSection>
+          {/* Headline */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+            {t('title')}
+          </h1>
+
+          {/* Subheadline */}
+          <p className="text-xl md:text-2xl text-foreground/70 mb-10 max-w-3xl mx-auto">
+            {t('subtitle')}
+          </p>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <Link href="/download">
+              <Button variant="primary" className="text-lg px-8 py-4 w-full sm:w-auto group">
+                {common('downloadFree')}
+                <ArrowRightIcon className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link href="/features">
+              <Button variant="outline" className="text-lg px-8 py-4 w-full sm:w-auto">
+                <PlayIcon className="mr-2 w-5 h-5" />
+                {common('seeHowItWorks')}
+              </Button>
+            </Link>
+          </div>
+
+          {/* Quick Stats */}
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-foreground/60">
+            <span className="flex items-center gap-1">
+              <CheckIcon className="w-4 h-4 text-secondary" />
+              {t('stat1')}
+            </span>
+            <span className="hidden sm:inline text-foreground/30">•</span>
+            <span className="flex items-center gap-1">
+              <CheckIcon className="w-4 h-4 text-secondary" />
+              {t('stat2')}
+            </span>
+            <span className="hidden sm:inline text-foreground/30">•</span>
+            <span className="flex items-center gap-1">
+              <CheckIcon className="w-4 h-4 text-secondary" />
+              {t('stat3')}
+            </span>
+          </div>
+        </div>
+
+        {/* App Screenshot */}
+        <div className="mt-16 relative">
+          <div className="max-w-5xl mx-auto rounded-xl border border-foreground/10 overflow-hidden shadow-2xl">
+            <Image
+              src="/images/home/Screenshot.jpg"
+              alt="AI FileSense application interface showing intelligent file organization"
+              width={1920}
+              height={1080}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+          {/* Decorative glow under screenshot */}
+          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-3/4 h-16 bg-primary/20 blur-3xl rounded-full" />
         </div>
       </Container>
-    </section>
+    </Section>
   )
 }

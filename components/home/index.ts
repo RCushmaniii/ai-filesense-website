@@ -1,0 +1,5 @@
+export { Hero } from './hero'
+export { HowItWorks } from './how-it-works'
+export { FeaturesSection } from './features-section'
+export { FoldersSection } from './folders-section'
+export { CTASection } from './cta-section'
