@@ -43,8 +43,15 @@
   "home": {
     "hero": {
       "badge": "No configuration required",
-      "title": "Organize years of files in minutes.",
+      "title": "Organize",
+      "titleHighlight": "years of files",
+      "titleEnd": "in minutes.",
       "subtitle": "AI FileSense reads your documents and intelligently categorizes them into a clean 11-folder structure. Preview everything. Undo anything. Lose nothing.",
+      "cta": "Download Free",
+      "ctaSecondary": "Watch Demo",
+      "badge1": "Free to use",
+      "badge2": "No signup required",
+      "badge3": "Windows 10/11",
       "stat1": "Files never leave your computer",
       "stat2": "Full preview before moving",
       "stat3": "One-click undo"
@@ -99,7 +106,9 @@
       "archive": "10 Archive",
       "archiveDesc": "Older documents, completed projects, historical records",
       "review": "11 Review",
-      "reviewDesc": "Low-confidence items for manual sorting—AI wasn't sure where these belong"
+      "reviewDesc": "Low-confidence items for manual sorting—AI wasn't sure where these belong",
+      "getStarted": "Ready to Organize?",
+      "getStartedDesc": "Download free and transform your cluttered folders into organized bliss in minutes."
     },
     "cta": {
       "title": "Ready to Get Organized?",

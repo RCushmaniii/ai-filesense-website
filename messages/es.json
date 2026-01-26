@@ -43,8 +43,15 @@
   "home": {
     "hero": {
       "badge": "Sin configuracion requerida",
-      "title": "Organiza anos de archivos en minutos.",
+      "title": "Organiza",
+      "titleHighlight": "anos de archivos",
+      "titleEnd": "en minutos.",
       "subtitle": "AI FileSense lee tus documentos y los categoriza inteligentemente en una estructura limpia de 11 carpetas. Previsualiza todo. Deshaz cualquier cosa. No pierdas nada.",
+      "cta": "Descargar Gratis",
+      "ctaSecondary": "Ver Demo",
+      "badge1": "Gratis",
+      "badge2": "Sin registro",
+      "badge3": "Windows 10/11",
       "stat1": "Archivos nunca salen de tu computadora",
       "stat2": "Vista previa completa antes de mover",
       "stat3": "Deshacer con un clic"
@@ -99,7 +106,9 @@
       "archive": "10 Archivo",
       "archiveDesc": "Documentos antiguos, proyectos completados, registros historicos",
       "review": "11 Revisar",
-      "reviewDesc": "Items de baja confianza para ordenamiento manual—la IA no estaba segura donde pertenecen"
+      "reviewDesc": "Items de baja confianza para ordenamiento manual—la IA no estaba segura donde pertenecen",
+      "getStarted": "¿Listo para Organizar?",
+      "getStartedDesc": "Descarga gratis y transforma tus carpetas desordenadas en orden en minutos."
     },
     "cta": {
       "title": "¿Listo para Organizarte?",

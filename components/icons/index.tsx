@@ -608,3 +608,64 @@ export function ClockIcon({ className, ...props }: IconProps) {
     </svg>
   )
 }
+
+// Play icon - used for video/demo
+export function PlayIcon({ className, ...props }: IconProps) {
+  return (
+    <svg
+      className={cn('w-5 h-5', className)}
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+        clipRule="evenodd"
+      />
+    </svg>
+  )
+}
+
+// Sparkles/magic icon - used for AI features
+export function SparklesIcon({ className, ...props }: IconProps) {
+  return (
+    <svg
+      className={cn('w-6 h-6', className)}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+      />
+    </svg>
+  )
+}
+
+// Cursor click icon - used for one-click features
+export function CursorClickIcon({ className, ...props }: IconProps) {
+  return (
+    <svg
+      className={cn('w-6 h-6', className)}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+      />
+    </svg>
+  )
+}

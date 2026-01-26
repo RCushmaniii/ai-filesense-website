@@ -16,6 +16,8 @@ import {
   UndoIcon,
   FolderIcon,
   GlobeIcon,
+  CursorClickIcon,
+  SparklesIcon,
 } from '@/components/icons'
 
 export default async function HomePage({
@@ -35,7 +37,7 @@ export default async function HomePage({
   const features = [
     { icon: <LightbulbIcon />, title: t('features.aiClassification'), desc: t('features.aiClassificationDesc') },
     { icon: <FolderIcon />, title: t('features.smartFolders'), desc: t('features.smartFoldersDesc') },
-    { icon: <ClipboardIcon />, title: t('features.organizationDepth'), desc: t('features.organizationDepthDesc') },
+    { icon: <CursorClickIcon />, title: t('features.oneClick'), desc: t('features.oneClickDesc') },
     { icon: <UndoIcon />, title: t('features.safeReversible'), desc: t('features.safeReversibleDesc') },
     { icon: <LockIcon />, title: t('features.privacyFirst'), desc: t('features.privacyFirstDesc') },
     { icon: <GlobeIcon />, title: t('features.fullyBilingual'), desc: t('features.fullyBilingualDesc') },
@@ -43,16 +45,17 @@ export default async function HomePage({
 
   const folders = [
     { name: t('folders.work'), desc: t('folders.workDesc') },
-    { name: t('folders.money'), desc: t('folders.moneyDesc') },
-    { name: t('folders.home'), desc: t('folders.homeDesc') },
-    { name: t('folders.health'), desc: t('folders.healthDesc') },
+    { name: t('folders.personal'), desc: t('folders.personalDesc') },
+    { name: t('folders.financial'), desc: t('folders.financialDesc') },
+    { name: t('folders.medical'), desc: t('folders.medicalDesc') },
     { name: t('folders.legal'), desc: t('folders.legalDesc') },
-    { name: t('folders.school'), desc: t('folders.schoolDesc') },
-    { name: t('folders.family'), desc: t('folders.familyDesc') },
-    { name: t('folders.clients'), desc: t('folders.clientsDesc') },
-    { name: t('folders.projects'), desc: t('folders.projectsDesc') },
+    { name: t('folders.education'), desc: t('folders.educationDesc') },
+    { name: t('folders.creative'), desc: t('folders.creativeDesc') },
+    { name: t('folders.technical'), desc: t('folders.technicalDesc') },
+    { name: t('folders.reference'), desc: t('folders.referenceDesc') },
     { name: t('folders.archive'), desc: t('folders.archiveDesc') },
     { name: t('folders.review'), desc: t('folders.reviewDesc') },
+    { name: t('folders.getStarted'), desc: t('folders.getStartedDesc'), isSpecial: true },
   ]
 
   return (
@@ -195,11 +198,21 @@ export default async function HomePage({
             {folders.map((folder, index) => (
               <div
                 key={index}
-                className="p-4 rounded-lg bg-background border border-foreground/10 hover:border-primary/30 transition-colors"
+                className={`p-4 rounded-lg transition-colors ${
+                  'isSpecial' in folder && folder.isSpecial
+                    ? 'bg-primary/10 border-2 border-primary/30 hover:border-primary/50'
+                    : 'bg-background border border-foreground/10 hover:border-primary/30'
+                }`}
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <FolderIcon className="w-5 h-5 text-primary" />
-                  <span className="font-semibold">{folder.name}</span>
+                  {'isSpecial' in folder && folder.isSpecial ? (
+                    <SparklesIcon className="w-5 h-5 text-primary" />
+                  ) : (
+                    <FolderIcon className="w-5 h-5 text-primary" />
+                  )}
+                  <span className={`font-semibold ${'isSpecial' in folder && folder.isSpecial ? 'text-primary' : ''}`}>
+                    {folder.name}
+                  </span>
                 </div>
                 <p className="text-sm text-foreground/60">{folder.desc}</p>
               </div>
