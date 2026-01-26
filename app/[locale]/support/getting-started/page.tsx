@@ -23,12 +23,12 @@ export default async function GettingStartedPage({
 
   const steps = [
     'selectFolders',
-    'scanning',
+    'fileTypes',
     'personalization',
-    'resultsPreview',
-    'detailedReview',
-    'quickClarifications',
-    'applyingChanges',
+    'scanning',
+    'classification',
+    'quickFixes',
+    'preview',
     'success',
   ] as const
 
