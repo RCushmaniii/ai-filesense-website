@@ -2,7 +2,7 @@
   "metadata": {
     "title": "AI FileSense - Organizacion de Archivos con IA para Windows",
     "siteName": "AI FileSense",
-    "description": "Finalmente organiza tu Escritorio, Documentos y Descargas sin subir nada a la nube. Clasificacion inteligente con IA que respeta tu privacidad."
+    "description": "Organiza anos de archivos en minutos, no horas. La IA lee tus documentos y los ordena en carpetas limpias—sin configuracion requerida."
   },
   "common": {
     "downloadFree": "Descargar Gratis",
@@ -36,147 +36,159 @@
     "contact": "Contacto",
     "privacyPolicy": "Politica de Privacidad",
     "termsOfService": "Terminos de Servicio",
-    "tagline": "Organizacion de archivos con IA para Windows. Tus archivos permanecen en tu computadora — solo los nombres de archivo se envian a la IA para clasificacion inteligente.",
+    "tagline": "Organizacion de archivos con IA para Windows. Tus archivos permanecen en tu computadora—solo pequenos fragmentos de texto se envian a la IA para clasificacion inteligente.",
     "localPrivate": "100% Local y Privado",
     "copyright": "© {year} AI FileSense. Todos los derechos reservados."
   },
   "home": {
     "hero": {
-      "badge": "Procesamiento 100% local",
-      "title": "Tus documentos, finalmente organizados.",
-      "subtitle": "AI FileSense analiza tus archivos localmente—nada sale de tu computadora—y los organiza en carpetas que tienen sentido.",
-      "stat1": "Procesamiento 100% local",
-      "stat2": "Deshacer cualquier cambio",
-      "stat3": "Funciona en 5 minutos"
+      "badge": "Sin configuracion requerida",
+      "title": "Organiza anos de archivos en minutos.",
+      "subtitle": "AI FileSense lee tus documentos y los categoriza inteligentemente en una estructura limpia de 11 carpetas. Previsualiza todo. Deshaz cualquier cosa. No pierdas nada.",
+      "stat1": "Archivos nunca salen de tu computadora",
+      "stat2": "Vista previa completa antes de mover",
+      "stat3": "Deshacer con un clic"
     },
     "solution": {
       "title": "Como Funciona",
-      "subtitle": "Organizado en tres simples pasos",
+      "subtitle": "Del caos a organizado en tres pasos",
       "step1Title": "Escanear",
-      "step1Desc": "Apunta a Documentos, Escritorio o Descargas. AI FileSense encuentra PDFs, documentos Word y archivos de texto.",
+      "step1Desc": "Apunta a Escritorio, Documentos o Descargas. AI FileSense encuentra PDFs, documentos Word, PowerPoint y archivos de texto.",
       "step2Title": "Analizar",
-      "step2Desc": "La IA local lee nombres de archivo y contenido para entender cada documento—nunca se sube a ningun lado.",
+      "step2Desc": "Claude AI lee el contenido de los archivos para entender cada documento—no solo los nombres. Un archivo llamado escaneo_2024.pdf se categoriza correctamente.",
       "step3Title": "Organizar",
-      "step3Desc": "Revisa el plan, haz cambios si es necesario, luego aplica. Registro completo guardado automaticamente."
+      "step3Desc": "Previsualiza donde ira cada archivo. Cambia cualquier sugerencia. Luego aplica—los archivos van a Documentos/Archivos Organizados/ con deshacer completo."
     },
     "features": {
-      "title": "Hecho para la Privacidad, Disenado para Ti",
-      "subtitle": "Funciones poderosas que respetan tus datos",
-      "aiClassification": "Clasificacion con IA",
-      "aiClassificationDesc": "Claude Haiku lee tus documentos y los categoriza inteligentemente basandose en el contenido real, no solo en nombres de archivo.",
-      "smartFolders": "Sistema de 11 Carpetas",
-      "smartFoldersDesc": "Carpetas numeradas (01-11) mantienen todo en orden logico: Trabajo, Dinero, Hogar, Salud, Legal, Escuela, Familia, Clientes, Proyectos, Archivo y Revisar.",
-      "organizationDepth": "3 Niveles de Organizacion",
-      "organizationDepthDesc": "Elige organizacion ligera (solo carpetas principales), moderada (con subcarpetas) o detallada (anidado por fecha).",
-      "safeReversible": "Seguro y Reversible",
-      "safeReversibleDesc": "Previsualiza cada cambio antes de que suceda. Deshacer con un clic para cualquier archivo o sesiones completas. Recuperacion de fallos incluida.",
-      "privacyFirst": "Privacidad Primero",
-      "privacyFirstDesc": "Los archivos permanecen en tu computadora. Solo pequenos fragmentos de texto se envian a la IA para clasificacion—nunca documentos completos.",
+      "title": "Hecho para la Confianza, Disenado para Todos",
+      "subtitle": "IA poderosa que cualquiera puede usar",
+      "aiClassification": "Analisis de Contenido con IA",
+      "aiClassificationDesc": "Entiende lo que hay dentro de tus archivos, no solo los nombres. escaneo_2024.pdf se categoriza correctamente como Medico o Financiero.",
+      "smartFolders": "Sistema Inteligente de 11 Carpetas",
+      "smartFoldersDesc": "Categorias predefinidas que funcionan para el 95% de archivos personales y profesionales: Trabajo, Personal, Financiero, Medico, Legal y mas.",
+      "oneClick": "Organizacion con Un Clic",
+      "oneClickDesc": "Transforma anos de desorden digital en orden en minutos, no horas. Sin ordenamiento manual requerido.",
+      "safeReversible": "Vista Previa y Deshacer Completo",
+      "safeReversibleDesc": "Ve exactamente donde ira cada archivo antes de que nada se mueva. ¿Cambiaste de opinion? Restaura todo instantaneamente.",
+      "privacyFirst": "Diseno Privacidad Primero",
+      "privacyFirstDesc": "Tus archivos nunca salen de tu computadora. Solo pequenos fragmentos de texto enviados a la IA. Sin cuenta requerida.",
       "fullyBilingual": "Completamente Bilingue",
-      "fullyBilingualDesc": "Soporte completo en ingles y espanol (Mexico). La IA entiende documentos en ambos idiomas."
+      "fullyBilingualDesc": "Interfaz completa en ingles y espanol (Mexico). La IA entiende documentos en ambos idiomas."
     },
     "folders": {
-      "title": "11 Carpetas Inteligentes",
-      "subtitle": "Cubriendo documentos personales y profesionales",
+      "title": "El Sistema de 11 Carpetas",
+      "subtitle": "Categorias predefinidas para documentos personales y profesionales",
       "work": "01 Trabajo",
       "workDesc": "Curriculos, ofertas de trabajo, evaluaciones de desempeno, recibos de nomina, contratos laborales",
-      "money": "02 Dinero",
-      "moneyDesc": "Estados de cuenta, declaraciones de impuestos, inversiones, recibos, facturas, presupuestos",
-      "home": "03 Hogar",
-      "homeDesc": "Documentos de hipoteca, contratos de renta, recibos de servicios, registros de reparaciones, garantias",
-      "health": "04 Salud",
-      "healthDesc": "Expedientes medicos, recetas, resultados de laboratorio, tarjetas de seguro, registros de vacunacion",
+      "personal": "02 Personal",
+      "personalDesc": "Correspondencia personal, documentos familiares, proyectos personales, administracion de vida",
+      "financial": "03 Financiero",
+      "financialDesc": "Estados de cuenta, declaraciones de impuestos, inversiones, recibos, facturas, presupuestos",
+      "medical": "04 Medico",
+      "medicalDesc": "Expedientes medicos, recetas, resultados de laboratorio, tarjetas de seguro, registros de vacunacion",
       "legal": "05 Legal",
       "legalDesc": "Contratos, acuerdos, licencias, identificaciones, pasaportes, correspondencia legal",
-      "school": "06 Escuela",
-      "schoolDesc": "Materiales de cursos, certificados, transcripciones, diplomas, trabajos de investigacion",
-      "family": "07 Familia",
-      "familyDesc": "Correspondencia familiar, registros escolares de los ninos, cartas personales, documentos familiares",
-      "clients": "08 Clientes",
-      "clientsDesc": "Documentos de clientes, contratos con proveedores, facturas de proyectos (para freelancers y pequenas empresas)",
-      "projects": "09 Proyectos",
-      "projectsDesc": "Entregables de proyectos, hitos, documentos de trabajo activo, archivos de colaboracion",
+      "education": "06 Educacion",
+      "educationDesc": "Materiales de cursos, certificados, transcripciones, diplomas, trabajos de investigacion",
+      "creative": "07 Creativo",
+      "creativeDesc": "Archivos de diseno, proyectos de escritura, arte, briefs creativos, piezas de portafolio",
+      "technical": "08 Tecnico",
+      "technicalDesc": "Documentacion de codigo, especificaciones tecnicas, guias de sistema, archivos de configuracion",
+      "reference": "09 Referencia",
+      "referenceDesc": "Manuales, guias de como hacer, materiales de referencia, articulos guardados, investigacion",
       "archive": "10 Archivo",
-      "archiveDesc": "Documentos de mas de 3 anos, proyectos completados, registros historicos",
+      "archiveDesc": "Documentos antiguos, proyectos completados, registros historicos",
       "review": "11 Revisar",
-      "reviewDesc": "Items de baja confianza que necesitan ordenamiento manual—la IA no estaba segura donde pertenecen"
+      "reviewDesc": "Items de baja confianza para ordenamiento manual—la IA no estaba segura donde pertenecen"
     },
     "cta": {
       "title": "¿Listo para Organizarte?",
-      "subtitle": "Descarga AI FileSense y organiza tus archivos en 5 minutos. Sin cuenta necesaria, 100% privado.",
+      "subtitle": "Descarga AI FileSense y organiza tus archivos en minutos. Sin cuenta necesaria, sin configuracion requerida.",
       "button": "Descargar Gratis para Windows",
       "specs": "Windows 10/11 (64-bit) • 45MB de descarga • Gratis para usar"
     }
   },
   "features": {
     "hero": {
-      "title": "Como Funciona AI FileSense",
+      "title": "IA que Lee Tus Documentos Para Que Tu No Tengas Que Hacerlo",
       "subtitle": "Organizacion inteligente que corre completamente en tu computadora"
     },
     "howItWorks": {
-      "title": "Cuatro Simples Pasos",
-      "scan": {
-        "title": "1. Escanear",
-        "description": "Apuntalo a tus Documentos, Escritorio o Descargas. AI FileSense encuentra PDFs, documentos Word y archivos de texto—incluso en subcarpetas."
+      "title": "El Recorrido de 8 Pasos",
+      "folderSelection": {
+        "title": "1. Seleccion de Carpetas",
+        "description": "Elige que carpetas escanear—Escritorio, Documentos, Descargas. Comienza con la mas desordenada."
       },
-      "analyze": {
-        "title": "2. Analizar",
-        "description": "Nuestra IA local lee nombres de archivo y contenido (nunca se sube a ningun lado) para entender cada documento: facturas, contratos, registros medicos, tareas escolares y mas."
+      "fileTypes": {
+        "title": "2. Tipos de Archivo",
+        "description": "Selecciona tipos de archivo a organizar: PDF, Word, PowerPoint o archivos de texto. Omite lo que no necesitas."
       },
-      "organize": {
-        "title": "3. Organizar",
-        "description": "Elige tu estilo: Simple (carpetas por tema), Linea de Tiempo (por ano y mes), o Grupos Inteligentes (por cliente, proyecto o entidad)."
+      "personalization": {
+        "title": "3. Personalizacion",
+        "description": "Responde 2-3 preguntas rapidas sobre tus preferencias—profundidad de carpetas y estilo de busqueda. Toma 30 segundos."
       },
-      "review": {
-        "title": "4. Revisar y Aplicar",
-        "description": "Ve exactamente donde ira cada archivo. Cambia cualquier sugerencia. Luego aplica—con un registro completo de deshacer guardado automaticamente."
+      "scanning": {
+        "title": "4. Escaneando",
+        "description": "AI FileSense escanea tus carpetas y extrae fragmentos de texto de documentos. Los archivos nunca salen de tu computadora."
+      },
+      "classification": {
+        "title": "5. Clasificacion con IA",
+        "description": "Claude AI analiza contenido y asigna categorias. Un archivo llamado doc123.pdf se categoriza correctamente basandose en su contenido."
+      },
+      "quickFixes": {
+        "title": "6. Ajustes Rapidos",
+        "description": "Revisa sugerencias de la IA. Responde preguntas aclaratorias para archivos de baja confianza. Tu aporte mejora la precision."
+      },
+      "preview": {
+        "title": "7. Vista Previa",
+        "description": "Ve exactamente donde se movera cada archivo antes de confirmar. Cambia cualquier sugerencia con la que no estes de acuerdo."
+      },
+      "apply": {
+        "title": "8. Aplicar y Exito",
+        "description": "Los archivos se mueven a Documentos/Archivos Organizados/ en carpetas numeradas. Deshacer completo—restaura cualquier cosa con un clic."
       }
     },
     "folders": {
-      "title": "Las 11 Carpetas Inteligentes",
-      "subtitle": "Cubriendo la gran mayoria de documentos personales y profesionales",
+      "title": "El Sistema de 11 Carpetas",
+      "subtitle": "Categorias predefinidas que funcionan para el 95% de archivos",
       "work": { "name": "01 Trabajo", "desc": "Curriculos, ofertas de trabajo, evaluaciones de desempeno, recibos de nomina, contratos laborales" },
-      "money": { "name": "02 Dinero", "desc": "Estados de cuenta, declaraciones de impuestos, inversiones, recibos, facturas, presupuestos" },
-      "home": { "name": "03 Hogar", "desc": "Documentos de hipoteca, contratos de renta, recibos de servicios, registros de reparaciones, garantias" },
-      "health": { "name": "04 Salud", "desc": "Expedientes medicos, recetas, resultados de laboratorio, tarjetas de seguro, registros de vacunacion" },
+      "personal": { "name": "02 Personal", "desc": "Correspondencia personal, documentos familiares, proyectos personales, administracion de vida" },
+      "financial": { "name": "03 Financiero", "desc": "Estados de cuenta, declaraciones de impuestos, inversiones, recibos, facturas, presupuestos" },
+      "medical": { "name": "04 Medico", "desc": "Expedientes medicos, recetas, resultados de laboratorio, tarjetas de seguro, registros de vacunacion" },
       "legal": { "name": "05 Legal", "desc": "Contratos, acuerdos, licencias, identificaciones, pasaportes, correspondencia legal" },
-      "school": { "name": "06 Escuela", "desc": "Materiales de cursos, certificados, transcripciones, diplomas, trabajos de investigacion" },
-      "family": { "name": "07 Familia", "desc": "Correspondencia familiar, registros escolares de los ninos, cartas personales, documentos familiares" },
-      "clients": { "name": "08 Clientes", "desc": "Documentos de clientes, contratos con proveedores, facturas de proyectos (para freelancers y pequenas empresas)" },
-      "projects": { "name": "09 Proyectos", "desc": "Entregables de proyectos, hitos, documentos de trabajo activo, archivos de colaboracion" },
-      "archive": { "name": "10 Archivo", "desc": "Documentos de mas de 3 anos, proyectos completados, registros historicos" },
-      "review": { "name": "11 Revisar", "desc": "Items de baja confianza que necesitan ordenamiento manual—la IA no estaba segura donde pertenecen" }
+      "education": { "name": "06 Educacion", "desc": "Materiales de cursos, certificados, transcripciones, diplomas, trabajos de investigacion" },
+      "creative": { "name": "07 Creativo", "desc": "Archivos de diseno, proyectos de escritura, arte, briefs creativos, piezas de portafolio" },
+      "technical": { "name": "08 Tecnico", "desc": "Documentacion de codigo, especificaciones tecnicas, guias de sistema, archivos de configuracion" },
+      "reference": { "name": "09 Referencia", "desc": "Manuales, guias de como hacer, materiales de referencia, articulos guardados, investigacion" },
+      "archive": { "name": "10 Archivo", "desc": "Documentos antiguos, proyectos completados, registros historicos" },
+      "review": { "name": "11 Revisar", "desc": "Items de baja confianza para ordenamiento manual—la IA no estaba segura donde pertenecen" }
     },
     "differentiators": {
       "title": "Que Hace Diferente a AI FileSense",
-      "subtitle": "Construido desde cero para privacidad e inteligencia",
+      "subtitle": "Hecho para personas que han intentado y fallado en organizar manualmente",
       "contentBased": {
-        "title": "Inteligencia Basada en Contenido",
-        "description": "A diferencia de organizadores simples basados en reglas, AI FileSense realmente lee tus documentos para entender que son—un estado de cuenta vs. una factura vs. un formulario de impuestos."
+        "title": "La IA Lee Contenido, No Solo Nombres",
+        "description": "Un archivo llamado doc123.pdf se categoriza correctamente basandose en su contenido. Facturas, contratos, registros medicos—todos identificados automaticamente."
+      },
+      "zeroConfig": {
+        "title": "Cero Configuracion",
+        "description": "Descarga, instala, ejecuta. Sin claves API que configurar, sin conocimiento tecnico requerido. Solo haz clic y organiza."
+      },
+      "safeByDefault": {
+        "title": "Seguro por Defecto",
+        "description": "Previsualiza todo antes de mover. Deshaz en cualquier momento. Los archivos se mueven, nunca se eliminan. Cada accion se registra."
       },
       "trulyBilingual": {
         "title": "Verdaderamente Bilingue",
-        "description": "Soporte completo en ingles y espanol (Mexico) en toda la aplicacion y clasificacion de IA. Los documentos en cualquier idioma se entienden y categorizan correctamente."
+        "description": "Soporte completo en ingles y espanol (Mexico) en toda la aplicacion. Documentos en cualquier idioma se entienden y categorizan correctamente."
       },
-      "humanInLoop": {
-        "title": "Diseno con Humano en el Ciclo",
-        "description": "Siempre previsualizas y apruebas los cambios antes de que sucedan. Los items de baja confianza van a Revisar para tu decision. Siempre tienes el control."
+      "privacyFirst": {
+        "title": "Arquitectura Privacidad Primero",
+        "description": "Los archivos nunca salen de tu computadora. Solo pequenos fragmentos de texto enviados a la IA. Tu nombre de usuario se elimina de las rutas."
       },
-      "privacyRespecting": {
-        "title": "Arquitectura que Respeta la Privacidad",
-        "description": "Los archivos nunca salen de tu computadora. Solo pequenos fragmentos de texto (~500 caracteres) se envian a la IA. Tu nombre de usuario se elimina de las rutas de archivo."
-      },
-      "smartFolders": {
-        "title": "Estructura de Carpetas Inteligente",
-        "description": "11 carpetas numeradas (01-11) basadas en tipos de documentos del mundo real. Cubre necesidades laborales, personales y de negocio en un sistema consistente."
-      },
-      "crashRecovery": {
-        "title": "Recuperacion de Fallos y Seguridad",
-        "description": "Cada movimiento de archivo se registra con rutas originales y nuevas. Deshaz cualquier cambio, recuperate de fallos y siempre regresa a donde empezaste."
-      },
-      "personalized": {
-        "title": "Personalizado a Como Trabajas",
-        "description": "Responde algunas preguntas sobre tu estilo de trabajo (freelancer, estudiante, padre, etc.) y obtén recomendaciones de organizacion adaptadas a ti."
+      "incremental": {
+        "title": "Procesamiento Incremental",
+        "description": "Solo procesa archivos nuevos o modificados en ejecuciones posteriores. Ejecutalo semanalmente para mantener todo organizado automaticamente."
       }
     },
     "fileTypes": {
@@ -214,7 +226,7 @@
       "phase1": {
         "title": "Fase 1",
         "status": "Completada",
-        "description": "Funciones principales: clasificacion con IA, sistema de 11 carpetas, 3 niveles de organizacion, previsualizacion y deshacer, soporte bilingue, recuperacion de fallos."
+        "description": "Funciones principales: clasificacion con IA, sistema de 11 carpetas, vista previa y deshacer, soporte bilingue, recuperacion de fallos, cero configuracion."
       },
       "phase2": {
         "title": "Fase 2",
@@ -238,47 +250,44 @@
       "recOS": "Windows 11",
       "recRAM": "8GB RAM",
       "recDisk": "SSD para indexacion mas rapida",
-      "note": "No se requiere internet despues de la descarga"
+      "note": "Conexion a internet requerida para clasificacion con IA"
     }
   },
   "pricing": {
     "hero": {
       "title": "Precios Simples y Transparentes",
-      "subtitle": "Comienza gratis, actualiza cuando necesites mas"
+      "subtitle": "Gratis para usar, sin suscripcion requerida"
     },
     "tiers": {
       "free": "Gratis",
       "personal": "Personal",
       "professional": "Profesional"
     },
-    "apiCosts": {
-      "title": "Sobre Costos de API",
-      "subtitle": "Tu traes tu propia clave API de Anthropic",
-      "howItWorks": "Como Funciona",
-      "howItWorksDesc": "AI FileSense usa Claude AI para clasificacion inteligente. Tu proporcionas tu propia clave API, asi solo pagas por lo que usas.",
-      "estimatedCosts": "Costos Estimados",
-      "estimatedCostsDesc": "~$0.50-1.00 por 1,000 archivos clasificados"
+    "freeForNow": {
+      "title": "Gratis Durante el Lanzamiento",
+      "subtitle": "Sin pago requerido",
+      "description": "AI FileSense es completamente gratis durante nuestro periodo de lanzamiento. Sin cuotas de suscripcion, sin costos ocultos. Solo descarga y organiza."
     },
     "faq": {
       "title": "Preguntas Frecuentes sobre Precios",
-      "q1": "¿Por que necesito mi propia clave API?",
-      "a1": "Esto mantiene tus costos bajos y te da control total. No hay cargos ocultos ni suscripciones mas alla del nivel Pro.",
-      "q2": "¿Como obtengo una clave API?",
-      "a2": "Registrate en anthropic.com, agrega informacion de facturacion y genera una clave API. Tenemos una guia paso a paso en la aplicacion.",
-      "q3": "¿Que pasa si alcanzo mi limite de archivos?",
-      "a3": "Aun puedes escanear y buscar, pero las nuevas clasificaciones de IA se pausaran hasta que actualices o el mes se reinicie.",
-      "q4": "¿Puedo obtener un reembolso?",
-      "a4": "Si, dentro de los 30 dias de la compra si no estas satisfecho.",
+      "q1": "¿AI FileSense es realmente gratis?",
+      "a1": "Si. Durante nuestro periodo de lanzamiento, AI FileSense es completamente gratis sin limitaciones. Sin tarjeta de credito requerida.",
+      "q2": "¿Habra una version de pago despues?",
+      "a2": "Podemos introducir funciones premium en el futuro, pero la funcionalidad principal siempre tendra un nivel gratuito.",
+      "q3": "¿Necesito crear una cuenta?",
+      "a3": "No. AI FileSense funciona sin ninguna cuenta o registro. Solo descarga y ejecuta.",
+      "q4": "¿Hay limites de uso?",
+      "a4": "Sin limites en archivos o carpetas durante el periodo de lanzamiento gratuito. Organiza todo lo que quieras.",
       "q5": "¿Hay un plan de equipo?",
-      "a5": "Aun no, pero esta en nuestra hoja de ruta. Contactanos si estas interesado.",
+      "a5": "Aun no, pero esta en nuestra hoja de ruta. Contactanos si te interesan funciones de equipo.",
       "q6": "¿Ofrecen descuentos?",
-      "a6": "Ofrecemos descuentos para estudiantes, educadores y organizaciones sin fines de lucro. Contactanos con prueba de elegibilidad."
+      "a6": "¡Es gratis ahora mismo! Cuando introduzcamos funciones de pago, ofreceremos descuentos para estudiantes, educadores y organizaciones sin fines de lucro."
     }
   },
   "download": {
     "hero": {
       "title": "Descargar AI FileSense",
-      "subtitle": "Organiza tus archivos en 5 minutos. Procesamiento 100% local."
+      "subtitle": "Organiza tus archivos en minutos. Sin configuracion requerida."
     },
     "button": "Descargar para Windows",
     "version": "Version {version}",
@@ -286,7 +295,7 @@
     "size": "45 MB de descarga",
     "platform": "Windows 10/11 (64-bit)",
     "features": {
-      "local": "Procesamiento 100% local",
+      "local": "Archivos nunca salen de tu computadora",
       "folders": "11 carpetas inteligentes",
       "undo": "Deshacer completo"
     },
@@ -304,33 +313,18 @@
       "recNet": "Conexion de banda ancha"
     },
     "quickStart": {
-      "title": "Organizado en 5 Minutos",
+      "title": "Organizado en Minutos",
       "subtitle": "Esto es lo que pasa despues de descargar",
       "step1": "Ejecuta el instalador",
       "step1Desc": "Haz doble clic en el archivo descargado y sigue el asistente",
-      "step2": "Responde 3 preguntas rapidas",
-      "step2Desc": "AI FileSense personaliza recomendaciones basadas en como trabajas",
-      "step3": "Agrega tu clave API",
-      "step3Desc": "Crea una cuenta gratuita de Anthropic y pega tu clave",
-      "step4": "Elige una carpeta",
-      "step4Desc": "Comienza con Descargas, Documentos o Escritorio",
-      "step5": "Revisa y organiza",
-      "step5Desc": "Ve el plan, haz cambios y haz clic en Aplicar. ¡Listo!"
-    },
-    "apiKey": {
-      "title": "Obteniendo tu Clave API",
-      "subtitle": "Toma aproximadamente 2 minutos",
-      "step1": "Visita console.anthropic.com",
-      "step1Desc": "Crea una cuenta gratuita o inicia sesion",
-      "step2": "Ve a API Keys",
-      "step2Desc": "Encuentralo en la barra lateral izquierda",
-      "step3": "Agrega $5 de credito",
-      "step3Desc": "Suficiente para miles de archivos",
-      "step4": "Genera una nueva clave",
-      "step4Desc": "Nombrala 'AI FileSense'",
-      "step5": "Pega en la aplicacion",
-      "step5Desc": "Tu clave esta encriptada y almacenada localmente",
-      "note": "Tu clave API nunca sale de tu computadora excepto para autenticarse con Anthropic."
+      "step2": "Elige tus carpetas",
+      "step2Desc": "Selecciona Escritorio, Documentos o Descargas—comienza con la mas desordenada",
+      "step3": "Responde 2-3 preguntas",
+      "step3Desc": "Personalizacion rapida para profundidad de carpetas y estilo de organizacion",
+      "step4": "Revisa el plan",
+      "step4Desc": "Ve exactamente donde ira cada archivo antes de que nada se mueva",
+      "step5": "Haz clic en Aplicar",
+      "step5Desc": "Los archivos se mueven a Documentos/Archivos Organizados/ con deshacer completo"
     },
     "help": {
       "title": "¿Necesitas Ayuda?",
@@ -361,70 +355,70 @@
     },
     "gettingStarted": {
       "hero": {
-        "title": "Organizado en 5 Minutos",
+        "title": "Organizado en Minutos",
         "subtitle": "Desde la descarga hasta archivos organizados—esto es exactamente lo que puedes esperar."
       },
-      "overview": "AI FileSense te guia a traves de 8 simples pasos. La mayoria de las personas estan organizando archivos dentro de 5 minutos de descargar.",
+      "overview": "AI FileSense te guia a traves de 8 simples pasos. La mayoria de las personas estan organizando archivos en minutos despues de descargar.",
       "timeline": {
-        "title": "El Flujo de Configuracion",
-        "step1": "Seleccionar",
-        "step2": "Escanear",
+        "title": "El Flujo de 8 Pasos",
+        "step1": "Carpetas",
+        "step2": "Archivos",
         "step3": "Personalizar",
-        "step4": "Vista Previa",
-        "step5": "Revisar",
-        "step6": "Aclarar",
-        "step7": "Aplicar",
+        "step4": "Escanear",
+        "step5": "Clasificar",
+        "step6": "Ajustar",
+        "step7": "Vista Previa",
         "step8": "Listo"
       },
       "steps": {
         "selectFolders": {
           "number": "1",
-          "title": "Seleccionar Carpetas y Tipos de Archivo",
-          "description": "Elige que carpetas organizar (Documentos, Escritorio, Descargas) y que tipos de archivo incluir (PDF, Word, PowerPoint, archivos de texto)."
+          "title": "Seleccion de Carpetas",
+          "description": "Elige que carpetas escanear: Escritorio, Documentos o Descargas. Comienza con la mas desordenada para ver resultados inmediatos."
         },
-        "scanning": {
+        "fileTypes": {
           "number": "2",
-          "title": "Escaneando",
-          "description": "AI FileSense escanea las carpetas seleccionadas y extrae texto de los documentos. Los archivos permanecen en tu computadora—solo pequenos fragmentos se envian a la IA."
+          "title": "Tipos de Archivo",
+          "description": "Selecciona tipos de archivo a organizar: PDF, Word, PowerPoint o archivos de texto. Omite tipos de archivo que quieras dejar solos."
         },
         "personalization": {
           "number": "3",
           "title": "Personalizacion",
-          "description": "Responde algunas preguntas rapidas sobre como trabajas. ¿Freelancer? ¿Estudiante? ¿Padre? Esto ayuda a AI FileSense a recomendar el mejor estilo de organizacion."
+          "description": "Responde 2-3 preguntas rapidas sobre tus preferencias—profundidad de carpetas y estilo de busqueda. Toma aproximadamente 30 segundos."
         },
-        "resultsPreview": {
+        "scanning": {
           "number": "4",
-          "title": "Vista Previa de Resultados",
-          "description": "Ve un resumen de como se organizaran tus archivos en las 11 carpetas. Obtén una vista general antes de entrar en detalles."
+          "title": "Escaneando",
+          "description": "AI FileSense escanea las carpetas seleccionadas y extrae fragmentos de texto de documentos. Los archivos permanecen en tu computadora—solo pequenos fragmentos se envian a la IA."
         },
-        "detailedReview": {
+        "classification": {
           "number": "5",
-          "title": "Revision Detallada",
-          "description": "Revisa el destino propuesto de cada archivo. Cambia cualquier sugerencia con la que no estes de acuerdo. Tomate tu tiempo—nada se mueve hasta que apruebes."
+          "title": "Clasificacion con IA",
+          "description": "Claude AI analiza contenido y asigna categorias. Un archivo llamado doc123.pdf se categoriza correctamente basandose en su contenido."
         },
-        "quickClarifications": {
+        "quickFixes": {
           "number": "6",
-          "title": "Aclaraciones Rapidas",
-          "description": "La IA puede preguntar sobre archivos ambiguos: '¿Este es un documento personal o de negocio?' Tus respuestas mejoran futuras clasificaciones."
+          "title": "Ajustes Rapidos",
+          "description": "Revisa sugerencias de la IA y responde preguntas aclaratorias para archivos de baja confianza. Tu aporte mejora la precision de clasificacion."
         },
-        "applyingChanges": {
+        "preview": {
           "number": "7",
-          "title": "Aplicando Cambios",
-          "description": "Haz clic en Aplicar y observa como tus archivos se mueven a sus nuevos hogares. Cada movimiento se registra con rutas originales y nuevas para deshacer facilmente."
+          "title": "Vista Previa",
+          "description": "Ve exactamente donde se movera cada archivo antes de confirmar. Cambia cualquier sugerencia con la que no estes de acuerdo. Nada se mueve hasta que apruebes."
         },
         "success": {
           "number": "8",
-          "title": "¡Exito!",
-          "description": "Tus archivos ahora estan organizados en carpetas numeradas. Usa el Registro de Actividad para deshacer cualquier cambio, o deshaz todo con un clic."
+          "title": "Aplicar y Exito",
+          "description": "Los archivos se mueven a Documentos/Archivos Organizados/ en carpetas numeradas (01-11). Usa el Registro de Actividad para deshacer cualquier cambio con un clic."
         }
       },
       "folders": {
-        "title": "Las 11 Carpetas Inteligentes",
-        "description": "AI FileSense organiza tus documentos en estas categorias inteligentes:"
+        "title": "El Sistema de 11 Carpetas",
+        "description": "AI FileSense organiza tus documentos en estas categorias predefinidas:"
       },
       "activityLog": {
         "title": "Registro de Actividad y Deshacer",
-        "description": "Cada movimiento de archivo se rastrea. Deshaz un solo archivo, una sesion completa, o revierte todo. Incluso si la aplicacion falla, puedes recuperar tu organizacion anterior.",
+        "description": "Cada movimiento de archivo se rastrea. Deshaz un solo archivo, una sesion completa, o revierte todo. Incluso si la aplicacion falla, puedes recuperarte.",
         "features": {
           "singleUndo": "Deshacer cualquier movimiento individual",
           "sessionUndo": "Deshacer una sesion completa de organizacion",
@@ -440,8 +434,8 @@
         "tip2Desc": "Siempre revisa el plan antes de aplicar. Puedes cambiar cualquier sugerencia.",
         "tip3Title": "Confia en Deshacer",
         "tip3Desc": "El Registro de Actividad rastrea todo. Siempre puedes volver atras.",
-        "tip4Title": "Prueba los 3 Estilos",
-        "tip4Desc": "Experimenta con Simple, Linea de Tiempo y Grupos Inteligentes para encontrar lo que funciona para ti."
+        "tip4Title": "Ejecutalo Semanalmente",
+        "tip4Desc": "AI FileSense solo procesa archivos nuevos en ejecuciones repetidas. Mantén todo organizado automaticamente."
       },
       "needHelp": {
         "title": "¿Necesitas Mas Ayuda?",
@@ -476,25 +470,27 @@
     },
     "questions": {
       "q1": "¿Mis datos estan seguros? ¿Mis archivos se suben a algun lado?",
-      "a1": "Tus archivos nunca salen de tu computadora. AI FileSense solo envia pequenos fragmentos de texto (~500 caracteres) y nombres de archivo anonimizados a la IA para clasificacion. El contenido completo nunca se transmite. Tu nombre de usuario se elimina de las rutas de archivo para privacidad adicional.",
+      "a1": "Tus archivos nunca salen de tu computadora. AI FileSense solo envia pequenos fragmentos de texto (~500 caracteres) a la IA para clasificacion. El contenido completo nunca se transmite. Tu nombre de usuario se elimina de las rutas de archivo para privacidad adicional.",
       "q2": "¿Que pasa si no me gusta como se organizaron los archivos?",
       "a2": "Cada movimiento de archivo se registra con la ubicacion original y nueva. Puedes deshacer cualquier movimiento individual, deshacer una sesion completa o revertir todo al estado original. Incluso si la aplicacion falla en medio de la organizacion, puedes recuperarte completamente.",
       "q3": "¿Por que algunos archivos van a la carpeta 'Revisar'?",
-      "a3": "Cuando la IA no esta segura de donde pertenece un archivo (confianza menor al 70%), va a la carpeta Revisar. Esto mantiene tu organizacion limpia mientras te permite tomar la decision final sobre documentos ambiguos.",
+      "a3": "Cuando la IA no esta segura de donde pertenece un archivo, va a la carpeta Revisar (11 Revisar). Esto mantiene tu organizacion limpia mientras te permite tomar la decision final sobre documentos ambiguos.",
       "q4": "¿Puedo excluir ciertos archivos de ser organizados?",
       "a4": "Si. Durante la fase de previsualizacion, puedes deseleccionar cualquier archivo que quieras mantener en su lugar. Tambien puedes excluir carpetas completas o tipos de archivo del escaneo en la configuracion inicial.",
       "q5": "¿AI FileSense funciona con idiomas distintos al ingles?",
       "a5": "¡Si! AI FileSense es completamente bilingue con soporte total en ingles y espanol (Mexico). La IA puede leer y categorizar correctamente documentos escritos en cualquiera de los dos idiomas.",
       "q6": "¿Que tipos de archivo son soportados?",
-      "a6": "AI FileSense extrae contenido de archivos PDF (primera pagina), documentos Word (.doc, .docx - texto completo), PowerPoint (.pptx - texto de diapositivas), y archivos de texto (.txt, .md, .log, .csv - primeras 100 lineas). Cualquier archivo puede ser clasificado solo por nombre de archivo.",
+      "a6": "AI FileSense extrae contenido de archivos PDF (primera pagina), documentos Word (.doc, .docx), PowerPoint (.pptx), y archivos de texto (.txt, .md, .log, .csv). Cualquier archivo puede ser clasificado solo por nombre de archivo.",
       "q7": "¿A donde van mis archivos organizados?",
-      "a7": "Los archivos se mueven a 11 carpetas numeradas (01 Trabajo hasta 11 Revisar) dentro de tu destino elegido. Los prefijos numerados mantienen las carpetas en orden logico en el Explorador de Archivos.",
+      "a7": "Los archivos se mueven a Documentos/Archivos Organizados/ en 11 carpetas numeradas (01 Trabajo hasta 11 Revisar). Los prefijos numerados mantienen las carpetas en orden logico en el Explorador de Archivos.",
       "q8": "¿Puedo ejecutar AI FileSense de nuevo despues de organizar?",
-      "a8": "Absolutamente. Puedes ejecutar AI FileSense todas las veces que quieras. Es lo suficientemente inteligente para reconocer archivos ya organizados y se enfocara en documentos nuevos o modificados.",
+      "a8": "Absolutamente. AI FileSense solo procesa archivos nuevos o modificados en ejecuciones repetidas. Ejecutalo semanalmente para mantener todo organizado automaticamente.",
       "q9": "¿Que pasa si la IA categoriza un archivo incorrectamente?",
       "a9": "Siempre previsualizas todos los cambios antes de que sucedan. Simplemente cambia la carpeta sugerida durante la previsualizacion. Si notas un error despues de organizar, usa el Registro de Actividad para mover el archivo donde quieras.",
       "q10": "¿Se requiere conexion a internet?",
-      "a10": "Se necesita conexion a internet para la clasificacion de IA (comunicacion con la API de Anthropic). Sin embargo, escanear archivos, revisar cambios y deshacer movimientos funcionan completamente sin conexion."
+      "a10": "Se necesita conexion a internet para la clasificacion de IA. Sin embargo, escanear archivos, revisar cambios y deshacer movimientos funcionan completamente sin conexion.",
+      "q11": "¿Necesito configurar una clave API o crear una cuenta?",
+      "a11": "No. AI FileSense funciona de inmediato sin configuracion requerida. Sin claves API, sin cuentas, sin registro. Solo descarga y ejecuta."
     },
     "stillHaveQuestions": "¿Aun Tienes Preguntas?",
     "stillHaveQuestionsDesc": "¿No encuentras lo que buscas? Envianos un mensaje y te ayudaremos.",
@@ -508,8 +504,8 @@
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Maria Garcia",
-      "email": "Correo de Trabajo",
-      "emailPlaceholder": "maria@empresa.com",
+      "email": "Correo",
+      "emailPlaceholder": "maria@ejemplo.com",
       "company": "Empresa (Opcional)",
       "companyPlaceholder": "Industrias Acme",
       "website": "Sitio Web de la Empresa",
@@ -541,32 +537,32 @@
     },
     "mission": {
       "title": "Nuestra Mision",
-      "description": "Construimos AI FileSense porque organizar archivos no deberia significar subir tus documentos personales al servidor de alguien mas. Tus registros medicos, documentos fiscales y fotos familiares merecen algo mejor que almacenamiento en la nube y politicas de privacidad vagas."
+      "description": "Construimos AI FileSense porque organizar archivos no deberia significar subir tus documentos personales al servidor de alguien mas. Tus registros medicos, documentos fiscales y archivos personales merecen algo mejor que almacenamiento en la nube y politicas de privacidad vagas."
     },
     "commitment": {
       "title": "Nuestro Compromiso de Privacidad",
       "intro": "No solo hablamos de privacidad—la construimos en la arquitectura:",
       "items": {
         "local": "Procesamiento 100% local: Tus archivos nunca salen de tu computadora",
-        "minimal": "Datos minimos a la IA: Solo nombres de archivo y fragmentos de ~500 caracteres",
+        "minimal": "Datos minimos a la IA: Solo pequenos fragmentos de texto para clasificacion",
         "noAccount": "Sin cuenta requerida: Sin registro, sin email, sin rastreo",
         "noTelemetry": "Cero telemetria: No recopilamos analisis ni datos de uso",
-        "yourKey": "Tu clave API: Conexion directa a Anthropic—sin intermediarios",
-        "encrypted": "Almacenamiento encriptado: Claves API guardadas de forma segura en tu dispositivo"
+        "noConfig": "Sin configuracion: Funciona de inmediato, sin claves API necesarias",
+        "encrypted": "Registro de transacciones: Cada movimiento rastreado para deshacer facil"
       }
     },
     "values": {
       "title": "En Lo Que Creemos",
       "privacy": "Privacidad por Defecto",
       "privacyDesc": "Tus archivos se quedan en tu computadora. Nunca vemos tus datos—ni nombres, ni contenido, ni metadatos. Lo construimos asi a proposito.",
-      "simplicity": "Organizado en 5 Minutos",
-      "simplicityDesc": "IA poderosa no deberia significar software complicado. Descarga, agrega tu clave API, apunta a una carpeta y listo.",
+      "simplicity": "Cero Configuracion",
+      "simplicityDesc": "IA poderosa no deberia significar software complicado. Descarga, instala, ejecuta—sin habilidades tecnicas requeridas.",
       "transparency": "Tu Tienes el Control",
-      "transparencyDesc": "Tu eliges tu proveedor de API. Ves exactamente lo que la IA sugiere antes de que nada se mueva. Puedes deshacer cualquier cosa."
+      "transparencyDesc": "Previsualiza todo antes de que se mueva. Deshaz cualquier cosa despues de que se mueva. Siempre estas en control."
     },
     "cta": {
       "title": "¿Listo para Organizarte?",
-      "subtitle": "Descarga AI FileSense y organiza tus archivos en 5 minutos. Sin cuenta necesaria.",
+      "subtitle": "Descarga AI FileSense y organiza tus archivos en minutos. Sin cuenta necesaria, sin configuracion requerida.",
       "button": "Descargar Gratis"
     }
   },
@@ -610,7 +606,7 @@
   "share": {
     "title": "Comparte AI FileSense",
     "subtitle": "Ayuda a otros a organizar sus archivos",
-    "message": "Mira AI FileSense - organiza tus archivos localmente usando IA. 100% privado, nada sale de tu computadora.",
+    "message": "Mira AI FileSense - organiza tus archivos usando IA. Sin configuracion requerida, vista previa completa antes de mover, deshacer con un clic.",
     "copyLink": "Copiar Enlace",
     "copied": "¡Copiado!",
     "shareApp": "Compartir Esta App"

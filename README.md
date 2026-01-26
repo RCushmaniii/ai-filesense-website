@@ -209,20 +209,20 @@ return <span>{t('features')}</span>
 
 ### 11 Smart Folders
 
-The product organizes files into numbered folders:
+The product organizes files into `Documents/Organized Files/` with numbered folders:
 
 | # | Folder | Contents |
 |---|--------|----------|
 | 01 | Work | Resumes, job offers, payslips, employment contracts |
-| 02 | Money | Bank statements, tax returns, invoices, budgets |
-| 03 | Home | Mortgage docs, utility bills, warranties |
-| 04 | Health | Medical records, prescriptions, lab results |
+| 02 | Personal | Personal correspondence, family documents, life admin |
+| 03 | Financial | Bank statements, tax returns, invoices, budgets |
+| 04 | Medical | Medical records, prescriptions, lab results |
 | 05 | Legal | Contracts, licenses, IDs, passports |
-| 06 | School | Certificates, transcripts, course materials |
-| 07 | Family | Family correspondence, kids' records |
-| 08 | Clients | Client documents, vendor contracts |
-| 09 | Projects | Project deliverables, active work |
-| 10 | Archive | Documents older than 3 years |
+| 06 | Education | Certificates, transcripts, course materials |
+| 07 | Creative | Design files, writing projects, artwork |
+| 08 | Technical | Code docs, technical specs, system guides |
+| 09 | Reference | Manuals, how-to guides, saved articles |
+| 10 | Archive | Older documents, completed projects |
 | 11 | Review | Low-confidence items for manual sorting |
 
 ### Page Content
@@ -230,8 +230,8 @@ The product organizes files into numbered folders:
 | Page | Key Content |
 |------|-------------|
 | Home | Hero, 3-step process, 6 features, 11 folders, CTA |
-| Features | 4-step how it works, 7 differentiators, file types, roadmap |
-| Support/FAQ | 10 questions covering data safety, undo, file types |
+| Features | 8-step user journey, 6 differentiators, file types, roadmap |
+| Support/FAQ | 11 questions covering data safety, undo, file types, no config |
 | Support/Getting Started | 8-step user journey with tips |
 
 ---

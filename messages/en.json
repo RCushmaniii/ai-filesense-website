@@ -2,7 +2,7 @@
   "metadata": {
     "title": "AI FileSense - AI-Powered File Organization for Windows",
     "siteName": "AI FileSense",
-    "description": "Finally organize your Desktop, Documents, and Downloads without uploading anything to the cloud. Smart AI classification that respects your privacy."
+    "description": "Organize years of files in minutes, not hours. AI reads your documents and sorts them into clean folders—no configuration required."
   },
   "common": {
     "downloadFree": "Download Free",
@@ -36,147 +36,159 @@
     "contact": "Contact",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
-    "tagline": "AI-powered file organization for Windows. Your files stay on your computer — only filenames are sent to AI for smart classification.",
+    "tagline": "AI-powered file organization for Windows. Your files stay on your computer—only small text snippets are sent to AI for smart classification.",
     "localPrivate": "100% Local & Private",
     "copyright": "© {year} AI FileSense. All rights reserved."
   },
   "home": {
     "hero": {
-      "badge": "100% local processing",
-      "title": "Your documents, finally organized.",
-      "subtitle": "AI FileSense analyzes your files locally—nothing leaves your computer—and organizes them into folders that make sense.",
-      "stat1": "100% local processing",
-      "stat2": "Undo any change",
-      "stat3": "Works in 5 minutes"
+      "badge": "No configuration required",
+      "title": "Organize years of files in minutes.",
+      "subtitle": "AI FileSense reads your documents and intelligently categorizes them into a clean 11-folder structure. Preview everything. Undo anything. Lose nothing.",
+      "stat1": "Files never leave your computer",
+      "stat2": "Full preview before moving",
+      "stat3": "One-click undo"
     },
     "solution": {
       "title": "How It Works",
-      "subtitle": "Organized in three simple steps",
+      "subtitle": "From chaos to organized in three steps",
       "step1Title": "Scan",
-      "step1Desc": "Point to Documents, Desktop, or Downloads. AI FileSense finds PDFs, Word docs, and text files.",
+      "step1Desc": "Point to Desktop, Documents, or Downloads. AI FileSense finds PDFs, Word docs, PowerPoint, and text files.",
       "step2Title": "Analyze",
-      "step2Desc": "Local AI reads filenames and content to understand what each document is—never uploaded anywhere.",
+      "step2Desc": "Claude AI reads file contents to understand what each document is—not just filenames. A file named scan_2024.pdf gets correctly categorized.",
       "step3Title": "Organize",
-      "step3Desc": "Review the plan, make changes if needed, then apply. Full undo log saved automatically."
+      "step3Desc": "Preview where every file will go. Change any suggestion. Then apply—files move to Documents/Organized Files/ with full undo capability."
     },
     "features": {
-      "title": "Built for Privacy, Designed for You",
-      "subtitle": "Powerful features that respect your data",
-      "aiClassification": "AI-Powered Classification",
-      "aiClassificationDesc": "Claude Haiku reads your documents and intelligently categorizes them based on actual content, not just filenames.",
-      "smartFolders": "11-Folder Smart System",
-      "smartFoldersDesc": "Numbered folders (01-11) keep everything in logical order: Work, Money, Home, Health, Legal, School, Family, Clients, Projects, Archive, and Review.",
-      "organizationDepth": "3-Level Organization",
-      "organizationDepthDesc": "Choose light (top folders only), moderate (with subfolders), or detailed (date-based nesting) organization.",
-      "safeReversible": "Safe & Reversible",
-      "safeReversibleDesc": "Preview every change before it happens. One-click undo for any file or entire sessions. Crash recovery built-in.",
-      "privacyFirst": "Privacy First",
-      "privacyFirstDesc": "Files stay on your computer. Only small text snippets are sent to AI for classification—never full documents.",
+      "title": "Built for Trust, Designed for Everyone",
+      "subtitle": "Powerful AI that anyone can use",
+      "aiClassification": "AI-Powered Content Analysis",
+      "aiClassificationDesc": "Understands what's inside your files, not just filenames. scan_2024.pdf becomes correctly categorized as Medical or Financial.",
+      "smartFolders": "Smart 11-Folder System",
+      "smartFoldersDesc": "Pre-designed categories that work for 95% of personal and professional files: Work, Personal, Financial, Medical, Legal, and more.",
+      "oneClick": "One-Click Organization",
+      "oneClickDesc": "Transform years of digital clutter into order in minutes, not hours. No manual sorting required.",
+      "safeReversible": "Full Preview & Undo",
+      "safeReversibleDesc": "See exactly where every file will go before anything moves. Changed your mind? Restore everything instantly.",
+      "privacyFirst": "Privacy-First Design",
+      "privacyFirstDesc": "Your files never leave your computer. Only tiny text snippets sent to AI. No account required.",
       "fullyBilingual": "Fully Bilingual",
-      "fullyBilingualDesc": "Complete English and Spanish (Mexico) support. AI understands documents in both languages."
+      "fullyBilingualDesc": "Complete English and Spanish (Mexico) interface. AI understands documents in both languages."
     },
     "folders": {
-      "title": "11 Smart Folders",
-      "subtitle": "Covering personal and professional documents",
+      "title": "The 11-Folder System",
+      "subtitle": "Pre-designed categories for personal and professional documents",
       "work": "01 Work",
       "workDesc": "Resumes, job offers, performance reviews, payslips, employment contracts",
-      "money": "02 Money",
-      "moneyDesc": "Bank statements, tax returns, investments, receipts, invoices, budgets",
-      "home": "03 Home",
-      "homeDesc": "Mortgage docs, rent agreements, utility bills, repair records, warranties",
-      "health": "04 Health",
-      "healthDesc": "Medical records, prescriptions, lab results, insurance cards, vaccination records",
+      "personal": "02 Personal",
+      "personalDesc": "Personal correspondence, family documents, personal projects, life admin",
+      "financial": "03 Financial",
+      "financialDesc": "Bank statements, tax returns, investments, receipts, invoices, budgets",
+      "medical": "04 Medical",
+      "medicalDesc": "Medical records, prescriptions, lab results, insurance cards, vaccination records",
       "legal": "05 Legal",
       "legalDesc": "Contracts, agreements, licenses, IDs, passports, legal correspondence",
-      "school": "06 School",
-      "schoolDesc": "Course materials, certificates, transcripts, diplomas, research papers",
-      "family": "07 Family",
-      "familyDesc": "Family correspondence, kids' school records, personal letters, family documents",
-      "clients": "08 Clients",
-      "clientsDesc": "Client documents, vendor contracts, project invoices (for freelancers & small businesses)",
-      "projects": "09 Projects",
-      "projectsDesc": "Project deliverables, milestones, active work documents, collaboration files",
+      "education": "06 Education",
+      "educationDesc": "Course materials, certificates, transcripts, diplomas, research papers",
+      "creative": "07 Creative",
+      "creativeDesc": "Design files, writing projects, artwork, creative briefs, portfolio pieces",
+      "technical": "08 Technical",
+      "technicalDesc": "Code documentation, technical specs, system guides, configuration files",
+      "reference": "09 Reference",
+      "referenceDesc": "Manuals, how-to guides, reference materials, saved articles, research",
       "archive": "10 Archive",
-      "archiveDesc": "Documents older than 3 years, completed projects, historical records",
+      "archiveDesc": "Older documents, completed projects, historical records",
       "review": "11 Review",
-      "reviewDesc": "Low-confidence items needing manual sorting—AI wasn't sure where these belong"
+      "reviewDesc": "Low-confidence items for manual sorting—AI wasn't sure where these belong"
     },
     "cta": {
       "title": "Ready to Get Organized?",
-      "subtitle": "Download AI FileSense and organize your files in 5 minutes. No account needed, 100% private.",
+      "subtitle": "Download AI FileSense and organize your files in minutes. No account needed, no configuration required.",
       "button": "Download Free for Windows",
       "specs": "Windows 10/11 (64-bit) • 45MB download • Free to use"
     }
   },
   "features": {
     "hero": {
-      "title": "How AI FileSense Works",
+      "title": "AI That Reads Your Documents So You Don't Have To",
       "subtitle": "Smart organization that runs entirely on your computer"
     },
     "howItWorks": {
-      "title": "Four Simple Steps",
-      "scan": {
-        "title": "1. Scan",
-        "description": "Point it at your Documents, Desktop, or Downloads. AI FileSense finds PDFs, Word docs, and text files—even in subfolders."
+      "title": "The 8-Step Journey",
+      "folderSelection": {
+        "title": "1. Folder Selection",
+        "description": "Choose which folders to scan—Desktop, Documents, Downloads. Start with the messiest one."
       },
-      "analyze": {
-        "title": "2. Analyze",
-        "description": "Our local AI reads filenames and content (never uploaded anywhere) to understand what each document is: invoices, contracts, medical records, school assignments, and more."
+      "fileTypes": {
+        "title": "2. File Types",
+        "description": "Select file types to organize: PDF, Word, PowerPoint, or text files. Skip what you don't need."
       },
-      "organize": {
-        "title": "3. Organize",
-        "description": "Choose your style: Simple (topic-based folders), Timeline (by year and month), or Smart Groups (by client, project, or entity)."
+      "personalization": {
+        "title": "3. Personalization",
+        "description": "Answer 2-3 quick questions about your preferences—folder depth and lookup style. Takes 30 seconds."
       },
-      "review": {
-        "title": "4. Review & Apply",
-        "description": "See exactly where each file will go. Change any suggestion. Then apply—with a complete undo log saved automatically."
+      "scanning": {
+        "title": "4. Scanning",
+        "description": "AI FileSense scans your folders and extracts text snippets from documents. Files never leave your computer."
+      },
+      "classification": {
+        "title": "5. AI Classification",
+        "description": "Claude AI analyzes content and assigns categories. A file named doc123.pdf gets categorized correctly based on what's inside."
+      },
+      "quickFixes": {
+        "title": "6. Quick Fixes",
+        "description": "Review AI suggestions. Answer clarifying questions for low-confidence files. Your input improves accuracy."
+      },
+      "preview": {
+        "title": "7. Preview",
+        "description": "See exactly where each file will move before committing. Change any suggestion you disagree with."
+      },
+      "apply": {
+        "title": "8. Apply & Success",
+        "description": "Files move to Documents/Organized Files/ in numbered folders. Full undo capability—restore anything with one click."
       }
     },
     "folders": {
-      "title": "The 11 Smart Folders",
-      "subtitle": "Covering the vast majority of personal and professional documents",
+      "title": "The 11-Folder System",
+      "subtitle": "Pre-designed categories that work for 95% of files",
       "work": { "name": "01 Work", "desc": "Resumes, job offers, performance reviews, payslips, employment contracts" },
-      "money": { "name": "02 Money", "desc": "Bank statements, tax returns, investments, receipts, invoices, budgets" },
-      "home": { "name": "03 Home", "desc": "Mortgage docs, rent agreements, utility bills, repair records, warranties" },
-      "health": { "name": "04 Health", "desc": "Medical records, prescriptions, lab results, insurance cards, vaccination records" },
+      "personal": { "name": "02 Personal", "desc": "Personal correspondence, family documents, personal projects, life admin" },
+      "financial": { "name": "03 Financial", "desc": "Bank statements, tax returns, investments, receipts, invoices, budgets" },
+      "medical": { "name": "04 Medical", "desc": "Medical records, prescriptions, lab results, insurance cards, vaccination records" },
       "legal": { "name": "05 Legal", "desc": "Contracts, agreements, licenses, IDs, passports, legal correspondence" },
-      "school": { "name": "06 School", "desc": "Course materials, certificates, transcripts, diplomas, research papers" },
-      "family": { "name": "07 Family", "desc": "Family correspondence, kids' school records, personal letters, family documents" },
-      "clients": { "name": "08 Clients", "desc": "Client documents, vendor contracts, project invoices (for freelancers & small businesses)" },
-      "projects": { "name": "09 Projects", "desc": "Project deliverables, milestones, active work documents, collaboration files" },
-      "archive": { "name": "10 Archive", "desc": "Documents older than 3 years, completed projects, historical records" },
-      "review": { "name": "11 Review", "desc": "Low-confidence items needing manual sorting—AI wasn't sure where these belong" }
+      "education": { "name": "06 Education", "desc": "Course materials, certificates, transcripts, diplomas, research papers" },
+      "creative": { "name": "07 Creative", "desc": "Design files, writing projects, artwork, creative briefs, portfolio pieces" },
+      "technical": { "name": "08 Technical", "desc": "Code documentation, technical specs, system guides, configuration files" },
+      "reference": { "name": "09 Reference", "desc": "Manuals, how-to guides, reference materials, saved articles, research" },
+      "archive": { "name": "10 Archive", "desc": "Older documents, completed projects, historical records" },
+      "review": { "name": "11 Review", "desc": "Low-confidence items for manual sorting—AI wasn't sure where these belong" }
     },
     "differentiators": {
       "title": "What Makes AI FileSense Different",
-      "subtitle": "Built from the ground up for privacy and intelligence",
+      "subtitle": "Built for people who've tried and failed to organize manually",
       "contentBased": {
-        "title": "Content-Based Intelligence",
-        "description": "Unlike simple rule-based organizers, AI FileSense actually reads your documents to understand what they are—a bank statement vs. an invoice vs. a tax form."
+        "title": "AI Reads Content, Not Just Filenames",
+        "description": "A file named doc123.pdf gets categorized correctly based on what's inside. Invoices, contracts, medical records—all identified automatically."
+      },
+      "zeroConfig": {
+        "title": "Zero Configuration",
+        "description": "Download, install, run. No API keys to set up, no technical knowledge required. Just click and organize."
+      },
+      "safeByDefault": {
+        "title": "Safe by Default",
+        "description": "Preview everything before moving. Undo anytime. Files are moved, never deleted. Every action is logged."
       },
       "trulyBilingual": {
         "title": "Truly Bilingual",
-        "description": "Full English and Spanish (Mexico) support throughout the app and AI classification. Documents in either language are understood and categorized correctly."
+        "description": "Full English and Spanish (Mexico) support throughout. Documents in either language are understood and categorized correctly."
       },
-      "humanInLoop": {
-        "title": "Human-in-the-Loop Design",
-        "description": "You always preview and approve changes before they happen. Low-confidence items go to Review for your decision. You're always in control."
+      "privacyFirst": {
+        "title": "Privacy-First Architecture",
+        "description": "Files never leave your computer. Only small text snippets sent to AI. Your username is stripped from file paths."
       },
-      "privacyRespecting": {
-        "title": "Privacy-Respecting Architecture",
-        "description": "Files never leave your computer. Only small text snippets (~500 chars) are sent to AI. Your username is stripped from file paths."
-      },
-      "smartFolders": {
-        "title": "Smart Folder Structure",
-        "description": "11 numbered folders (01-11) based on real-world document types. Covers work, personal, and business needs in one consistent system."
-      },
-      "crashRecovery": {
-        "title": "Crash Recovery & Safety",
-        "description": "Every file move is logged with original and new paths. Undo any change, recover from crashes, and always get back to where you started."
-      },
-      "personalized": {
-        "title": "Personalized to How You Work",
-        "description": "Answer a few questions about your work style (freelancer, student, parent, etc.) and get organization recommendations tailored to you."
+      "incremental": {
+        "title": "Incremental Processing",
+        "description": "Only processes new or changed files on subsequent runs. Run it weekly to keep things organized automatically."
       }
     },
     "fileTypes": {
@@ -214,7 +226,7 @@
       "phase1": {
         "title": "Phase 1",
         "status": "Complete",
-        "description": "Core features: AI classification, 11-folder system, 3-level organization, preview & undo, bilingual support, crash recovery."
+        "description": "Core features: AI classification, 11-folder system, preview & undo, bilingual support, crash recovery, zero configuration."
       },
       "phase2": {
         "title": "Phase 2",
@@ -238,47 +250,44 @@
       "recOS": "Windows 11",
       "recRAM": "8GB RAM",
       "recDisk": "SSD for faster indexing",
-      "note": "No internet required after download"
+      "note": "Internet connection required for AI classification"
     }
   },
   "pricing": {
     "hero": {
       "title": "Simple, Transparent Pricing",
-      "subtitle": "Start free, upgrade when you need more"
+      "subtitle": "Free to use, no subscription required"
     },
     "tiers": {
       "free": "Free",
       "personal": "Personal",
       "professional": "Professional"
     },
-    "apiCosts": {
-      "title": "About API Costs",
-      "subtitle": "You bring your own Anthropic API key",
-      "howItWorks": "How It Works",
-      "howItWorksDesc": "AI FileSense uses Claude AI for smart classification. You provide your own API key, so you only pay for what you use.",
-      "estimatedCosts": "Estimated Costs",
-      "estimatedCostsDesc": "~$0.50-1.00 per 1,000 files classified"
+    "freeForNow": {
+      "title": "Free During Launch",
+      "subtitle": "No payment required",
+      "description": "AI FileSense is completely free to use during our launch period. No subscription fees, no hidden costs. Just download and organize."
     },
     "faq": {
       "title": "Pricing FAQ",
-      "q1": "Why do I need my own API key?",
-      "a1": "This keeps your costs low and gives you full control. There are no hidden fees or subscriptions beyond the Pro tier.",
-      "q2": "How do I get an API key?",
-      "a2": "Sign up at anthropic.com, add billing info, and generate an API key. We have a step-by-step guide in the app.",
-      "q3": "What if I hit my file limit?",
-      "a3": "You can still scan and search, but new AI classifications will pause until you upgrade or the month resets.",
-      "q4": "Can I get a refund?",
-      "a4": "Yes, within 30 days of purchase if you're not satisfied.",
+      "q1": "Is AI FileSense really free?",
+      "a1": "Yes. During our launch period, AI FileSense is completely free to use with no limitations. No credit card required.",
+      "q2": "Will there be a paid version later?",
+      "a2": "We may introduce premium features in the future, but core functionality will always have a free tier.",
+      "q3": "Do I need to create an account?",
+      "a3": "No. AI FileSense works without any account or sign-up. Just download and run.",
+      "q4": "Are there any usage limits?",
+      "a4": "No limits on files or folders during the free launch period. Organize as much as you want.",
       "q5": "Is there a team plan?",
-      "a5": "Not yet, but it's on our roadmap. Contact us if you're interested.",
+      "a5": "Not yet, but it's on our roadmap. Contact us if you're interested in team features.",
       "q6": "Do you offer discounts?",
-      "a6": "We offer discounts for students, educators, and nonprofits. Contact us with proof of eligibility."
+      "a6": "It's free right now! When we introduce paid features, we'll offer discounts for students, educators, and nonprofits."
     }
   },
   "download": {
     "hero": {
       "title": "Download AI FileSense",
-      "subtitle": "Organize your files in 5 minutes. 100% local processing."
+      "subtitle": "Organize your files in minutes. No configuration required."
     },
     "button": "Download for Windows",
     "version": "Version {version}",
@@ -286,7 +295,7 @@
     "size": "45 MB download",
     "platform": "Windows 10/11 (64-bit)",
     "features": {
-      "local": "100% local processing",
+      "local": "Files never leave your computer",
       "folders": "11 smart folders",
       "undo": "Full undo support"
     },
@@ -304,33 +313,18 @@
       "recNet": "Broadband connection"
     },
     "quickStart": {
-      "title": "5 Minutes to Organized",
+      "title": "Organized in Minutes",
       "subtitle": "Here's what happens after you download",
       "step1": "Run the installer",
       "step1Desc": "Double-click the downloaded file and follow the setup wizard",
-      "step2": "Answer 3 quick questions",
-      "step2Desc": "AI FileSense personalizes recommendations based on how you work",
-      "step3": "Add your API key",
-      "step3Desc": "Create a free Anthropic account and paste in your key",
-      "step4": "Pick a folder",
-      "step4Desc": "Start with Downloads, Documents, or Desktop",
-      "step5": "Review and organize",
-      "step5Desc": "See the plan, make changes, and click Apply. Done!"
-    },
-    "apiKey": {
-      "title": "Getting Your API Key",
-      "subtitle": "Takes about 2 minutes",
-      "step1": "Visit console.anthropic.com",
-      "step1Desc": "Create a free account or sign in",
-      "step2": "Go to API Keys",
-      "step2Desc": "Find it in the left sidebar",
-      "step3": "Add $5 credit",
-      "step3Desc": "Enough for thousands of files",
-      "step4": "Generate a new key",
-      "step4Desc": "Name it 'AI FileSense'",
-      "step5": "Paste into the app",
-      "step5Desc": "Your key is encrypted and stored locally",
-      "note": "Your API key never leaves your computer except to authenticate with Anthropic."
+      "step2": "Choose your folders",
+      "step2Desc": "Select Desktop, Documents, or Downloads—start with the messiest one",
+      "step3": "Answer 2-3 questions",
+      "step3Desc": "Quick personalization for folder depth and organization style",
+      "step4": "Review the plan",
+      "step4Desc": "See exactly where every file will go before anything moves",
+      "step5": "Click Apply",
+      "step5Desc": "Files move to Documents/Organized Files/ with full undo capability"
     },
     "help": {
       "title": "Need Help?",
@@ -361,70 +355,70 @@
     },
     "gettingStarted": {
       "hero": {
-        "title": "Organized in 5 Minutes",
+        "title": "Organized in Minutes",
         "subtitle": "From download to organized files—here's exactly what to expect."
       },
-      "overview": "AI FileSense walks you through 8 simple steps. Most people are organizing files within 5 minutes of downloading.",
+      "overview": "AI FileSense guides you through 8 simple steps. Most people are organizing files within minutes of downloading.",
       "timeline": {
-        "title": "The Setup Flow",
-        "step1": "Select",
-        "step2": "Scan",
+        "title": "The 8-Step Flow",
+        "step1": "Folders",
+        "step2": "Files",
         "step3": "Personalize",
-        "step4": "Preview",
-        "step5": "Review",
-        "step6": "Clarify",
-        "step7": "Apply",
+        "step4": "Scan",
+        "step5": "Classify",
+        "step6": "Fix",
+        "step7": "Preview",
         "step8": "Done"
       },
       "steps": {
         "selectFolders": {
           "number": "1",
-          "title": "Select Folders & File Types",
-          "description": "Choose which folders to organize (Documents, Desktop, Downloads) and which file types to include (PDF, Word, PowerPoint, text files)."
+          "title": "Folder Selection",
+          "description": "Choose which folders to scan: Desktop, Documents, or Downloads. Start with the messiest one to see immediate results."
         },
-        "scanning": {
+        "fileTypes": {
           "number": "2",
-          "title": "Scanning",
-          "description": "AI FileSense scans your selected folders and extracts text from documents. Files stay on your computer—only small snippets are sent to AI."
+          "title": "File Types",
+          "description": "Select file types to organize: PDF, Word, PowerPoint, or text files. Skip file types you want to leave alone."
         },
         "personalization": {
           "number": "3",
           "title": "Personalization",
-          "description": "Answer a few quick questions about how you work. Freelancer? Student? Parent? This helps AI FileSense recommend the best organization style."
+          "description": "Answer 2-3 quick questions about your preferences—folder depth and lookup style. Takes about 30 seconds."
         },
-        "resultsPreview": {
+        "scanning": {
           "number": "4",
-          "title": "Results Preview",
-          "description": "See a summary of how your files will be organized across the 11 folders. Get a bird's-eye view before diving into details."
+          "title": "Scanning",
+          "description": "AI FileSense scans your selected folders and extracts text snippets from documents. Files stay on your computer—only small snippets are sent to AI."
         },
-        "detailedReview": {
+        "classification": {
           "number": "5",
-          "title": "Detailed Review",
-          "description": "Review each file's proposed destination. Change any suggestion you disagree with. Take your time—nothing moves until you approve."
+          "title": "AI Classification",
+          "description": "Claude AI analyzes content and assigns categories. A file named doc123.pdf gets categorized correctly based on what's inside."
         },
-        "quickClarifications": {
+        "quickFixes": {
           "number": "6",
-          "title": "Quick Clarifications",
-          "description": "AI may ask about ambiguous files: 'Is this a personal or business document?' Your answers improve future classifications."
+          "title": "Quick Fixes",
+          "description": "Review AI suggestions and answer clarifying questions for low-confidence files. Your input improves classification accuracy."
         },
-        "applyingChanges": {
+        "preview": {
           "number": "7",
-          "title": "Applying Changes",
-          "description": "Click Apply and watch your files move to their new homes. Every move is logged with original and new paths for easy undo."
+          "title": "Preview",
+          "description": "See exactly where each file will move before committing. Change any suggestion you disagree with. Nothing moves until you approve."
         },
         "success": {
           "number": "8",
-          "title": "Success!",
-          "description": "Your files are now organized into numbered folders. Use the Activity Log to undo any change, or undo everything with one click."
+          "title": "Apply & Success",
+          "description": "Files move to Documents/Organized Files/ in numbered folders (01-11). Use the Activity Log to undo any change with one click."
         }
       },
       "folders": {
-        "title": "The 11 Smart Folders",
-        "description": "AI FileSense organizes your documents into these intelligent categories:"
+        "title": "The 11-Folder System",
+        "description": "AI FileSense organizes your documents into these pre-designed categories:"
       },
       "activityLog": {
         "title": "Activity Log & Undo",
-        "description": "Every file move is tracked. Undo a single file, an entire session, or roll back everything. Even if the app crashes, you can recover your previous organization.",
+        "description": "Every file move is tracked. Undo a single file, an entire session, or roll back everything. Even if the app crashes, you can recover.",
         "features": {
           "singleUndo": "Undo any single file move",
           "sessionUndo": "Undo an entire organization session",
@@ -440,8 +434,8 @@
         "tip2Desc": "Always review the plan before applying. You can change any suggestion.",
         "tip3Title": "Trust the Undo",
         "tip3Desc": "The Activity Log tracks everything. You can always go back.",
-        "tip4Title": "Try All 3 Styles",
-        "tip4Desc": "Experiment with Simple, Timeline, and Smart Groups to find what works for you."
+        "tip4Title": "Run It Weekly",
+        "tip4Desc": "AI FileSense only processes new files on repeat runs. Keep things organized automatically."
       },
       "needHelp": {
         "title": "Need More Help?",
@@ -476,25 +470,27 @@
     },
     "questions": {
       "q1": "Is my data safe? Do my files get uploaded anywhere?",
-      "a1": "Your files never leave your computer. AI FileSense only sends small text snippets (~500 characters) and anonymized filenames to the AI for classification. Full file contents are never transmitted. Your username is stripped from file paths for additional privacy.",
+      "a1": "Your files never leave your computer. AI FileSense only sends small text snippets (~500 characters) to the AI for classification. Full file contents are never transmitted. Your username is stripped from file paths for additional privacy.",
       "q2": "What happens if I don't like how files were organized?",
       "a2": "Every file move is logged with the original and new location. You can undo any single file move, undo an entire session, or roll back everything to the original state. Even if the app crashes mid-organization, you can fully recover.",
       "q3": "Why are some files put in the 'Review' folder?",
-      "a3": "When the AI isn't confident about where a file belongs (below 70% confidence), it goes to the Review folder. This keeps your organization clean while letting you make the final call on ambiguous documents.",
+      "a3": "When the AI isn't confident about where a file belongs, it goes to the Review folder (11 Review). This keeps your organization clean while letting you make the final call on ambiguous documents.",
       "q4": "Can I exclude certain files from being organized?",
       "a4": "Yes. During the preview phase, you can deselect any files you want to keep in place. You can also exclude entire folders or file types from scanning in the initial setup.",
       "q5": "Does AI FileSense work with languages other than English?",
       "a5": "Yes! AI FileSense is fully bilingual with complete English and Spanish (Mexico) support. The AI can read and correctly categorize documents written in either language.",
       "q6": "What file types are supported?",
-      "a6": "AI FileSense extracts content from PDF files (first page), Word documents (.doc, .docx - full text), PowerPoint (.pptx - slide text), and text files (.txt, .md, .log, .csv - first 100 lines). Any file can be classified by filename alone.",
+      "a6": "AI FileSense extracts content from PDF files (first page), Word documents (.doc, .docx), PowerPoint (.pptx), and text files (.txt, .md, .log, .csv). Any file can be classified by filename alone.",
       "q7": "Where do my organized files go?",
-      "a7": "Files are moved into 11 numbered folders (01 Work through 11 Review) within your chosen destination. The numbered prefixes keep folders in logical order in File Explorer.",
+      "a7": "Files are moved to Documents/Organized Files/ into 11 numbered folders (01 Work through 11 Review). The numbered prefixes keep folders in logical order in File Explorer.",
       "q8": "Can I run AI FileSense again after organizing?",
-      "a8": "Absolutely. You can run AI FileSense as many times as you want. It's smart enough to recognize already-organized files and will focus on new or changed documents.",
+      "a8": "Absolutely. AI FileSense only processes new or changed files on repeat runs. Run it weekly to keep things organized automatically.",
       "q9": "What if the AI categorizes a file incorrectly?",
       "a9": "You always preview all changes before they happen. Simply change the suggested folder during preview. If you notice an error after organizing, use the Activity Log to move the file wherever you want.",
       "q10": "Is an internet connection required?",
-      "a10": "An internet connection is needed for AI classification (communicating with Anthropic's API). However, scanning files, reviewing changes, and undoing moves all work completely offline."
+      "a10": "An internet connection is needed for AI classification. However, scanning files, reviewing changes, and undoing moves all work completely offline.",
+      "q11": "Do I need to set up an API key or create an account?",
+      "a11": "No. AI FileSense works out of the box with no configuration required. No API keys, no accounts, no sign-up. Just download and run."
     },
     "stillHaveQuestions": "Still Have Questions?",
     "stillHaveQuestionsDesc": "Can't find what you're looking for? Send us a message and we'll help you out.",
@@ -508,8 +504,8 @@
     "form": {
       "name": "Name",
       "namePlaceholder": "Jane Smith",
-      "email": "Work Email",
-      "emailPlaceholder": "jane@acme.com",
+      "email": "Email",
+      "emailPlaceholder": "jane@example.com",
       "company": "Company (Optional)",
       "companyPlaceholder": "Acme Industries",
       "website": "Company Website",
@@ -541,32 +537,32 @@
     },
     "mission": {
       "title": "Our Mission",
-      "description": "We built AI FileSense because organizing files shouldn't mean uploading your personal documents to someone else's server. Your medical records, tax documents, and family photos deserve better than cloud storage and vague privacy policies."
+      "description": "We built AI FileSense because organizing files shouldn't mean uploading your personal documents to someone else's server. Your medical records, tax documents, and personal files deserve better than cloud storage and vague privacy policies."
     },
     "commitment": {
       "title": "Our Privacy Commitment",
       "intro": "We don't just talk about privacy—we built it into the architecture:",
       "items": {
         "local": "100% local processing: Your files never leave your computer",
-        "minimal": "Minimal data to AI: Only filenames and ~500 character snippets",
+        "minimal": "Minimal data to AI: Only small text snippets for classification",
         "noAccount": "No account required: No signup, no email, no tracking",
         "noTelemetry": "Zero telemetry: We don't collect analytics or usage data",
-        "yourKey": "Your API key: Direct connection to Anthropic—no middleman",
-        "encrypted": "Encrypted storage: API keys stored securely on your device"
+        "noConfig": "No configuration: Works out of the box, no API keys needed",
+        "encrypted": "Transaction logging: Every move tracked for easy undo"
       }
     },
     "values": {
       "title": "What We Believe",
       "privacy": "Privacy by Default",
       "privacyDesc": "Your files stay on your computer. We never see your data—not filenames, not contents, not metadata. We built it this way on purpose.",
-      "simplicity": "Organized in 5 Minutes",
-      "simplicityDesc": "Powerful AI shouldn't mean complex software. Download, add your API key, point at a folder, and you're done.",
+      "simplicity": "Zero Configuration",
+      "simplicityDesc": "Powerful AI shouldn't mean complex software. Download, install, run—no technical skills required.",
       "transparency": "You're in Control",
-      "transparencyDesc": "You choose your API provider. You see exactly what AI suggests before anything moves. You can undo anything."
+      "transparencyDesc": "Preview everything before it moves. Undo anything after it moves. You're always in the driver's seat."
     },
     "cta": {
       "title": "Ready to Get Organized?",
-      "subtitle": "Download AI FileSense and organize your files in 5 minutes. No account needed.",
+      "subtitle": "Download AI FileSense and organize your files in minutes. No account needed, no configuration required.",
       "button": "Download Free"
     }
   },
@@ -610,7 +606,7 @@
   "share": {
     "title": "Share AI FileSense",
     "subtitle": "Help others organize their files",
-    "message": "Check out AI FileSense - it organizes your files locally using AI. 100% private, nothing leaves your computer.",
+    "message": "Check out AI FileSense - it organizes your files using AI. No configuration required, full preview before moving, one-click undo.",
     "copyLink": "Copy Link",
     "copied": "Copied!",
     "shareApp": "Share This App"
