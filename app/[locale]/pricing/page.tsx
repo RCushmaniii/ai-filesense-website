@@ -27,6 +27,7 @@ export default async function PricingPage({
       <PageHero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        variant="waves"
       />
 
       {/* Pricing Cards */}

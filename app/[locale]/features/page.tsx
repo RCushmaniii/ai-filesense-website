@@ -19,6 +19,7 @@ import {
   LockIcon,
   UndoIcon,
   CheckCircleIcon,
+  SparklesIcon,
 } from '@/components/icons'
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default async function FeaturesPage({
 }) {
   const t = await getTranslations('features')
   const common = await getTranslations('common')
+  const homeT = await getTranslations('home')
 
   const steps = [
     {
@@ -89,6 +91,7 @@ export default async function FeaturesPage({
     { key: 'reference', name: t('folders.reference.name'), desc: t('folders.reference.desc') },
     { key: 'archive', name: t('folders.archive.name'), desc: t('folders.archive.desc') },
     { key: 'review', name: t('folders.review.name'), desc: t('folders.review.desc') },
+    { key: 'getStarted', name: homeT('folders.getStarted'), desc: homeT('folders.getStartedDesc'), isSpecial: true },
   ]
 
   const differentiators = [
@@ -173,6 +176,7 @@ export default async function FeaturesPage({
       <PageHero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        variant="glow"
       />
 
       {/* How It Works - 4 Steps */}
@@ -215,11 +219,21 @@ export default async function FeaturesPage({
             {folders.map((folder) => (
               <div
                 key={folder.key}
-                className="p-4 rounded-lg bg-background border border-foreground/10 hover:border-primary/30 transition-colors"
+                className={`p-4 rounded-lg transition-colors ${
+                  'isSpecial' in folder && folder.isSpecial
+                    ? 'bg-primary/10 border-2 border-primary/30 hover:border-primary/50'
+                    : 'bg-background border border-foreground/10 hover:border-primary/30'
+                }`}
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <FolderIcon className="w-5 h-5 text-primary" />
-                  <span className="font-semibold">{folder.name}</span>
+                  {'isSpecial' in folder && folder.isSpecial ? (
+                    <SparklesIcon className="w-5 h-5 text-primary" />
+                  ) : (
+                    <FolderIcon className="w-5 h-5 text-primary" />
+                  )}
+                  <span className={`font-semibold ${'isSpecial' in folder && folder.isSpecial ? 'text-primary' : ''}`}>
+                    {folder.name}
+                  </span>
                 </div>
                 <p className="text-sm text-foreground/60">{folder.desc}</p>
               </div>

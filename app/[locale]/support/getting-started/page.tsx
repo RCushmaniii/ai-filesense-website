@@ -6,7 +6,7 @@ import { PageHero } from '@/components/layout/page-hero'
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import NextLink from 'next/link'
-import { FolderIcon, UndoIcon, CheckIcon } from '@/components/icons'
+import { FolderIcon, UndoIcon, CheckIcon, SparklesIcon } from '@/components/icons'
 
 export const metadata: Metadata = {
   title: 'Getting Started',
@@ -44,6 +44,7 @@ export default async function GettingStartedPage({
     { key: 'reference', name: homeT('folders.reference'), desc: homeT('folders.referenceDesc') },
     { key: 'archive', name: homeT('folders.archive'), desc: homeT('folders.archiveDesc') },
     { key: 'review', name: homeT('folders.review'), desc: homeT('folders.reviewDesc') },
+    { key: 'getStarted', name: homeT('folders.getStarted'), desc: homeT('folders.getStartedDesc'), isSpecial: true },
   ]
 
   const tips = [
@@ -58,6 +59,7 @@ export default async function GettingStartedPage({
       <PageHero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        variant="waves"
       />
 
       {/* Overview */}
@@ -133,11 +135,21 @@ export default async function GettingStartedPage({
             {folders.map((folder) => (
               <div
                 key={folder.key}
-                className="p-3 rounded-lg bg-foreground/5 border border-foreground/10"
+                className={`p-3 rounded-lg transition-colors ${
+                  'isSpecial' in folder && folder.isSpecial
+                    ? 'bg-primary/10 border-2 border-primary/30 hover:border-primary/50'
+                    : 'bg-foreground/5 border border-foreground/10 hover:border-primary/30'
+                }`}
               >
                 <div className="flex items-center gap-2 mb-1">
-                  <FolderIcon className="w-4 h-4 text-primary" />
-                  <span className="font-medium text-sm">{folder.name}</span>
+                  {'isSpecial' in folder && folder.isSpecial ? (
+                    <SparklesIcon className="w-4 h-4 text-primary" />
+                  ) : (
+                    <FolderIcon className="w-4 h-4 text-primary" />
+                  )}
+                  <span className={`font-medium text-sm ${'isSpecial' in folder && folder.isSpecial ? 'text-primary' : ''}`}>
+                    {folder.name}
+                  </span>
                 </div>
                 <p className="text-xs text-foreground/60">{folder.desc}</p>
               </div>

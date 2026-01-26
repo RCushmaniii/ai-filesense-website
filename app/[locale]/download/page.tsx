@@ -43,6 +43,7 @@ export default async function DownloadPage({
       <PageHero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        variant="dots"
       />
 
       {/* Main Download Section */}

@@ -36,6 +36,7 @@ export default async function FAQPage({
       <PageHero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        variant="dots"
       />
 
       <Section spacing="lg">

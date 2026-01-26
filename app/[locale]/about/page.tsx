@@ -58,6 +58,7 @@ export default async function AboutPage({
       <PageHero
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
+        variant="glow"
       />
 
       {/* Mission */}
