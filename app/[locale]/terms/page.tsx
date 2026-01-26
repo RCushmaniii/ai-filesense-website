@@ -42,23 +42,23 @@ export default async function TermsPage({
             </p>
             <ul>
               <li>Runs locally on your computer</li>
-              <li>Requires your own Anthropic API key for AI features</li>
+              <li>AI-powered classification included—no API key setup required</li>
               <li>Moves and organizes files based on your instructions</li>
             </ul>
 
-            <h2>3. Free Tier and Credits</h2>
-            <p>AI FileSense offers a free tier that includes:</p>
+            <h2>3. Free During Launch</h2>
+            <p>AI FileSense is currently free during our launch period, including:</p>
             <ul>
               <li>Unlimited local file scanning and indexing</li>
-              <li>AI classification for up to <strong>1,000 files</strong> using your own API key</li>
-              <li>Full organization and search features</li>
+              <li>Full AI-powered classification</li>
+              <li>Complete organization and search features</li>
             </ul>
 
             <h2>4. User Responsibilities</h2>
             <ul>
               <li>You are responsible for backing up your files before using organization features</li>
               <li>You understand that file organization involves moving files on your computer</li>
-              <li>Keep your API key secure and confidential</li>
+              <li>Use the undo features if you need to reverse any changes</li>
             </ul>
 
             <h2>5. Disclaimer of Warranties</h2>

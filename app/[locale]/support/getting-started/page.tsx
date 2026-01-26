@@ -34,14 +34,14 @@ export default async function GettingStartedPage({
 
   const folders = [
     { key: 'work', name: homeT('folders.work'), desc: homeT('folders.workDesc') },
-    { key: 'money', name: homeT('folders.money'), desc: homeT('folders.moneyDesc') },
-    { key: 'home', name: homeT('folders.home'), desc: homeT('folders.homeDesc') },
-    { key: 'health', name: homeT('folders.health'), desc: homeT('folders.healthDesc') },
+    { key: 'personal', name: homeT('folders.personal'), desc: homeT('folders.personalDesc') },
+    { key: 'financial', name: homeT('folders.financial'), desc: homeT('folders.financialDesc') },
+    { key: 'medical', name: homeT('folders.medical'), desc: homeT('folders.medicalDesc') },
     { key: 'legal', name: homeT('folders.legal'), desc: homeT('folders.legalDesc') },
-    { key: 'school', name: homeT('folders.school'), desc: homeT('folders.schoolDesc') },
-    { key: 'family', name: homeT('folders.family'), desc: homeT('folders.familyDesc') },
-    { key: 'clients', name: homeT('folders.clients'), desc: homeT('folders.clientsDesc') },
-    { key: 'projects', name: homeT('folders.projects'), desc: homeT('folders.projectsDesc') },
+    { key: 'education', name: homeT('folders.education'), desc: homeT('folders.educationDesc') },
+    { key: 'creative', name: homeT('folders.creative'), desc: homeT('folders.creativeDesc') },
+    { key: 'technical', name: homeT('folders.technical'), desc: homeT('folders.technicalDesc') },
+    { key: 'reference', name: homeT('folders.reference'), desc: homeT('folders.referenceDesc') },
     { key: 'archive', name: homeT('folders.archive'), desc: homeT('folders.archiveDesc') },
     { key: 'review', name: homeT('folders.review'), desc: homeT('folders.reviewDesc') },
   ]

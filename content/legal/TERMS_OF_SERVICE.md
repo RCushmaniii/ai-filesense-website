@@ -12,22 +12,15 @@ By downloading, installing, or using AI FileSense, you agree to be bound by thes
 
 AI FileSense is a desktop application that helps you organize and find files on your Windows computer using AI-powered classification. The Service:
 - Runs locally on your computer
-- Requires your own Anthropic API key for AI features
+- AI-powered classification included—no API key setup required
 - Moves and organizes files based on your instructions
 
-## 3. Free Tier and Credits
+## 3. Free During Launch
 
-### Free Usage
-AI FileSense offers a free tier that includes:
+AI FileSense is currently free during our launch period, including:
 - Unlimited local file scanning and indexing
-- AI classification for up to **1,000 files** using your own API key
-- Full organization and search features
-
-### API Costs
-AI features require an Anthropic API key. You are responsible for:
-- Obtaining your own API key from Anthropic
-- Any costs associated with API usage
-- Compliance with Anthropic's terms of service
+- Full AI-powered classification
+- Complete organization and search features
 
 ## 4. User Responsibilities
 
@@ -35,11 +28,6 @@ AI features require an Anthropic API key. You are responsible for:
 - You are responsible for backing up your files before using organization features
 - You understand that file organization involves moving files on your computer
 - You agree to use the preview and undo features to verify changes
-
-### API Key Security
-- Keep your API key secure and confidential
-- Do not share your API key with others
-- You are responsible for all usage under your API key
 
 ### Acceptable Use
 You agree not to:
@@ -128,4 +116,4 @@ These Terms constitute the entire agreement between you and AI FileSense regardi
 
 ---
 
-**Summary**: AI FileSense is a local-first tool to help organize your files. We provide the software; you provide the files and API key. Back up your files, review before organizing, and enjoy a cleaner desktop!
+**Summary**: AI FileSense is a local-first tool to help organize your files. We provide the software and AI capabilities; you provide the files. Back up your files, review before organizing, and enjoy a cleaner desktop!

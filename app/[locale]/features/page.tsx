@@ -36,37 +36,57 @@ export default async function FeaturesPage({
 
   const steps = [
     {
+      icon: <FolderIcon className="w-8 h-8" />,
+      title: t('howItWorks.folderSelection.title'),
+      desc: t('howItWorks.folderSelection.description'),
+    },
+    {
       icon: <SearchIcon className="w-8 h-8" />,
-      title: t('howItWorks.scan.title'),
-      desc: t('howItWorks.scan.description'),
+      title: t('howItWorks.fileTypes.title'),
+      desc: t('howItWorks.fileTypes.description'),
+    },
+    {
+      icon: <UserIcon className="w-8 h-8" />,
+      title: t('howItWorks.personalization.title'),
+      desc: t('howItWorks.personalization.description'),
     },
     {
       icon: <EyeIcon className="w-8 h-8" />,
-      title: t('howItWorks.analyze.title'),
-      desc: t('howItWorks.analyze.description'),
+      title: t('howItWorks.scanning.title'),
+      desc: t('howItWorks.scanning.description'),
     },
     {
-      icon: <FolderIcon className="w-8 h-8" />,
-      title: t('howItWorks.organize.title'),
-      desc: t('howItWorks.organize.description'),
+      icon: <LightbulbIcon className="w-8 h-8" />,
+      title: t('howItWorks.classification.title'),
+      desc: t('howItWorks.classification.description'),
     },
     {
       icon: <CheckSimpleIcon className="w-8 h-8" />,
-      title: t('howItWorks.review.title'),
-      desc: t('howItWorks.review.description'),
+      title: t('howItWorks.quickFixes.title'),
+      desc: t('howItWorks.quickFixes.description'),
+    },
+    {
+      icon: <EyeIcon className="w-8 h-8" />,
+      title: t('howItWorks.preview.title'),
+      desc: t('howItWorks.preview.description'),
+    },
+    {
+      icon: <CheckCircleIcon className="w-8 h-8" />,
+      title: t('howItWorks.apply.title'),
+      desc: t('howItWorks.apply.description'),
     },
   ]
 
   const folders = [
     { key: 'work', name: t('folders.work.name'), desc: t('folders.work.desc') },
-    { key: 'money', name: t('folders.money.name'), desc: t('folders.money.desc') },
-    { key: 'home', name: t('folders.home.name'), desc: t('folders.home.desc') },
-    { key: 'health', name: t('folders.health.name'), desc: t('folders.health.desc') },
+    { key: 'personal', name: t('folders.personal.name'), desc: t('folders.personal.desc') },
+    { key: 'financial', name: t('folders.financial.name'), desc: t('folders.financial.desc') },
+    { key: 'medical', name: t('folders.medical.name'), desc: t('folders.medical.desc') },
     { key: 'legal', name: t('folders.legal.name'), desc: t('folders.legal.desc') },
-    { key: 'school', name: t('folders.school.name'), desc: t('folders.school.desc') },
-    { key: 'family', name: t('folders.family.name'), desc: t('folders.family.desc') },
-    { key: 'clients', name: t('folders.clients.name'), desc: t('folders.clients.desc') },
-    { key: 'projects', name: t('folders.projects.name'), desc: t('folders.projects.desc') },
+    { key: 'education', name: t('folders.education.name'), desc: t('folders.education.desc') },
+    { key: 'creative', name: t('folders.creative.name'), desc: t('folders.creative.desc') },
+    { key: 'technical', name: t('folders.technical.name'), desc: t('folders.technical.desc') },
+    { key: 'reference', name: t('folders.reference.name'), desc: t('folders.reference.desc') },
     { key: 'archive', name: t('folders.archive.name'), desc: t('folders.archive.desc') },
     { key: 'review', name: t('folders.review.name'), desc: t('folders.review.desc') },
   ]
@@ -78,34 +98,29 @@ export default async function FeaturesPage({
       desc: t('differentiators.contentBased.description'),
     },
     {
+      icon: <CheckSimpleIcon className="w-8 h-8" />,
+      title: t('differentiators.zeroConfig.title'),
+      desc: t('differentiators.zeroConfig.description'),
+    },
+    {
+      icon: <UndoIcon className="w-8 h-8" />,
+      title: t('differentiators.safeByDefault.title'),
+      desc: t('differentiators.safeByDefault.description'),
+    },
+    {
       icon: <GlobeIcon className="w-8 h-8" />,
       title: t('differentiators.trulyBilingual.title'),
       desc: t('differentiators.trulyBilingual.description'),
     },
     {
-      icon: <UserIcon className="w-8 h-8" />,
-      title: t('differentiators.humanInLoop.title'),
-      desc: t('differentiators.humanInLoop.description'),
-    },
-    {
       icon: <LockIcon className="w-8 h-8" />,
-      title: t('differentiators.privacyRespecting.title'),
-      desc: t('differentiators.privacyRespecting.description'),
+      title: t('differentiators.privacyFirst.title'),
+      desc: t('differentiators.privacyFirst.description'),
     },
     {
       icon: <FolderIcon className="w-8 h-8" />,
-      title: t('differentiators.smartFolders.title'),
-      desc: t('differentiators.smartFolders.description'),
-    },
-    {
-      icon: <UndoIcon className="w-8 h-8" />,
-      title: t('differentiators.crashRecovery.title'),
-      desc: t('differentiators.crashRecovery.description'),
-    },
-    {
-      icon: <CheckSimpleIcon className="w-8 h-8" />,
-      title: t('differentiators.personalized.title'),
-      desc: t('differentiators.personalized.description'),
+      title: t('differentiators.incremental.title'),
+      desc: t('differentiators.incremental.description'),
     },
   ]
 
@@ -167,13 +182,18 @@ export default async function FeaturesPage({
             <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('howItWorks.title')}</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {steps.map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
-                  {step.icon}
+              <div key={index} className="p-4 rounded-xl bg-foreground/[0.02] border border-foreground/10">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                    {step.icon}
+                  </div>
+                  <span className="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold">
+                    {index + 1}
+                  </span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
+                <h3 className="font-semibold mb-2">{step.title}</h3>
                 <p className="text-foreground/70 text-sm leading-relaxed">{step.desc}</p>
               </div>
             ))}

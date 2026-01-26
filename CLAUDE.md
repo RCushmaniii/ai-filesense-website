@@ -113,7 +113,7 @@ CONTACT_FROM="AI FileSense <noreply@aifilesense.com>"
 ## Key Content
 
 ### 11 Smart Folders (numbered 01-11)
-Work, Money, Home, Health, Legal, School, Family, Clients, Projects, Archive, Review
+Work, Personal, Financial, Medical, Legal, Education, Creative, Technical, Reference, Archive, Review
 
 ### 6 Phase 1 Core Features
 AI-Powered Classification, 11-Folder Smart System, 3-Level Organization, Safe & Reversible, Privacy First, Fully Bilingual

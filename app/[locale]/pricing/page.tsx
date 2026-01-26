@@ -139,14 +139,14 @@ export default async function PricingPage({
         </Container>
       </Section>
 
-      {/* API Cost Transparency */}
+      {/* Why Free During Launch */}
       <Section spacing="lg" className="bg-foreground/[0.02]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-2xl font-bold mb-4">{t('apiCosts.title')}</h2>
+              <h2 className="text-2xl font-bold mb-4">Why Free During Launch?</h2>
               <p className="text-foreground/70">
-                {t('apiCosts.subtitle')}
+                We want you to experience the power of AI-organized files without any barriers.
               </p>
             </div>
 
@@ -154,45 +154,46 @@ export default async function PricingPage({
               <CardHeader>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="font-semibold mb-3">{t('apiCosts.howItWorks')}</h3>
-                    <ol className="space-y-2 text-sm text-foreground/70">
-                      <li className="flex gap-2">
-                        <span className="font-medium text-primary">1.</span>
-                        Create a free Anthropic account
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="font-medium text-primary">2.</span>
-                        Generate an API key
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="font-medium text-primary">3.</span>
-                        Add credit to your account ($5 minimum)
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="font-medium text-primary">4.</span>
-                        Paste the key into AI FileSense
-                      </li>
-                    </ol>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-3">{t('apiCosts.estimatedCosts')}</h3>
+                    <h3 className="font-semibold mb-3">No Setup Required</h3>
                     <ul className="space-y-2 text-sm text-foreground/70">
-                      <li className="flex justify-between">
-                        <span>1,000 files</span>
-                        <span className="font-medium">~$0.50 - $1.00</span>
+                      <li className="flex gap-2">
+                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                        Download and install
                       </li>
-                      <li className="flex justify-between">
-                        <span>5,000 files</span>
-                        <span className="font-medium">~$2.50 - $5.00</span>
+                      <li className="flex gap-2">
+                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                        Select folders to organize
                       </li>
-                      <li className="flex justify-between">
-                        <span>10,000 files</span>
-                        <span className="font-medium">~$5.00 - $10.00</span>
+                      <li className="flex gap-2">
+                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                        Let AI analyze your files
+                      </li>
+                      <li className="flex gap-2">
+                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                        Review and apply—done!
                       </li>
                     </ul>
-                    <p className="text-xs text-foreground/50 mt-3">
-                      {t('apiCosts.estimatedCostsDesc')}
-                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-3">What You Get</h3>
+                    <ul className="space-y-2 text-sm text-foreground/70">
+                      <li className="flex gap-2">
+                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                        Full AI-powered classification
+                      </li>
+                      <li className="flex gap-2">
+                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                        11 smart folder categories
+                      </li>
+                      <li className="flex gap-2">
+                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                        Complete undo capabilities
+                      </li>
+                      <li className="flex gap-2">
+                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                        English + Spanish support
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </CardHeader>

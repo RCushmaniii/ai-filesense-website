@@ -33,18 +33,18 @@ When you use AI-powered features, the following is sent to your configured AI pr
 
 ### Anthropic API
 AI FileSense uses the Anthropic API for document classification. When you use AI features:
-- You provide your own API key
-- Data is sent directly from your computer to Anthropic
+- AI is bundled in the app—no API key setup required
+- Only small text snippets are sent for classification
 - Anthropic's privacy policy applies: https://www.anthropic.com/privacy
 
-We do not have access to your API key or the data you send to Anthropic.
+File paths are anonymized and full contents are never transmitted.
 
 ## Data Storage
 
 ### Local Storage Only
 - All file indexes are stored locally on your computer
 - Organization plans and history are stored locally
-- Settings (including your API key) are stored locally and encrypted
+- Settings and preferences are stored locally
 
 ### No Cloud Storage
 - We do not operate servers that store your data

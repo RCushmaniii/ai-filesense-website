@@ -10,7 +10,6 @@ import NextLink from 'next/link'
 import {
   CheckCircleIcon,
   LightningIcon,
-  InfoIcon,
   CheckIcon,
   FolderIcon,
   UndoIcon,
@@ -37,14 +36,6 @@ export default async function DownloadPage({
     { title: t('quickStart.step3'), desc: t('quickStart.step3Desc') },
     { title: t('quickStart.step4'), desc: t('quickStart.step4Desc') },
     { title: t('quickStart.step5'), desc: t('quickStart.step5Desc') },
-  ]
-
-  const apiSteps = [
-    { title: t('apiKey.step1'), desc: t('apiKey.step1Desc') },
-    { title: t('apiKey.step2'), desc: t('apiKey.step2Desc') },
-    { title: t('apiKey.step3'), desc: t('apiKey.step3Desc') },
-    { title: t('apiKey.step4'), desc: t('apiKey.step4Desc') },
-    { title: t('apiKey.step5'), desc: t('apiKey.step5Desc') },
   ]
 
   return (
@@ -187,43 +178,6 @@ export default async function DownloadPage({
                 </CardHeader>
               </Card>
             </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* Getting API Key */}
-      <Section spacing="lg" className="bg-foreground/[0.02]">
-        <Container>
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold mb-2">{t('apiKey.title')}</h2>
-              <p className="text-foreground/70">{t('apiKey.subtitle')}</p>
-            </div>
-
-            <Card>
-              <CardHeader>
-                <ol className="space-y-4">
-                  {apiSteps.map((item, i) => (
-                    <li key={i} className="flex gap-4">
-                      <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm font-medium shrink-0">
-                        {i + 1}
-                      </span>
-                      <div>
-                        <p className="font-medium">{item.title}</p>
-                        <p className="text-sm text-foreground/60">{item.desc}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ol>
-
-                <div className="mt-6 p-4 bg-secondary/10 rounded-lg">
-                  <p className="text-sm text-secondary font-medium flex items-start gap-2">
-                    <InfoIcon className="w-4 h-4 mt-0.5 shrink-0" />
-                    {t('apiKey.note')}
-                  </p>
-                </div>
-              </CardHeader>
-            </Card>
           </div>
         </Container>
       </Section>

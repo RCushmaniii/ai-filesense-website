@@ -28,7 +28,7 @@ export default async function ChangelogPage({
           title: 'Core Features',
           items: [
             'AI-powered file classification using Claude Haiku',
-            '11 numbered smart folders (01-11): Work, Money, Home, Health, Legal, School, Family, Clients, Projects, Archive, Review',
+            '11 numbered smart folders (01-11): Work, Personal, Financial, Medical, Legal, Education, Creative, Technical, Reference, Archive, Review',
             '3-level organization depth: light (top folders), moderate (subfolders), detailed (date-based)',
             'Preview all changes before applying—nothing moves until you approve',
             'One-click undo for any file or entire sessions',
@@ -60,7 +60,7 @@ export default async function ChangelogPage({
             'Files never leave your computer—100% local processing',
             'Only ~500 character text snippets sent to AI for classification',
             'Username stripped from file paths before AI processing',
-            'Encrypted API key storage',
+            'AI bundled—no API key setup required',
             'No user accounts, no cloud sync, no telemetry',
           ],
         },

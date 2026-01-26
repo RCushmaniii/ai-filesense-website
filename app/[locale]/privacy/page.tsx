@@ -73,11 +73,11 @@ export default async function PrivacyPage({
               AI FileSense uses the Anthropic API for document classification. When you use AI features:
             </p>
             <ul>
-              <li>You provide your own API key</li>
-              <li>Data is sent directly from your computer to Anthropic</li>
+              <li>AI is bundled in the app—no API key setup required</li>
+              <li>Only small text snippets are sent for classification</li>
               <li>Anthropic&apos;s privacy policy applies: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener noreferrer">https://www.anthropic.com/privacy</a></li>
             </ul>
-            <p>We do not have access to your API key or the data you send to Anthropic.</p>
+            <p>File paths are anonymized and full contents are never transmitted.</p>
 
             <h2>Data Storage</h2>
 
@@ -85,7 +85,7 @@ export default async function PrivacyPage({
             <ul>
               <li>All file indexes are stored locally on your computer</li>
               <li>Organization plans and history are stored locally</li>
-              <li>Settings (including your API key) are stored locally and encrypted</li>
+              <li>Settings and preferences are stored locally</li>
             </ul>
 
             <h3>No Cloud Storage</h3>
