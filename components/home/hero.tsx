@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import { Container } from '@/components/layout/container'
 import { Section } from '@/components/layout/section'
@@ -11,17 +11,21 @@ import Image from 'next/image'
 
 export function Hero() {
   const t = useTranslations('home.hero')
+  const locale = useLocale()
   const [isPlaying, setIsPlaying] = useState(false)
   const [isVideoLoaded, setIsVideoLoaded] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
+  // Use locale-specific video (en_explainer.mp4 or es_explainer.mp4)
+  const videoSrc = `/videos/${locale}_explainer.mp4`
+
   // Preload video in background
   useEffect(() => {
     const video = document.createElement('video')
-    video.src = '/videos/explainer.mp4'
+    video.src = videoSrc
     video.preload = 'auto'
     video.oncanplaythrough = () => setIsVideoLoaded(true)
-  }, [])
+  }, [videoSrc])
 
   const handlePlayClick = () => {
     setIsPlaying(true)
@@ -145,7 +149,7 @@ export function Hero() {
               /* Video Player */
               <video
                 ref={videoRef}
-                src="/videos/explainer.mp4"
+                src={videoSrc}
                 poster="/images/home/video-poster.jpg"
                 controls
                 className="w-full h-auto"
