@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useRef, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import { Container } from '@/components/layout/container'
@@ -10,6 +11,27 @@ import Image from 'next/image'
 
 export function Hero() {
   const t = useTranslations('home.hero')
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  // Preload video in background
+  useEffect(() => {
+    const video = document.createElement('video')
+    video.src = '/videos/explainer.mp4'
+    video.preload = 'auto'
+    video.oncanplaythrough = () => setIsVideoLoaded(true)
+  }, [])
+
+  const handlePlayClick = () => {
+    setIsPlaying(true)
+    // Small delay to ensure video element is rendered
+    setTimeout(() => {
+      if (videoRef.current) {
+        videoRef.current.play()
+      }
+    }, 100)
+  }
   const common = useTranslations('common')
 
   return (
@@ -82,19 +104,56 @@ export function Hero() {
           </div>
         </div>
 
-        {/* App Screenshot */}
+        {/* Video Section */}
         <div className="mt-16 relative">
           <div className="max-w-5xl mx-auto rounded-xl border border-foreground/10 overflow-hidden shadow-2xl">
-            <Image
-              src="/images/home/Screenshot.jpg"
-              alt="AI FileSense application interface showing intelligent file organization"
-              width={1920}
-              height={1080}
-              className="w-full h-auto"
-              priority
-            />
+            {!isPlaying ? (
+              /* Poster with Play Button */
+              <button
+                onClick={handlePlayClick}
+                className="relative w-full block group cursor-pointer"
+                aria-label="Play explainer video"
+              >
+                <Image
+                  src="/images/home/video-poster.jpg"
+                  alt="AI FileSense explainer video thumbnail"
+                  width={1920}
+                  height={1080}
+                  className="w-full h-auto"
+                  priority
+                />
+                {/* Play Button Overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <svg
+                      className="w-8 h-8 md:w-10 md:h-10 text-white ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+                {/* Loading indicator */}
+                {!isVideoLoaded && (
+                  <div className="absolute bottom-4 right-4 text-xs text-white/70 bg-black/50 px-2 py-1 rounded">
+                    Loading video...
+                  </div>
+                )}
+              </button>
+            ) : (
+              /* Video Player */
+              <video
+                ref={videoRef}
+                src="/videos/explainer.mp4"
+                poster="/images/home/video-poster.jpg"
+                controls
+                className="w-full h-auto"
+                playsInline
+              />
+            )}
           </div>
-          {/* Decorative glow under screenshot */}
+          {/* Decorative glow under video */}
           <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-3/4 h-16 bg-primary/20 blur-3xl rounded-full" />
         </div>
       </Container>
