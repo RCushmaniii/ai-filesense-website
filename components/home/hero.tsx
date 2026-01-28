@@ -16,8 +16,9 @@ export function Hero() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
-  // Use locale-specific video (en_explainer.mp4 or es_explainer.mp4)
+  // Use locale-specific video and poster
   const videoSrc = `/videos/${locale}_explainer.mp4`
+  const posterSrc = `/images/home/${locale}_video_poster.jpg`
 
   // Preload video in background
   useEffect(() => {
@@ -119,7 +120,7 @@ export function Hero() {
                 aria-label="Play explainer video"
               >
                 <Image
-                  src="/images/home/video-poster.jpg"
+                  src={posterSrc}
                   alt="AI FileSense explainer video thumbnail"
                   width={1920}
                   height={1080}
@@ -150,7 +151,7 @@ export function Hero() {
               <video
                 ref={videoRef}
                 src={videoSrc}
-                poster="/images/home/video-poster.jpg"
+                poster={posterSrc}
                 controls
                 className="w-full h-auto"
                 playsInline
