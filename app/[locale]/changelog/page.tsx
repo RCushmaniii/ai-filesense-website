@@ -28,7 +28,7 @@ export default async function ChangelogPage({
           title: 'Core Features',
           items: [
             'AI-powered file classification using Claude Haiku',
-            '11 numbered smart folders (01-11): Work, Personal, Financial, Medical, Legal, Education, Creative, Technical, Reference, Archive, Review',
+            '12 numbered smart folders (01-12): Work, Money, Home, Health, Legal, School, Family, Clients, Projects, Travel, Archive, Review',
             '3-level organization depth: light (top folders), moderate (subfolders), detailed (date-based)',
             'Preview all changes before applying—nothing moves until you approve',
             'One-click undo for any file or entire sessions',

@@ -41,24 +41,16 @@ export default async function PricingPage({
                 <CardTitle className="text-2xl">{t('tiers.free')}</CardTitle>
                 <div className="mt-4 mb-6">
                   <span className="text-5xl font-bold">$0</span>
-                  <span className="text-foreground/60 ml-2">forever</span>
+                  <span className="text-foreground/60 ml-2">{t('cards.forever')}</span>
                 </div>
                 <CardDescription className="text-base mb-6">
-                  Perfect for trying out AI FileSense and organizing your most important files.
+                  {t('cards.freeDesc')}
                 </CardDescription>
                 <ul className="space-y-3 mb-8">
-                  {[
-                    '1,000 files AI classification',
-                    'Unlimited local scanning & indexing',
-                    'All 3 organization styles',
-                    'Full search capabilities',
-                    'One-click undo',
-                    'English + Spanish',
-                    'No account required',
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-2 text-sm">
+                  {(['f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7'] as const).map((key) => (
+                    <li key={key} className="flex items-start gap-2 text-sm">
                       <CheckIcon className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
-                      <span>{item}</span>
+                      <span>{t(`cards.freeFeatures.${key}`)}</span>
                     </li>
                   ))}
                 </ul>
@@ -73,29 +65,23 @@ export default async function PricingPage({
             {/* Personal Tier */}
             <Card className="relative border-primary/30 shadow-lg">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <Badge variant="primary" className="shadow-sm">Most Popular</Badge>
+                <Badge variant="primary" className="shadow-sm">{t('cards.mostPopular')}</Badge>
               </div>
               <CardHeader>
                 <Badge variant="default" className="w-fit mb-4">{common('comingSoon')}</Badge>
                 <CardTitle className="text-2xl">{t('tiers.personal')}</CardTitle>
                 <div className="mt-4 mb-6">
                   <span className="text-5xl font-bold">$9.99</span>
-                  <span className="text-foreground/60 ml-2">/year</span>
+                  <span className="text-foreground/60 ml-2">{t('cards.perYear')}</span>
                 </div>
                 <CardDescription className="text-base mb-6">
-                  For home users with lots of files to organize.
+                  {t('cards.personalDesc')}
                 </CardDescription>
                 <ul className="space-y-3 mb-8">
-                  {[
-                    '10,000 files AI classification',
-                    'Everything in Free',
-                    'Email support',
-                    'Early access to new features',
-                    'Multiple folder profiles',
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-2 text-sm">
+                  {(['f1', 'f2', 'f3', 'f4', 'f5'] as const).map((key) => (
+                    <li key={key} className="flex items-start gap-2 text-sm">
                       <CheckIcon className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
-                      <span>{item}</span>
+                      <span>{t(`cards.personalFeatures.${key}`)}</span>
                     </li>
                   ))}
                 </ul>
@@ -112,22 +98,16 @@ export default async function PricingPage({
                 <CardTitle className="text-2xl">{t('tiers.professional')}</CardTitle>
                 <div className="mt-4 mb-6">
                   <span className="text-5xl font-bold">$29.99</span>
-                  <span className="text-foreground/60 ml-2">/year</span>
+                  <span className="text-foreground/60 ml-2">{t('cards.perYear')}</span>
                 </div>
                 <CardDescription className="text-base mb-6">
-                  For power users and small businesses.
+                  {t('cards.professionalDesc')}
                 </CardDescription>
                 <ul className="space-y-3 mb-8">
-                  {[
-                    '50,000 files AI classification',
-                    'Everything in Personal',
-                    'Priority support',
-                    'Custom organization rules',
-                    'Batch processing priority',
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-2 text-sm">
+                  {(['f1', 'f2', 'f3', 'f4', 'f5'] as const).map((key) => (
+                    <li key={key} className="flex items-start gap-2 text-sm">
                       <CheckIcon className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
-                      <span>{item}</span>
+                      <span>{t(`cards.professionalFeatures.${key}`)}</span>
                     </li>
                   ))}
                 </ul>
@@ -145,9 +125,9 @@ export default async function PricingPage({
         <Container>
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-2xl font-bold mb-4">Why Free During Launch?</h2>
+              <h2 className="text-2xl font-bold mb-4">{t('whyFree.title')}</h2>
               <p className="text-foreground/70">
-                We want you to experience the power of AI-organized files without any barriers.
+                {t('whyFree.subtitle')}
               </p>
             </div>
 
@@ -155,45 +135,25 @@ export default async function PricingPage({
               <CardHeader>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="font-semibold mb-3">No Setup Required</h3>
+                    <h3 className="font-semibold mb-3">{t('whyFree.noSetup')}</h3>
                     <ul className="space-y-2 text-sm text-foreground/70">
-                      <li className="flex gap-2">
-                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                        Download and install
-                      </li>
-                      <li className="flex gap-2">
-                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                        Select folders to organize
-                      </li>
-                      <li className="flex gap-2">
-                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                        Let AI analyze your files
-                      </li>
-                      <li className="flex gap-2">
-                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                        Review and apply—done!
-                      </li>
+                      {(['s1', 's2', 's3', 's4'] as const).map((key) => (
+                        <li key={key} className="flex gap-2">
+                          <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                          {t(`whyFree.noSetupItems.${key}`)}
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-3">What You Get</h3>
+                    <h3 className="font-semibold mb-3">{t('whyFree.whatYouGet')}</h3>
                     <ul className="space-y-2 text-sm text-foreground/70">
-                      <li className="flex gap-2">
-                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                        Full AI-powered classification
-                      </li>
-                      <li className="flex gap-2">
-                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                        12 smart folder categories
-                      </li>
-                      <li className="flex gap-2">
-                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                        Complete undo capabilities
-                      </li>
-                      <li className="flex gap-2">
-                        <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                        English + Spanish support
-                      </li>
+                      {(['w1', 'w2', 'w3', 'w4'] as const).map((key) => (
+                        <li key={key} className="flex gap-2">
+                          <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                          {t(`whyFree.whatYouGetItems.${key}`)}
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -232,9 +192,9 @@ export default async function PricingPage({
       <Section spacing="lg" className="bg-primary/5">
         <Container>
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Start Organizing for Free</h2>
+            <h2 className="text-3xl font-bold mb-4">{t('cta.title')}</h2>
             <p className="text-lg text-foreground/70 mb-8">
-              No credit card required. Get started in minutes with 1,000 free file classifications.
+              {t('cta.subtitle')}
             </p>
             <NextLink href={`/${locale}/download`}>
               <Button variant="primary" className="text-lg px-8 py-4">

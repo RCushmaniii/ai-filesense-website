@@ -54,7 +54,8 @@
       "badge3": "Windows 10/11",
       "stat1": "Files never leave your computer",
       "stat2": "Full preview before moving",
-      "stat3": "One-click undo"
+      "stat3": "One-click undo",
+      "loadingVideo": "Loading video..."
     },
     "solution": {
       "title": "How It Works",
@@ -271,6 +272,59 @@
       "title": "Free During Launch",
       "subtitle": "No payment required",
       "description": "AI FileSense is completely free to use during our launch period. No subscription fees, no hidden costs. Just download and organize."
+    },
+    "cards": {
+      "forever": "forever",
+      "perYear": "/year",
+      "freeDesc": "Perfect for trying out AI FileSense and organizing your most important files.",
+      "personalDesc": "For home users with lots of files to organize.",
+      "professionalDesc": "For power users and small businesses.",
+      "mostPopular": "Most Popular",
+      "freeFeatures": {
+        "f1": "1,000 files AI classification",
+        "f2": "Unlimited local scanning & indexing",
+        "f3": "All 3 organization styles",
+        "f4": "Full search capabilities",
+        "f5": "One-click undo",
+        "f6": "English + Spanish",
+        "f7": "No account required"
+      },
+      "personalFeatures": {
+        "f1": "10,000 files AI classification",
+        "f2": "Everything in Free",
+        "f3": "Email support",
+        "f4": "Early access to new features",
+        "f5": "Multiple folder profiles"
+      },
+      "professionalFeatures": {
+        "f1": "50,000 files AI classification",
+        "f2": "Everything in Personal",
+        "f3": "Priority support",
+        "f4": "Custom organization rules",
+        "f5": "Batch processing priority"
+      }
+    },
+    "whyFree": {
+      "title": "Why Free During Launch?",
+      "subtitle": "We want you to experience the power of AI-organized files without any barriers.",
+      "noSetup": "No Setup Required",
+      "noSetupItems": {
+        "s1": "Download and install",
+        "s2": "Select folders to organize",
+        "s3": "Let AI analyze your files",
+        "s4": "Review and apply—done!"
+      },
+      "whatYouGet": "What You Get",
+      "whatYouGetItems": {
+        "w1": "Full AI-powered classification",
+        "w2": "12 smart folder categories",
+        "w3": "Complete undo capabilities",
+        "w4": "English + Spanish support"
+      }
+    },
+    "cta": {
+      "title": "Start Organizing for Free",
+      "subtitle": "No credit card required. Get started in minutes with 1,000 free file classifications."
     },
     "faq": {
       "title": "Pricing FAQ",

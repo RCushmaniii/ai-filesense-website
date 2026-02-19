@@ -54,7 +54,8 @@
       "badge3": "Windows 10/11",
       "stat1": "Archivos nunca salen de tu computadora",
       "stat2": "Vista previa completa antes de mover",
-      "stat3": "Deshacer con un clic"
+      "stat3": "Deshacer con un clic",
+      "loadingVideo": "Cargando video..."
     },
     "solution": {
       "title": "Como Funciona",
@@ -271,6 +272,59 @@
       "title": "Gratis Durante el Lanzamiento",
       "subtitle": "Sin pago requerido",
       "description": "AI FileSense es completamente gratis durante nuestro periodo de lanzamiento. Sin cuotas de suscripcion, sin costos ocultos. Solo descarga y organiza."
+    },
+    "cards": {
+      "forever": "siempre",
+      "perYear": "/ano",
+      "freeDesc": "Perfecto para probar AI FileSense y organizar tus archivos mas importantes.",
+      "personalDesc": "Para usuarios con muchos archivos por organizar.",
+      "professionalDesc": "Para usuarios avanzados y pequenos negocios.",
+      "mostPopular": "Mas Popular",
+      "freeFeatures": {
+        "f1": "1,000 archivos con clasificacion IA",
+        "f2": "Escaneo e indexacion local ilimitados",
+        "f3": "Los 3 estilos de organizacion",
+        "f4": "Busqueda completa",
+        "f5": "Deshacer con un clic",
+        "f6": "Ingles + Espanol",
+        "f7": "Sin cuenta requerida"
+      },
+      "personalFeatures": {
+        "f1": "10,000 archivos con clasificacion IA",
+        "f2": "Todo lo del plan Gratis",
+        "f3": "Soporte por correo",
+        "f4": "Acceso anticipado a nuevas funciones",
+        "f5": "Multiples perfiles de carpetas"
+      },
+      "professionalFeatures": {
+        "f1": "50,000 archivos con clasificacion IA",
+        "f2": "Todo lo del plan Personal",
+        "f3": "Soporte prioritario",
+        "f4": "Reglas de organizacion personalizadas",
+        "f5": "Prioridad en procesamiento por lotes"
+      }
+    },
+    "whyFree": {
+      "title": "¿Por Que Gratis Durante el Lanzamiento?",
+      "subtitle": "Queremos que experimentes el poder de archivos organizados con IA sin barreras.",
+      "noSetup": "Sin Configuracion Requerida",
+      "noSetupItems": {
+        "s1": "Descarga e instala",
+        "s2": "Selecciona carpetas a organizar",
+        "s3": "Deja que la IA analice tus archivos",
+        "s4": "Revisa y aplica—¡listo!"
+      },
+      "whatYouGet": "Lo Que Obtienes",
+      "whatYouGetItems": {
+        "w1": "Clasificacion completa con IA",
+        "w2": "12 categorias de carpetas inteligentes",
+        "w3": "Deshacer completo",
+        "w4": "Soporte en ingles + espanol"
+      }
+    },
+    "cta": {
+      "title": "Comienza a Organizar Gratis",
+      "subtitle": "Sin tarjeta de credito requerida. Comienza en minutos con 1,000 clasificaciones de archivos gratis."
     },
     "faq": {
       "title": "Preguntas Frecuentes sobre Precios",

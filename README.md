@@ -7,7 +7,7 @@
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://ai-filesense-website.vercel.app/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![License](https://img.shields.io/badge/license-Educational-blue?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/license-Proprietary-red?style=for-the-badge)](LICENSE)
 
 [**Live Demo**](https://ai-filesense-website.vercel.app/) · [**Features**](https://ai-filesense-website.vercel.app/features) · [**Support**](https://ai-filesense-website.vercel.app/support)
 
@@ -17,7 +17,7 @@
 
 ## Overview
 
-This repository contains the marketing website for AI FileSense, a Windows desktop application that uses Claude AI to intelligently organize files into an 11-folder system. The website provides bilingual product information (English and Spanish), documentation, FAQ, and support resources.
+This repository contains the marketing website for AI FileSense, a Windows desktop application that uses Claude AI to intelligently organize files into a 12-folder system. The website provides bilingual product information (English and Spanish), documentation, FAQ, and support resources.
 
 **Built for:** Windows users who want to organize their Desktop, Documents, and Downloads without uploading files to the cloud.
 
@@ -123,7 +123,7 @@ ai-filesense-website/
 │   │   ├── pricing/           # Pricing tiers and API cost info
 │   │   ├── support/           # Support hub
 │   │   │   ├── faq/           # 10+ FAQs
-│   │   │   ├── getting-started/  # 8-step user journey
+│   │   │   ├── getting-started/  # 5-step user journey
 │   │   │   └── contact/       # Contact form
 │   │   ├── blog/              # Blog with MDX support
 │   │   ├── privacy/           # Privacy policy
@@ -164,23 +164,24 @@ ai-filesense-website/
 
 ## Content Structure
 
-### 11 Smart Folders
+### 12 Smart Folders
 
 The desktop application organizes files into `Documents/Organized Files/` with numbered folders:
 
-| #   | Folder    | Contents                                            |
-| --- | --------- | --------------------------------------------------- |
-| 01  | Work      | Resumes, job offers, payslips, employment contracts |
-| 02  | Personal  | Personal correspondence, family documents           |
-| 03  | Financial | Bank statements, tax returns, invoices, budgets     |
-| 04  | Medical   | Medical records, prescriptions, lab results         |
-| 05  | Legal     | Contracts, licenses, IDs, passports                 |
-| 06  | Education | Certificates, transcripts, course materials         |
-| 07  | Creative  | Design files, writing projects, artwork             |
-| 08  | Technical | Code docs, technical specs, system guides           |
-| 09  | Reference | Manuals, how-to guides, saved articles              |
-| 10  | Archive   | Older documents, completed projects                 |
-| 11  | Review    | Low-confidence items for manual sorting             |
+| #   | Folder   | Contents                                              |
+| --- | -------- | ----------------------------------------------------- |
+| 01  | Work     | Resumes, job offers, performance reviews, payslips    |
+| 02  | Money    | Bank statements, taxes, investments, receipts         |
+| 03  | Home     | Mortgage, rent, utilities, repairs, warranties        |
+| 04  | Health   | Medical records, prescriptions, lab results, insurance|
+| 05  | Legal    | Contracts, agreements, licenses, IDs, passports       |
+| 06  | School   | Courses, certificates, transcripts, research          |
+| 07  | Family   | Family correspondence, kids' records, personal letters|
+| 08  | Clients  | Client docs, vendor contracts, invoices               |
+| 09  | Projects | Project deliverables, milestones, active work         |
+| 10  | Travel   | Itineraries, bookings, boarding passes, visas         |
+| 11  | Archive  | Old docs (3+ years), completed projects, historical   |
+| 12  | Review   | Low-confidence items needing manual sorting           |
 
 ---
 
@@ -315,9 +316,19 @@ Lighthouse scores from production deployment (January 2026):
 
 ## License
 
-Educational Use License — see [LICENSE](./LICENSE) for details.
+Proprietary — All Rights Reserved. See [LICENSE](./LICENSE) for details.
 
-Commercial use requires prior written permission from the copyright holder.
+---
+
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [MARKETING.md](./docs/MARKETING.md) | Marketing copy, value proposition, and product positioning |
+| [BRAND.md](./docs/BRAND.md) | Brand guidelines and visual identity |
+| [DESIGN.md](./docs/DESIGN.md) | Design system and component documentation |
+| [CLIENT_START.md](./docs/CLIENT_START.md) | Client onboarding guide |
+| [IMAGE_SOURCES.md](./docs/IMAGE_SOURCES.md) | Image asset attribution and sources |
 
 ---
 

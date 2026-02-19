@@ -89,7 +89,7 @@ ai-filesense-website/
 | `app/[locale]/page.tsx` | Home page (hero, features, folders) |
 | `app/[locale]/features/page.tsx` | Features, differentiators, roadmap |
 | `app/[locale]/support/faq/page.tsx` | 10 FAQs (flat list) |
-| `app/[locale]/support/getting-started/page.tsx` | 8-step user journey |
+| `app/[locale]/support/getting-started/page.tsx` | 5-step user journey |
 | `components/contact/contact-form.tsx` | Contact form with validation |
 | `app/actions/contact.ts` | Server action for email submission |
 | `messages/en.json` | English translations |
@@ -112,17 +112,17 @@ CONTACT_FROM="AI FileSense <noreply@aifilesense.com>"
 
 ## Key Content
 
-### 11 Smart Folders (numbered 01-11)
-Work, Personal, Financial, Medical, Legal, Education, Creative, Technical, Reference, Archive, Review
+### 12 Smart Folders (numbered 01-12)
+Work, Money, Home, Health, Legal, School, Family, Clients, Projects, Travel, Archive, Review
 
 ### 6 Phase 1 Core Features
-AI-Powered Classification, 11-Folder Smart System, 3-Level Organization, Safe & Reversible, Privacy First, Fully Bilingual
+AI-Powered Classification, 12-Folder Smart System, 3-Level Organization, Safe & Reversible, Privacy First, Fully Bilingual
 
 ### 10 FAQs (flat structure)
 Data safety, undo changes, Review folder, file exclusion, bilingual support, file types, organized file location, re-running, incorrect categorization, internet requirement
 
-### 8-Step User Journey
-Select Folders, Scanning, Personalization, Results Preview, Detailed Review, Quick Clarifications, Applying Changes, Success
+### 5-Step User Journey
+Choose Folders, Scan, Preview, Organize, Done
 
 ## Code Conventions
 

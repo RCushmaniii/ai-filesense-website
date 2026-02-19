@@ -142,7 +142,7 @@ export function Hero() {
                 {/* Loading indicator */}
                 {!isVideoLoaded && (
                   <div className="absolute bottom-4 right-4 text-xs text-white/70 bg-black/50 px-2 py-1 rounded">
-                    Loading video...
+                    {t('loadingVideo')}
                   </div>
                 )}
               </button>
