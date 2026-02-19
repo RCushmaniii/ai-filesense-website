@@ -18,6 +18,7 @@ export function FoldersSection() {
     { name: t('creative'), desc: t('creativeDesc') },
     { name: t('technical'), desc: t('technicalDesc') },
     { name: t('reference'), desc: t('referenceDesc') },
+    { name: t('travel'), desc: t('travelDesc') },
     { name: t('archive'), desc: t('archiveDesc') },
     { name: t('review'), desc: t('reviewDesc') },
     { name: t('getStarted'), desc: t('getStartedDesc'), isSpecial: true },

@@ -46,7 +46,7 @@
       "title": "Organiza",
       "titleHighlight": "anos de archivos",
       "titleEnd": "en minutos.",
-      "subtitle": "AI FileSense lee tus documentos y los categoriza inteligentemente en una estructura limpia de 11 carpetas. Previsualiza todo. Deshaz cualquier cosa. No pierdas nada.",
+      "subtitle": "AI FileSense lee tus documentos y los categoriza inteligentemente en una estructura limpia de 12 carpetas. Previsualiza todo. Deshaz cualquier cosa. No pierdas nada.",
       "cta": "Descargar Gratis",
       "ctaSecondary": "Ver Demo",
       "badge1": "Gratis",
@@ -62,51 +62,53 @@
       "step1Title": "Escanear",
       "step1Desc": "Apunta a Escritorio, Documentos o Descargas. AI FileSense encuentra PDFs, documentos Word, PowerPoint y archivos de texto.",
       "step2Title": "Analizar",
-      "step2Desc": "Claude AI lee el contenido de los archivos para entender cada documento—no solo los nombres. Un archivo llamado escaneo_2024.pdf se categoriza correctamente.",
+      "step2Desc": "Claude AI lee el contenido de los archivos para entender cada documento—no solo los nombres. Un archivo llamado doc_2024_final.pdf podria ser un formulario fiscal, registro medico o contrato laboral—AI FileSense sabe la diferencia.",
       "step3Title": "Organizar",
       "step3Desc": "Previsualiza donde ira cada archivo. Cambia cualquier sugerencia. Luego aplica—los archivos van a Documentos/Archivos Organizados/ con deshacer completo."
     },
     "features": {
       "title": "Hecho para la Confianza, Disenado para Todos",
       "subtitle": "IA poderosa que cualquiera puede usar",
-      "aiClassification": "Analisis de Contenido con IA",
-      "aiClassificationDesc": "Entiende lo que hay dentro de tus archivos, no solo los nombres. escaneo_2024.pdf se categoriza correctamente como Medico o Financiero.",
-      "smartFolders": "Sistema Inteligente de 11 Carpetas",
-      "smartFoldersDesc": "Categorias predefinidas que funcionan para el 95% de archivos personales y profesionales: Trabajo, Personal, Financiero, Medico, Legal y mas.",
-      "oneClick": "Organizacion con Un Clic",
-      "oneClickDesc": "Transforma anos de desorden digital en orden en minutos, no horas. Sin ordenamiento manual requerido.",
-      "safeReversible": "Vista Previa y Deshacer Completo",
-      "safeReversibleDesc": "Ve exactamente donde ira cada archivo antes de que nada se mueva. ¿Cambiaste de opinion? Restaura todo instantaneamente.",
-      "privacyFirst": "Diseno Privacidad Primero",
-      "privacyFirstDesc": "Tus archivos nunca salen de tu computadora. Solo pequenos fragmentos de texto enviados a la IA. Sin cuenta requerida.",
+      "aiClassification": "Clasificacion con IA",
+      "aiClassificationDesc": "Usa Claude AI para categorizar archivos por analisis real de contenido. Un archivo llamado doc_2024_final.pdf podria ser un formulario fiscal, registro medico o contrato laboral—AI FileSense sabe la diferencia.",
+      "smartFolders": "Sistema Inteligente de 12 Carpetas",
+      "smartFoldersDesc": "Carpetas numeradas organizadas (01 Trabajo, 02 Dinero, 03 Hogar, etc.) que se ordenan consistentemente en cualquier sistema de archivos.",
+      "oneClick": "3 Niveles de Organizacion",
+      "oneClickDesc": "Elige entre Ligeramente Organizado, Mas Organizado o Completamente Organizado.",
+      "safeReversible": "Seguro y Reversible",
+      "safeReversibleDesc": "Previsualiza cada cambio antes de que suceda, con deshacer en un clic. ¿Cambiaste de opinion? Restaura todo instantaneamente.",
+      "privacyFirst": "Privacidad Primero",
+      "privacyFirstDesc": "Todo el escaneo de archivos ocurre localmente; solo pequenos fragmentos de texto se envian a la IA para clasificacion. Sin cuenta requerida.",
       "fullyBilingual": "Completamente Bilingue",
-      "fullyBilingualDesc": "Interfaz completa en ingles y espanol (Mexico). La IA entiende documentos en ambos idiomas."
+      "fullyBilingualDesc": "Soporte completo en ingles y espanol (Mexico) en toda la aplicacion."
     },
     "folders": {
-      "title": "El Sistema de 11 Carpetas",
+      "title": "El Sistema de 12 Carpetas",
       "subtitle": "Categorias predefinidas para documentos personales y profesionales",
       "work": "01 Trabajo",
-      "workDesc": "Curriculos, ofertas de trabajo, evaluaciones de desempeno, recibos de nomina, contratos laborales",
-      "personal": "02 Personal",
-      "personalDesc": "Correspondencia personal, documentos familiares, proyectos personales, administracion de vida",
-      "financial": "03 Financiero",
-      "financialDesc": "Estados de cuenta, declaraciones de impuestos, inversiones, recibos, facturas, presupuestos",
-      "medical": "04 Medico",
-      "medicalDesc": "Expedientes medicos, recetas, resultados de laboratorio, tarjetas de seguro, registros de vacunacion",
+      "workDesc": "Curriculos, ofertas de trabajo, evaluaciones de desempeno, recibos de nomina",
+      "personal": "02 Dinero",
+      "personalDesc": "Estados de cuenta, impuestos, inversiones, recibos, facturas",
+      "financial": "03 Hogar",
+      "financialDesc": "Hipoteca, renta, servicios, reparaciones, garantias",
+      "medical": "04 Salud",
+      "medicalDesc": "Expedientes medicos, recetas, resultados de laboratorio, seguros",
       "legal": "05 Legal",
-      "legalDesc": "Contratos, acuerdos, licencias, identificaciones, pasaportes, correspondencia legal",
-      "education": "06 Educacion",
-      "educationDesc": "Materiales de cursos, certificados, transcripciones, diplomas, trabajos de investigacion",
-      "creative": "07 Creativo",
-      "creativeDesc": "Archivos de diseno, proyectos de escritura, arte, briefs creativos, piezas de portafolio",
-      "technical": "08 Tecnico",
-      "technicalDesc": "Documentacion de codigo, especificaciones tecnicas, guias de sistema, archivos de configuracion",
-      "reference": "09 Referencia",
-      "referenceDesc": "Manuales, guias de como hacer, materiales de referencia, articulos guardados, investigacion",
-      "archive": "10 Archivo",
-      "archiveDesc": "Documentos antiguos, proyectos completados, registros historicos",
-      "review": "11 Revisar",
-      "reviewDesc": "Items de baja confianza para ordenamiento manual—la IA no estaba segura donde pertenecen",
+      "legalDesc": "Contratos, acuerdos, licencias, identificaciones, pasaportes",
+      "education": "06 Escuela",
+      "educationDesc": "Cursos, certificados, transcripciones, investigacion",
+      "creative": "07 Familia",
+      "creativeDesc": "Correspondencia familiar, registros de hijos, cartas personales",
+      "technical": "08 Clientes",
+      "technicalDesc": "Documentos de clientes, contratos de proveedores, facturas (freelancers/PyMEs)",
+      "reference": "09 Proyectos",
+      "referenceDesc": "Entregables de proyectos, hitos, trabajo activo",
+      "travel": "10 Viajes",
+      "travelDesc": "Itinerarios, reservaciones, pases de abordar, visas",
+      "archive": "11 Archivo",
+      "archiveDesc": "Documentos antiguos (3+ anos), proyectos completados, registros historicos",
+      "review": "12 Revisar",
+      "reviewDesc": "Items de baja confianza que necesitan clasificacion manual",
       "getStarted": "¿Listo para Organizar?",
       "getStartedDesc": "Descarga gratis y transforma tus carpetas desordenadas en orden en minutos."
     },
@@ -123,81 +125,74 @@
       "subtitle": "Organizacion inteligente que corre completamente en tu computadora"
     },
     "howItWorks": {
-      "title": "El Recorrido de 8 Pasos",
-      "folderSelection": {
-        "title": "1. Seleccion de Carpetas",
-        "description": "Elige que carpetas escanear—Escritorio, Documentos, Descargas. Comienza con la mas desordenada."
+      "title": "El Recorrido de 5 Pasos",
+      "chooseFolders": {
+        "title": "1. Elegir Carpetas",
+        "description": "Selecciona Escritorio, Documentos, Descargas o agrega carpetas personalizadas. Elige que tipos de archivo organizar (PDF, Word, Texto, PowerPoint)."
       },
-      "fileTypes": {
-        "title": "2. Tipos de Archivo",
-        "description": "Selecciona tipos de archivo a organizar: PDF, Word, PowerPoint o archivos de texto. Omite lo que no necesitas."
-      },
-      "personalization": {
-        "title": "3. Personalizacion",
-        "description": "Responde 2-3 preguntas rapidas sobre tus preferencias—profundidad de carpetas y estilo de busqueda. Toma 30 segundos."
-      },
-      "scanning": {
-        "title": "4. Escaneando",
-        "description": "AI FileSense escanea tus carpetas y extrae fragmentos de texto de documentos. Los archivos nunca salen de tu computadora."
-      },
-      "classification": {
-        "title": "5. Clasificacion con IA",
-        "description": "Claude AI analiza contenido y asigna categorias. Un archivo llamado doc123.pdf se categoriza correctamente basandose en su contenido."
-      },
-      "quickFixes": {
-        "title": "6. Ajustes Rapidos",
-        "description": "Revisa sugerencias de la IA. Responde preguntas aclaratorias para archivos de baja confianza. Tu aporte mejora la precision."
+      "scan": {
+        "title": "2. Escanear",
+        "description": "La IA analiza el contenido de archivos (extraido localmente, fragmentos enviados a la IA). Barra de progreso con mensajes de estado tranquilizadores."
       },
       "preview": {
-        "title": "7. Vista Previa",
-        "description": "Ve exactamente donde se movera cada archivo antes de confirmar. Cambia cualquier sugerencia con la que no estes de acuerdo."
+        "title": "3. Vista Previa",
+        "description": "Ve como se organizaran los archivos por categorias. Revisa resultados, excluye archivos, responde preguntas aclaratorias de la IA. Elige profundidad de organizacion."
       },
-      "apply": {
-        "title": "8. Aplicar y Exito",
-        "description": "Los archivos se mueven a Documentos/Archivos Organizados/ en carpetas numeradas. Deshacer completo—restaura cualquier cosa con un clic."
+      "organize": {
+        "title": "4. Organizar",
+        "description": "Los archivos se mueven a Documentos/Archivos Organizados/. Progreso en tiempo real con conteo de archivos. Cada movimiento registrado para deshacer."
+      },
+      "done": {
+        "title": "5. Listo",
+        "description": "Resumen de lo organizado. Acceso rapido para ver carpetas organizadas. Deshacer con un clic disponible. Continua al Panel para gestion continua."
       }
     },
     "folders": {
-      "title": "El Sistema de 11 Carpetas",
+      "title": "El Sistema de 12 Carpetas",
       "subtitle": "Categorias predefinidas que funcionan para el 95% de archivos",
-      "work": { "name": "01 Trabajo", "desc": "Curriculos, ofertas de trabajo, evaluaciones de desempeno, recibos de nomina, contratos laborales" },
-      "personal": { "name": "02 Personal", "desc": "Correspondencia personal, documentos familiares, proyectos personales, administracion de vida" },
-      "financial": { "name": "03 Financiero", "desc": "Estados de cuenta, declaraciones de impuestos, inversiones, recibos, facturas, presupuestos" },
-      "medical": { "name": "04 Medico", "desc": "Expedientes medicos, recetas, resultados de laboratorio, tarjetas de seguro, registros de vacunacion" },
-      "legal": { "name": "05 Legal", "desc": "Contratos, acuerdos, licencias, identificaciones, pasaportes, correspondencia legal" },
-      "education": { "name": "06 Educacion", "desc": "Materiales de cursos, certificados, transcripciones, diplomas, trabajos de investigacion" },
-      "creative": { "name": "07 Creativo", "desc": "Archivos de diseno, proyectos de escritura, arte, briefs creativos, piezas de portafolio" },
-      "technical": { "name": "08 Tecnico", "desc": "Documentacion de codigo, especificaciones tecnicas, guias de sistema, archivos de configuracion" },
-      "reference": { "name": "09 Referencia", "desc": "Manuales, guias de como hacer, materiales de referencia, articulos guardados, investigacion" },
-      "archive": { "name": "10 Archivo", "desc": "Documentos antiguos, proyectos completados, registros historicos" },
-      "review": { "name": "11 Revisar", "desc": "Items de baja confianza para ordenamiento manual—la IA no estaba segura donde pertenecen" }
+      "work": { "name": "01 Trabajo", "desc": "Curriculos, ofertas de trabajo, evaluaciones de desempeno, recibos de nomina" },
+      "personal": { "name": "02 Dinero", "desc": "Estados de cuenta, impuestos, inversiones, recibos, facturas" },
+      "financial": { "name": "03 Hogar", "desc": "Hipoteca, renta, servicios, reparaciones, garantias" },
+      "medical": { "name": "04 Salud", "desc": "Expedientes medicos, recetas, resultados de laboratorio, seguros" },
+      "legal": { "name": "05 Legal", "desc": "Contratos, acuerdos, licencias, identificaciones, pasaportes" },
+      "education": { "name": "06 Escuela", "desc": "Cursos, certificados, transcripciones, investigacion" },
+      "creative": { "name": "07 Familia", "desc": "Correspondencia familiar, registros de hijos, cartas personales" },
+      "technical": { "name": "08 Clientes", "desc": "Documentos de clientes, contratos de proveedores, facturas (freelancers/PyMEs)" },
+      "reference": { "name": "09 Proyectos", "desc": "Entregables de proyectos, hitos, trabajo activo" },
+      "travel": { "name": "10 Viajes", "desc": "Itinerarios, reservaciones, pases de abordar, visas" },
+      "archive": { "name": "11 Archivo", "desc": "Documentos antiguos (3+ anos), proyectos completados, registros historicos" },
+      "review": { "name": "12 Revisar", "desc": "Items de baja confianza que necesitan clasificacion manual" }
     },
     "differentiators": {
       "title": "Que Hace Diferente a AI FileSense",
       "subtitle": "Hecho para personas que han intentado y fallado en organizar manualmente",
       "contentBased": {
-        "title": "La IA Lee Contenido, No Solo Nombres",
-        "description": "Un archivo llamado doc123.pdf se categoriza correctamente basandose en su contenido. Facturas, contratos, registros medicos—todos identificados automaticamente."
-      },
-      "zeroConfig": {
-        "title": "Cero Configuracion",
-        "description": "Descarga, instala, ejecuta. Sin claves API que configurar, sin conocimiento tecnico requerido. Solo haz clic y organiza."
-      },
-      "safeByDefault": {
-        "title": "Seguro por Defecto",
-        "description": "Previsualiza todo antes de mover. Deshaz en cualquier momento. Los archivos se mueven, nunca se eliminan. Cada accion se registra."
+        "title": "Inteligencia Basada en Contenido",
+        "description": "A diferencia de organizadores simples que solo miran extensiones o fechas, AI FileSense lee el contenido real de tus documentos. Un archivo llamado doc_2024_final.pdf podria ser un formulario fiscal, registro medico o contrato laboral—AI FileSense sabe la diferencia."
       },
       "trulyBilingual": {
         "title": "Verdaderamente Bilingue",
-        "description": "Soporte completo en ingles y espanol (Mexico) en toda la aplicacion. Documentos en cualquier idioma se entienden y categorizan correctamente."
+        "description": "No solo una interfaz traducida—toda la experiencia esta disenada para hablantes de ingles y espanol (Mexico). La IA entiende documentos en ambos idiomas. Los nombres de categorias funcionan en ambas culturas. Cambio de idioma instantaneo."
+      },
+      "humanInTheLoop": {
+        "title": "Diseno Humano en el Ciclo",
+        "description": "La IA sugiere, tu decides. Previsualiza cada cambio antes de que suceda. Excluye archivos que no quieres mover. Responde preguntas aclaratorias para archivos ambiguos. Deshacer completo en cualquier momento."
       },
       "privacyFirst": {
-        "title": "Arquitectura Privacidad Primero",
-        "description": "Los archivos nunca salen de tu computadora. Solo pequenos fragmentos de texto enviados a la IA. Tu nombre de usuario se elimina de las rutas."
+        "title": "Arquitectura que Respeta tu Privacidad",
+        "description": "Los archivos nunca salen de tu computadora. Solo pequenos fragmentos de texto (primera pagina/100 lineas) enviados a la IA. Todo el escaneo e indexacion ocurre localmente. La base de datos SQLite permanece en tu maquina."
       },
-      "incremental": {
-        "title": "Procesamiento Incremental",
-        "description": "Solo procesa archivos nuevos o modificados en ejecuciones posteriores. Ejecutalo semanalmente para mantener todo organizado automaticamente."
+      "smartFolders": {
+        "title": "Estructura de Carpetas Inteligente",
+        "description": "El sistema numerado de 12 carpetas (01-12) garantiza orden consistente en cualquier sistema de archivos, categorias claras por area de vida, subcarpetas para organizacion detallada y una carpeta Revisar para items inciertos."
+      },
+      "crashRecovery": {
+        "title": "Recuperacion de Fallos y Seguridad",
+        "description": "Registro de transacciones para todos los movimientos de archivos. Deteccion y recuperacion de sesiones incompletas. Modo de prueba para previsualizar sin mover. Cada operacion es reversible."
+      },
+      "personalized": {
+        "title": "Personalizado a Tu Forma de Trabajar",
+        "description": "Diferentes profundidades de carpetas segun preferencia. El estilo de organizacion se adapta a tus roles. Opciones por cronologia, tema o proyecto. Recuerda tus elecciones para sesiones futuras."
       }
     },
     "fileTypes": {
@@ -235,17 +230,17 @@
       "phase1": {
         "title": "Fase 1",
         "status": "Completada",
-        "description": "Funciones principales: clasificacion con IA, sistema de 11 carpetas, vista previa y deshacer, soporte bilingue, recuperacion de fallos, cero configuracion."
+        "description": "Funciones principales: clasificacion con IA, sistema de 12 carpetas, vista previa y deshacer, soporte bilingue, recuperacion de fallos, cero configuracion."
       },
       "phase2": {
         "title": "Fase 2",
         "status": "En Desarrollo",
-        "description": "Soporte para Excel/CSV, clasificacion de imagenes, vigilante de archivos para auto-organizar, motor de reglas personalizadas, filtrado avanzado."
+        "description": "Soporte para hojas de calculo Excel/CSV, clasificacion de archivos de imagen, organizacion automatica de nuevos archivos (vigilante), reglas de categorias personalizadas, organizacion programada."
       },
       "phase3": {
         "title": "Fase 3",
         "status": "Planeada",
-        "description": "Soporte para macOS y Linux, opciones de sincronizacion en la nube, funciones para compartir en equipo, integraciones empresariales."
+        "description": "Soporte para macOS, soporte para Linux, opciones de sincronizacion en la nube, compartir en equipo/familia."
       }
     },
     "technical": {
@@ -305,7 +300,7 @@
     "platform": "Windows 10/11 (64-bit)",
     "features": {
       "local": "Archivos nunca salen de tu computadora",
-      "folders": "11 carpetas inteligentes",
+      "folders": "12 carpetas inteligentes",
       "undo": "Deshacer completo"
     },
     "requirements": {
@@ -367,62 +362,44 @@
         "title": "Organizado en Minutos",
         "subtitle": "Desde la descarga hasta archivos organizados—esto es exactamente lo que puedes esperar."
       },
-      "overview": "AI FileSense te guia a traves de 8 simples pasos. La mayoria de las personas estan organizando archivos en minutos despues de descargar.",
+      "overview": "AI FileSense te guia a traves de 5 simples pasos. La mayoria de las personas estan organizando archivos en minutos despues de descargar.",
       "timeline": {
-        "title": "El Flujo de 8 Pasos",
-        "step1": "Carpetas",
-        "step2": "Archivos",
-        "step3": "Personalizar",
-        "step4": "Escanear",
-        "step5": "Clasificar",
-        "step6": "Ajustar",
-        "step7": "Vista Previa",
-        "step8": "Listo"
+        "title": "El Flujo de 5 Pasos",
+        "step1": "Elegir",
+        "step2": "Escanear",
+        "step3": "Vista Previa",
+        "step4": "Organizar",
+        "step5": "Listo"
       },
       "steps": {
-        "selectFolders": {
+        "chooseFolders": {
           "number": "1",
-          "title": "Seleccion de Carpetas",
-          "description": "Elige que carpetas escanear: Escritorio, Documentos o Descargas. Comienza con la mas desordenada para ver resultados inmediatos."
+          "title": "Elegir Carpetas",
+          "description": "Selecciona Escritorio, Documentos, Descargas o agrega carpetas personalizadas. Elige que tipos de archivo organizar (PDF, Word, Texto, PowerPoint)."
         },
-        "fileTypes": {
+        "scan": {
           "number": "2",
-          "title": "Tipos de Archivo",
-          "description": "Selecciona tipos de archivo a organizar: PDF, Word, PowerPoint o archivos de texto. Omite tipos de archivo que quieras dejar solos."
-        },
-        "personalization": {
-          "number": "3",
-          "title": "Personalizacion",
-          "description": "Responde 2-3 preguntas rapidas sobre tus preferencias—profundidad de carpetas y estilo de busqueda. Toma aproximadamente 30 segundos."
-        },
-        "scanning": {
-          "number": "4",
-          "title": "Escaneando",
-          "description": "AI FileSense escanea las carpetas seleccionadas y extrae fragmentos de texto de documentos. Los archivos permanecen en tu computadora—solo pequenos fragmentos se envian a la IA."
-        },
-        "classification": {
-          "number": "5",
-          "title": "Clasificacion con IA",
-          "description": "Claude AI analiza contenido y asigna categorias. Un archivo llamado doc123.pdf se categoriza correctamente basandose en su contenido."
-        },
-        "quickFixes": {
-          "number": "6",
-          "title": "Ajustes Rapidos",
-          "description": "Revisa sugerencias de la IA y responde preguntas aclaratorias para archivos de baja confianza. Tu aporte mejora la precision de clasificacion."
+          "title": "Escanear",
+          "description": "La IA analiza el contenido de archivos (extraido localmente, fragmentos enviados a la IA). Barra de progreso con mensajes de estado tranquilizadores."
         },
         "preview": {
-          "number": "7",
+          "number": "3",
           "title": "Vista Previa",
-          "description": "Ve exactamente donde se movera cada archivo antes de confirmar. Cambia cualquier sugerencia con la que no estes de acuerdo. Nada se mueve hasta que apruebes."
+          "description": "Ve como se organizaran los archivos por categorias. Revisa resultados, excluye archivos, responde preguntas aclaratorias de la IA. Elige profundidad de organizacion (ligera, moderada, detallada)."
         },
-        "success": {
-          "number": "8",
-          "title": "Aplicar y Exito",
-          "description": "Los archivos se mueven a Documentos/Archivos Organizados/ en carpetas numeradas (01-11). Usa el Registro de Actividad para deshacer cualquier cambio con un clic."
+        "organize": {
+          "number": "4",
+          "title": "Organizar",
+          "description": "Los archivos se mueven a Documentos/Archivos Organizados/. Progreso en tiempo real con conteo de archivos. Cada movimiento registrado para deshacer."
+        },
+        "done": {
+          "number": "5",
+          "title": "Listo",
+          "description": "Resumen de lo organizado. Acceso rapido para ver carpetas organizadas. Deshacer con un clic disponible. Continua al Panel para gestion continua."
         }
       },
       "folders": {
-        "title": "El Sistema de 11 Carpetas",
+        "title": "El Sistema de 12 Carpetas",
         "description": "AI FileSense organiza tus documentos en estas categorias predefinidas:"
       },
       "activityLog": {
@@ -479,25 +456,25 @@
     },
     "questions": {
       "q1": "¿Mis datos estan seguros? ¿Mis archivos se suben a algun lado?",
-      "a1": "Tus archivos nunca salen de tu computadora. AI FileSense solo envia pequenos fragmentos de texto (~500 caracteres) a la IA para clasificacion. El contenido completo nunca se transmite. Tu nombre de usuario se elimina de las rutas de archivo para privacidad adicional.",
+      "a1": "Tus archivos nunca salen de tu computadora. AI FileSense solo envia pequenos fragmentos de texto (primera pagina de PDFs, primeras 100 lineas de archivos de texto) a la IA para clasificacion. La IA nunca ve tus documentos completos, y ningun archivo se sube a ningun servidor.",
       "q2": "¿Que pasa si no me gusta como se organizaron los archivos?",
-      "a2": "Cada movimiento de archivo se registra con la ubicacion original y nueva. Puedes deshacer cualquier movimiento individual, deshacer una sesion completa o revertir todo al estado original. Incluso si la aplicacion falla en medio de la organizacion, puedes recuperarte completamente.",
+      "a2": "Deshacer completo siempre esta disponible. Haz clic en \"Deshacer organizacion\" en la pantalla de Exito o el Panel, y todos los archivos regresan a sus ubicaciones originales instantaneamente. Cada movimiento de archivo se registra, asi que nada se pierde.",
       "q3": "¿Por que algunos archivos van a la carpeta 'Revisar'?",
-      "a3": "Cuando la IA no esta segura de donde pertenece un archivo, va a la carpeta Revisar (11 Revisar). Esto mantiene tu organizacion limpia mientras te permite tomar la decision final sobre documentos ambiguos.",
+      "a3": "La carpeta Revisar (12 Revisar) contiene archivos donde la IA no tenia confianza sobre la categoria correcta. Esto es intencional—en lugar de adivinar mal, AI FileSense te deja decidir. Puedes mover estos archivos manualmente o volver a organizar despues de agregar mas contexto.",
       "q4": "¿Puedo excluir ciertos archivos de ser organizados?",
-      "a4": "Si. Durante la fase de previsualizacion, puedes deseleccionar cualquier archivo que quieras mantener en su lugar. Tambien puedes excluir carpetas completas o tipos de archivo del escaneo en la configuracion inicial.",
+      "a4": "¡Si! En el Paso 3 (Vista Previa), puedes desmarcar archivos especificos para excluirlos, excluir carpetas/categorias completas, o activar el modo de prueba para previsualizar sin mover nada.",
       "q5": "¿AI FileSense funciona con idiomas distintos al ingles?",
-      "a5": "¡Si! AI FileSense es completamente bilingue con soporte total en ingles y espanol (Mexico). La IA puede leer y categorizar correctamente documentos escritos en cualquiera de los dos idiomas.",
+      "a5": "¡Si! AI FileSense es completamente bilingue (ingles y espanol/Mexico). La IA tambien puede clasificar documentos escritos en espanol. Cambia de idioma en cualquier momento usando el selector de idioma en el encabezado.",
       "q6": "¿Que tipos de archivo son soportados?",
-      "a6": "AI FileSense extrae contenido de archivos PDF (primera pagina), documentos Word (.doc, .docx), PowerPoint (.pptx), y archivos de texto (.txt, .md, .log, .csv). Cualquier archivo puede ser clasificado solo por nombre de archivo.",
+      "a6": "La Fase 1 soporta documentos PDF (.pdf), Microsoft Word (.doc, .docx), presentaciones PowerPoint (.pptx) y archivos de texto (.txt, .md, .log, .csv). Proximamente: hojas de calculo Excel (.xlsx), imagenes y mas.",
       "q7": "¿A donde van mis archivos organizados?",
-      "a7": "Los archivos se mueven a Documentos/Archivos Organizados/ en 11 carpetas numeradas (01 Trabajo hasta 11 Revisar). Los prefijos numerados mantienen las carpetas en orden logico en el Explorador de Archivos.",
+      "a7": "Todos los archivos se mueven a Documentos/Archivos Organizados/ con subcarpetas numeradas (01 Trabajo, 02 Dinero, etc.). Los prefijos numerados aseguran que las carpetas siempre aparezcan en el mismo orden sin importar la configuracion de tu explorador de archivos.",
       "q8": "¿Puedo ejecutar AI FileSense de nuevo despues de organizar?",
-      "a8": "Absolutamente. AI FileSense solo procesa archivos nuevos o modificados en ejecuciones repetidas. Ejecutalo semanalmente para mantener todo organizado automaticamente.",
+      "a8": "¡Absolutamente! Haz clic en el logo de AI FileSense o usa \"Organizar de Nuevo\" en el Panel. La aplicacion automaticamente omite archivos que ya estan en la carpeta Archivos Organizados, asi que solo procesa archivos nuevos.",
       "q9": "¿Que pasa si la IA categoriza un archivo incorrectamente?",
-      "a9": "Siempre previsualizas todos los cambios antes de que sucedan. Simplemente cambia la carpeta sugerida durante la previsualizacion. Si notas un error despues de organizar, usa el Registro de Actividad para mover el archivo donde quieras.",
+      "a9": "Tienes multiples oportunidades para corregir esto: En el Paso 3 (Vista Previa), la IA hace preguntas aclaratorias sobre archivos ambiguos y puedes excluir archivos de la organizacion. Despues de organizar, mueve archivos manualmente o usa Deshacer. La IA aprende de las preguntas aclaratorias que respondes, mejorando la precision para archivos similares.",
       "q10": "¿Se requiere conexion a internet?",
-      "a10": "Se necesita conexion a internet para la clasificacion de IA. Sin embargo, escanear archivos, revisar cambios y deshacer movimientos funcionan completamente sin conexion.",
+      "a10": "Si, para la clasificacion con IA. El escaneo de archivos ocurre localmente, pero clasificar archivos requiere enviar fragmentos al servicio de Claude AI. Sin internet, no puedes ejecutar un nuevo escaneo, pero puedes acceder a archivos previamente organizados.",
       "q11": "¿Necesito configurar una clave API o crear una cuenta?",
       "a11": "No. AI FileSense funciona de inmediato sin configuracion requerida. Sin claves API, sin cuentas, sin registro. Solo descarga y ejecuta."
     },

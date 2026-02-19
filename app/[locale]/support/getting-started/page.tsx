@@ -22,14 +22,11 @@ export default async function GettingStartedPage({
   const homeT = await getTranslations('home')
 
   const steps = [
-    'selectFolders',
-    'fileTypes',
-    'personalization',
-    'scanning',
-    'classification',
-    'quickFixes',
+    'chooseFolders',
+    'scan',
     'preview',
-    'success',
+    'organize',
+    'done',
   ] as const
 
   const folders = [
@@ -42,6 +39,7 @@ export default async function GettingStartedPage({
     { key: 'creative', name: homeT('folders.creative'), desc: homeT('folders.creativeDesc') },
     { key: 'technical', name: homeT('folders.technical'), desc: homeT('folders.technicalDesc') },
     { key: 'reference', name: homeT('folders.reference'), desc: homeT('folders.referenceDesc') },
+    { key: 'travel', name: homeT('folders.travel'), desc: homeT('folders.travelDesc') },
     { key: 'archive', name: homeT('folders.archive'), desc: homeT('folders.archiveDesc') },
     { key: 'review', name: homeT('folders.review'), desc: homeT('folders.reviewDesc') },
     { key: 'getStarted', name: homeT('folders.getStarted'), desc: homeT('folders.getStartedDesc'), isSpecial: true },
@@ -79,15 +77,12 @@ export default async function GettingStartedPage({
                 t('timeline.step3'),
                 t('timeline.step4'),
                 t('timeline.step5'),
-                t('timeline.step6'),
-                t('timeline.step7'),
-                t('timeline.step8'),
               ].map((step, i) => (
                 <div key={i} className="flex items-center">
                   <span className="px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
                     {step}
                   </span>
-                  {i < 7 && (
+                  {i < 4 && (
                     <span className="hidden sm:block mx-2 text-foreground/30">&rarr;</span>
                   )}
                 </div>
@@ -123,7 +118,7 @@ export default async function GettingStartedPage({
         </Container>
       </Section>
 
-      {/* 11 Smart Folders */}
+      {/* 12 Smart Folders */}
       <Section spacing="lg">
         <Container>
           <div className="text-center mb-10">

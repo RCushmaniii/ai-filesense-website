@@ -24,7 +24,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'Features',
-  description: 'Discover how AI FileSense organizes your files in 4 simple steps with 11 smart folders—all 100% local and private.',
+  description: 'Discover how AI FileSense organizes your files in 5 simple steps with 12 smart folders—all 100% local and private.',
 }
 
 export default async function FeaturesPage({
@@ -39,33 +39,13 @@ export default async function FeaturesPage({
   const steps = [
     {
       icon: <FolderIcon className="w-8 h-8" />,
-      title: t('howItWorks.folderSelection.title'),
-      desc: t('howItWorks.folderSelection.description'),
+      title: t('howItWorks.chooseFolders.title'),
+      desc: t('howItWorks.chooseFolders.description'),
     },
     {
       icon: <SearchIcon className="w-8 h-8" />,
-      title: t('howItWorks.fileTypes.title'),
-      desc: t('howItWorks.fileTypes.description'),
-    },
-    {
-      icon: <UserIcon className="w-8 h-8" />,
-      title: t('howItWorks.personalization.title'),
-      desc: t('howItWorks.personalization.description'),
-    },
-    {
-      icon: <EyeIcon className="w-8 h-8" />,
-      title: t('howItWorks.scanning.title'),
-      desc: t('howItWorks.scanning.description'),
-    },
-    {
-      icon: <LightbulbIcon className="w-8 h-8" />,
-      title: t('howItWorks.classification.title'),
-      desc: t('howItWorks.classification.description'),
-    },
-    {
-      icon: <CheckSimpleIcon className="w-8 h-8" />,
-      title: t('howItWorks.quickFixes.title'),
-      desc: t('howItWorks.quickFixes.description'),
+      title: t('howItWorks.scan.title'),
+      desc: t('howItWorks.scan.description'),
     },
     {
       icon: <EyeIcon className="w-8 h-8" />,
@@ -73,9 +53,14 @@ export default async function FeaturesPage({
       desc: t('howItWorks.preview.description'),
     },
     {
+      icon: <CheckSimpleIcon className="w-8 h-8" />,
+      title: t('howItWorks.organize.title'),
+      desc: t('howItWorks.organize.description'),
+    },
+    {
       icon: <CheckCircleIcon className="w-8 h-8" />,
-      title: t('howItWorks.apply.title'),
-      desc: t('howItWorks.apply.description'),
+      title: t('howItWorks.done.title'),
+      desc: t('howItWorks.done.description'),
     },
   ]
 
@@ -89,6 +74,7 @@ export default async function FeaturesPage({
     { key: 'creative', name: t('folders.creative.name'), desc: t('folders.creative.desc') },
     { key: 'technical', name: t('folders.technical.name'), desc: t('folders.technical.desc') },
     { key: 'reference', name: t('folders.reference.name'), desc: t('folders.reference.desc') },
+    { key: 'travel', name: t('folders.travel.name'), desc: t('folders.travel.desc') },
     { key: 'archive', name: t('folders.archive.name'), desc: t('folders.archive.desc') },
     { key: 'review', name: t('folders.review.name'), desc: t('folders.review.desc') },
     { key: 'getStarted', name: homeT('folders.getStarted'), desc: homeT('folders.getStartedDesc'), isSpecial: true },
@@ -101,19 +87,14 @@ export default async function FeaturesPage({
       desc: t('differentiators.contentBased.description'),
     },
     {
-      icon: <CheckSimpleIcon className="w-8 h-8" />,
-      title: t('differentiators.zeroConfig.title'),
-      desc: t('differentiators.zeroConfig.description'),
-    },
-    {
-      icon: <UndoIcon className="w-8 h-8" />,
-      title: t('differentiators.safeByDefault.title'),
-      desc: t('differentiators.safeByDefault.description'),
-    },
-    {
       icon: <GlobeIcon className="w-8 h-8" />,
       title: t('differentiators.trulyBilingual.title'),
       desc: t('differentiators.trulyBilingual.description'),
+    },
+    {
+      icon: <UserIcon className="w-8 h-8" />,
+      title: t('differentiators.humanInTheLoop.title'),
+      desc: t('differentiators.humanInTheLoop.description'),
     },
     {
       icon: <LockIcon className="w-8 h-8" />,
@@ -122,8 +103,18 @@ export default async function FeaturesPage({
     },
     {
       icon: <FolderIcon className="w-8 h-8" />,
-      title: t('differentiators.incremental.title'),
-      desc: t('differentiators.incremental.description'),
+      title: t('differentiators.smartFolders.title'),
+      desc: t('differentiators.smartFolders.description'),
+    },
+    {
+      icon: <UndoIcon className="w-8 h-8" />,
+      title: t('differentiators.crashRecovery.title'),
+      desc: t('differentiators.crashRecovery.description'),
+    },
+    {
+      icon: <SparklesIcon className="w-8 h-8" />,
+      title: t('differentiators.personalized.title'),
+      desc: t('differentiators.personalized.description'),
     },
   ]
 
@@ -179,14 +170,14 @@ export default async function FeaturesPage({
         variant="glow"
       />
 
-      {/* How It Works - 4 Steps */}
+      {/* How It Works - 5 Steps */}
       <Section spacing="lg">
         <Container>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('howItWorks.title')}</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
             {steps.map((step, index) => (
               <div key={index} className="p-4 rounded-xl bg-foreground/[0.02] border border-foreground/10">
                 <div className="flex items-center gap-3 mb-3">
@@ -205,7 +196,7 @@ export default async function FeaturesPage({
         </Container>
       </Section>
 
-      {/* 11 Smart Folders */}
+      {/* 12 Smart Folders */}
       <Section spacing="lg" className="bg-foreground/[0.02]">
         <Container>
           <div className="text-center mb-12">

@@ -184,7 +184,7 @@ export default async function PricingPage({
                       </li>
                       <li className="flex gap-2">
                         <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
-                        11 smart folder categories
+                        12 smart folder categories
                       </li>
                       <li className="flex gap-2">
                         <CheckIcon className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
