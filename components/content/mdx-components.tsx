@@ -1,8 +1,14 @@
 import Image from 'next/image'
 import { Link } from '@/components/ui/link'
 import { cn } from '@/lib/utils'
+import { ImageSlider } from '@/components/portfolio/image-slider'
+import { VideoBrief } from '@/components/portfolio/video-brief'
 
 export const mdxComponents = {
+  // Custom portfolio components
+  ImageSlider,
+  VideoBrief,
+
   // Headings
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1

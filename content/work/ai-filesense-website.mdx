@@ -1,0 +1,124 @@
+---
+title: 'AI FileSense Website'
+description: 'A production-grade marketing platform, support hub, and software distribution system for a Windows desktop application — bilingual, SEO-optimized, and built to convert.'
+date: '2026-02-18'
+client: 'CushLabs AI Services'
+role: 'Project Manager & Product Owner'
+tech: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'next-intl', 'Resend', 'Framer Motion', 'Vercel']
+coverImage: '/images/portfolio/ai-filesense-website-thumb.jpg'
+draft: false
+---
+
+<VideoBrief
+  poster="/images/portfolio/AI-FileSense-Website-Brief.jpg"
+  videoUrl="/videos/AI_FileSense_Website_Brief.mp4"
+  alt="AI FileSense Website — Project Brief"
+/>
+
+## The Problem
+
+Most indie software developers and small businesses ship a desktop app and then struggle with everything that comes after. They end up with a bare GitHub releases page, a single-page HTML site, or a WordPress blog they'll never update. The result:
+
+- **No discoverability** — Google can't index what doesn't exist
+- **No trust signals** — visitors land on a generic page and bounce
+- **No bilingual reach** — an entire market written off because "we'll add Spanish later"
+- **No support system** — users email a personal Gmail, questions go unanswered
+- **No conversion path** — a download link exists but nothing explains *why* someone should click it
+
+AI FileSense needed more than a landing page. It needed a complete product launch platform.
+
+## The Solution
+
+We built a **17-page marketing and support website** that handles everything between "I built an app" and "I have a business."
+
+<ImageSlider images={[
+  { src: "/images/portfolio/ai-filesense-website-01.png", alt: "Homepage hero with video explainer and download CTA" },
+  { src: "/images/portfolio/ai-filesense-website-02.png", alt: "How It Works — 3-step process breakdown" },
+  { src: "/images/portfolio/ai-filesense-website-03.png", alt: "Features section with trust signals" },
+  { src: "/images/portfolio/ai-filesense-website-04.png", alt: "The 12-Folder Smart System overview" },
+  { src: "/images/portfolio/ai-filesense-website-05.png", alt: "Features page — differentiators and competitive advantages" },
+  { src: "/images/portfolio/ai-filesense-website-06.png", alt: "Support hub with Getting Started guide" },
+  { src: "/images/portfolio/ai-filesense-website-07.png", alt: "Download page with system requirements and quick-start" },
+  { src: "/images/portfolio/ai-filesense-website-08.png", alt: "Dark mode — full theme support across all pages" }
+]} />
+
+### Full Marketing Funnel
+
+Seven sections covering every page a real software product needs: Home, Features, Pricing, Download, Support (FAQ + Getting Started + Contact), About, Blog, Changelog, Privacy, and Terms. Each page is designed to build trust and drive downloads.
+
+### Bilingual From Day One (EN + ES-MX)
+
+Every string lives in structured JSON translation files. Locale-based URL routing (`/en/features`, `/es/features`). The sitemap generates `hreflang` alternates for every page in both languages. Google indexes both versions and serves the right one to the right audience.
+
+### SEO That Actually Works
+
+- Dynamic metadata per page (title, description, Open Graph, Twitter cards)
+- Auto-generated XML sitemap with priorities, change frequencies, and `hreflang` alternates
+- Auto-generated `robots.txt`
+- Canonical URLs with locale-aware alternates
+- Semantic HTML throughout
+
+### Working Contact & Lead Capture System
+
+A production contact form with client-side validation (React Hook Form + Zod), server-side validation (Server Actions — no exposed API endpoints), honeypot spam protection, and transactional email delivery via Resend with professionally designed React Email templates.
+
+### Complete Support Hub
+
+- **Getting Started guide** — 5-step walkthrough with the full folder system explained
+- **FAQ** — 11 questions covering data safety, undo, file types, bilingual support, internet requirements
+- **Contact form** — validated, spam-protected, email-delivering
+
+### Software Distribution
+
+The download page includes system requirements (minimum vs. recommended), a 5-step quick-start guide, feature trust badges, and links to support resources. The installer is hosted on GitHub Releases — free, reliable, and versioned.
+
+## Technical Highlights
+
+### Architecture
+
+- **Next.js 14 App Router** — Server Components by default, client-only where needed
+- **TypeScript strict mode** — no implicit `any`, no shortcuts
+- **Tailwind CSS** with CSS variables and a `cn()` utility for a consistent, themeable design system
+- **Dark mode** — class-based with localStorage persistence and FOUC prevention
+- **Component library** — Button (4 variants), Card, Badge, Container (4 sizes), Section (4 spacings), PageHero (multiple background variants)
+- **Accessibility** — skip-to-content link, semantic HTML, keyboard navigation, WCAG AA contrast
+
+### Performance
+
+Lighthouse scores from production deployment:
+
+| Category | Score |
+|---|---|
+| Performance | 100 |
+| Best Practices | 100 |
+| SEO | 92 |
+| Accessibility | 92 |
+
+Core Web Vitals: FCP 0.3s, LCP 0.4s, TBT 0ms, CLS 0.
+
+### Security
+
+- Honeypot field on contact form for spam protection
+- Zod schema validation on all form inputs (client + server)
+- Server Actions for form processing (no exposed API routes)
+- Environment variables for all sensitive configuration
+
+## Results
+
+| Metric | Outcome |
+|---|---|
+| Pages | 17 across 7 sections |
+| Languages | 2 (English + Spanish MX) |
+| Lighthouse Performance | 100/100 |
+| First Contentful Paint | 0.3s |
+| Translation strings | 500+ per language |
+| Contact form | Validated, spam-protected, email-delivering |
+| SEO | Auto-generated sitemap, OG cards, `hreflang` alternates |
+
+## Why It Matters
+
+This website is the difference between "I built an app" and "I have a business." It handles discoverability, trust, conversion, support, and distribution — the parts most solo developers and small teams skip. The parts that determine whether anyone actually downloads the product.
+
+---
+
+Interested in a similar product launch platform? [Get in touch](/contact) to discuss your project.
