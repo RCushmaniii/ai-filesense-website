@@ -5,44 +5,41 @@ portfolio_priority: 2
 portfolio_featured: true
 
 # === CARD DISPLAY ===
-title: 'AI FileSense Website'
-tagline: 'Marketing website for AI FileSense - An AI-powered local file organization system for Windows. Landing page, downloads, privacy policy, terms of service, and changelog.'
-slug: 'ai-filesense-website'
-category: 'Marketing'
+title: "AI FileSense Website"
+tagline: "Marketing website for AI FileSense - An AI-powered local file organization system for Windows. Landing page, downloads, privacy policy, terms of service, and changelog."
+slug: "ai-filesense-website"
+category: "Marketing"
 tech_stack:
-  - 'TypeScript'
-  - 'Next.js 14'
-  - 'Tailwind CSS'
-  - 'next-intl'
-  - 'React Hook Form'
-  - 'Zod'
-  - 'Resend'
-thumbnail: ''
-status: 'Production'
+  - "TypeScript"
+  - "Next.js 14"
+  - "Tailwind CSS"
+  - "next-intl"
+  - "React Hook Form"
+  - "Zod"
+  - "Resend"
+status: "Production"
 
 # === DETAIL PAGE ===
-problem: 'Finally organize your Desktop, Documents, and Downloads without uploading anything to the cloud. Smart AI classification that respects your privacy.'
-solution: 'Your documents, finally organized.'
+problem: "Finally organize your Desktop, Documents, and Downloads without uploading anything to the cloud. Smart AI classification that respects your privacy."
+solution: "Your documents, finally organized."
 key_features:
-  - 'How It Works'
-  - 'Built for Privacy, Designed for You'
-  - '12 Smart Folders'
-  - 'Ready to Get Organized?'
-metrics: []
+  - "How It Works"
+  - "Built for Privacy, Designed for You"
+  - "12 Smart Folders"
+  - "Ready to Get Organized?"
 
 # === LINKS ===
-demo_url: 'https://ai-filesense-website.vercel.app/'
-live_url: 'https://ai-filesense-website.vercel.app'
+demo_url: "https://ai-filesense-website.vercel.app/"
+live_url: "https://ai-filesense-website.vercel.app"
 
 # === OPTIONAL ===
-hero_images: []
 tags:
-  - 'ai'
-  - 'claude-ai'
-  - 'file-organization'
-  - 'file-organizer'
-  - 'i18n'
-date_completed: '2026-01'
+  - "ai"
+  - "claude-ai"
+  - "file-organization"
+  - "file-organizer"
+  - "i18n"
+date_completed: "2026-01"
 ---
 
 Marketing website for AI FileSense, a Windows desktop application that uses Claude AI to intelligently organize files into a 12-folder system based on actual document content. The site serves as the primary customer-facing hub for product information, downloads, and support.
