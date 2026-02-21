@@ -6,7 +6,7 @@ portfolio_featured: true
 
 # === CARD DISPLAY ===
 title: "AI FileSense Website"
-tagline: "Production-grade bilingual marketing platform and software distribution system for a Windows desktop app"
+tagline: "Bilingual marketing site with Lighthouse 100 and lead capture"
 slug: "ai-filesense-website"
 category: "Marketing"
 tech_stack:
@@ -14,11 +14,7 @@ tech_stack:
   - "TypeScript"
   - "Tailwind CSS"
   - "next-intl"
-  - "React Hook Form"
-  - "Zod"
   - "Resend"
-  - "Framer Motion"
-  - "Vercel"
 thumbnail: "/images/portfolio/ai-filesense-website-thumb.jpg"
 status: "Production"
 
@@ -28,9 +24,8 @@ solution: "A 17-page bilingual marketing and support website that handles everyt
 key_features:
   - "17 pages across 7 sections — full marketing funnel from homepage to terms of service"
   - "Bilingual from day one (EN + ES-MX) — locale-based routing with hreflang sitemap alternates"
-  - "Working contact/lead capture — Zod + React Hook Form + Server Actions + Resend email delivery + honeypot spam protection"
+  - "Working contact/lead capture — Zod + React Hook Form + Server Actions + Resend + honeypot spam protection"
   - "Complete support hub — Getting Started guide, 11-question FAQ, validated contact form"
-  - "Software distribution page — system requirements, quick-start walkthrough, GitHub Releases integration"
   - "Production SEO — dynamic metadata, auto-generated sitemap, Open Graph cards, canonical URLs"
 
 # === MEDIA: PORTFOLIO SLIDES ===
@@ -71,9 +66,8 @@ live_url: "https://ai-filesense-website.vercel.app"
 # === OPTIONAL ===
 metrics:
   - "17 pages across 7 sections covering the full product lifecycle"
-  - "500+ translation strings per language (EN + ES-MX)"
   - "Lighthouse 100 Performance, 100 Best Practices, 92 SEO, 92 Accessibility"
-  - "0.3s First Contentful Paint, 0.4s Largest Contentful Paint, 0ms Total Blocking Time"
+  - "0.3s FCP, 0.4s LCP, 0ms TBT — zero layout shift"
   - "Auto-generated sitemap with hreflang alternates for 30+ locale-specific URLs"
 tags:
   - "nextjs"
@@ -83,10 +77,6 @@ tags:
   - "bilingual"
   - "seo"
   - "resend"
-  - "react-hook-form"
-  - "zod"
-  - "framer-motion"
-  - "vercel"
   - "marketing"
   - "software-distribution"
 date_completed: "2026-02"
@@ -107,22 +97,3 @@ The contact pipeline is production-grade: React Hook Form manages client state, 
 **CSS variables over theme config:** The design system uses CSS custom properties (`--color-primary`, etc.) with Tailwind's class strategy for dark mode. A flash-prevention script in `<head>` reads localStorage before paint, eliminating the dark mode FOUC that plagues most theme implementations.
 
 **Component library over UI framework:** Custom atomic components (Button with 4 variants, Card, Badge, Container with 4 sizes, Section with 4 spacings, PageHero with multiple background variants) matched to the specific design — no shadcn/ui or Radix dependency overhead for a marketing site.
-
-## Security
-
-- Honeypot spam protection: hidden `address` field silently drops bot submissions
-- Zod schema validation: client-side and server-side with matching schemas
-- Server Actions: no exposed API endpoints for form processing
-- Environment variables: all secrets (`RESEND_API_KEY`, `NOTIFICATION_EMAIL`) externalized
-- No telemetry: zero analytics or tracking scripts shipped to the client
-
-## Performance
-
-Lighthouse scores from production deployment:
-
-- **Performance:** 100
-- **Best Practices:** 100
-- **SEO:** 92
-- **Accessibility:** 92
-
-Core Web Vitals: FCP 0.3s, LCP 0.4s, TBT 0ms, CLS 0. Achieved through Server Components (minimal client JS), Next.js Image optimization, Inter font loaded via `next/font` (no layout shift), and static generation for all marketing pages.
