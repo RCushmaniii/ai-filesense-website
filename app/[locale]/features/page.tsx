@@ -4,8 +4,6 @@ import { Container } from '@/components/layout/container'
 import { Section } from '@/components/layout/section'
 import { PageHero } from '@/components/layout/page-hero'
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import NextLink from 'next/link'
 import {
   FolderIcon,
   SearchIcon,
@@ -27,13 +25,8 @@ export const metadata: Metadata = {
   description: 'Discover how AI FileSense organizes your files in 5 simple steps with 12 smart folders—all 100% local and private.',
 }
 
-export default async function FeaturesPage({
-  params: { locale },
-}: {
-  params: { locale: string }
-}) {
+export default async function FeaturesPage() {
   const t = await getTranslations('features')
-  const common = await getTranslations('common')
   const homeT = await getTranslations('home')
 
   const steps = [
@@ -391,23 +384,6 @@ export default async function FeaturesPage({
               </ul>
               <p className="mt-4 text-xs text-foreground/50">{t('technical.note')}</p>
             </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* CTA */}
-      <Section spacing="lg" className="bg-primary/5">
-        <Container>
-          <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">{t('hero.title')}</h2>
-            <p className="text-lg text-foreground/70 mb-8">
-              {t('hero.subtitle')}
-            </p>
-            <NextLink href={`/${locale}/download`}>
-              <Button variant="primary" className="text-lg px-8 py-4">
-                {common('downloadFree')}
-              </Button>
-            </NextLink>
           </div>
         </Container>
       </Section>
