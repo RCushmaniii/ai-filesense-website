@@ -5,7 +5,6 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 
 import { contactFormSchema, type ContactFormData } from '@/lib/schemas'
-import { submitContactForm } from '@/app/actions/contact'
 
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -31,14 +30,29 @@ export function ContactForm() {
     setServerError(null)
 
     try {
-      const response = await submitContactForm(data)
+      const response = await fetch(
+        `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            company: data.company,
+            message: data.message,
+            _gotcha: data._gotcha,
+            _subject: `[AI FileSense Website] Contact from ${data.name}`,
+            _source: 'ai-filesense-website',
+            _site: 'aifilesense.com',
+          }),
+        }
+      )
 
-      if (response.success) {
+      if (response.ok) {
         setIsSuccess(true)
         reset()
       } else {
-        if (response.error) setServerError(response.error)
-        else setServerError('Something went wrong. Please try again.')
+        setServerError('Something went wrong. Please try again.')
       }
     } catch {
       setServerError('Something went wrong. Please try again.')
@@ -104,7 +118,7 @@ export function ContactForm() {
           autoComplete="off"
           className="hidden"
           aria-hidden="true"
-          {...register('address')}
+          {...register('_gotcha')}
         />
 
         {serverError && <div className="text-sm text-red-500 font-medium">{serverError}</div>}

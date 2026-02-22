@@ -32,7 +32,7 @@ This repository contains the marketing website for AI FileSense, a Windows deskt
 **Test scenarios:**
 
 1. **Language switching** — Toggle between English and Spanish using the language switcher in the navigation bar
-2. **Contact form** — Navigate to Support > Contact and submit a test message (validates with Zod, sends via Resend)
+2. **Contact form** — Navigate to Support > Contact and submit a test message (validates with Zod, submits via Formspree)
 3. **Dark mode** — Toggle dark mode in the navbar to test theme persistence across page navigations
 
 ---
@@ -43,7 +43,7 @@ This repository contains the marketing website for AI FileSense, a Windows deskt
 | --------------------- | ----------------------------------------------------------------------- |
 | **Bilingual Support** | Full English and Spanish (Mexico) localization via locale-based routing |
 | **Server Components** | Fast initial page loads with Next.js 14 App Router architecture         |
-| **Contact System**    | Form validation with Zod schemas, email delivery via Resend             |
+| **Contact System**    | Form validation with Zod schemas, submission via Formspree              |
 | **SEO Optimized**     | Dynamic metadata per page, Open Graph cards, auto-generated sitemap     |
 | **Accessible**        | Semantic HTML, keyboard navigation, WCAG AA color contrast              |
 | **Dark Mode**         | System preference detection with localStorage persistence               |
@@ -59,7 +59,7 @@ This repository contains the marketing website for AI FileSense, a Windows deskt
 | Styling    | Tailwind CSS with CSS variables                            |
 | i18n       | next-intl (EN + ES-MX)                                     |
 | Forms      | React Hook Form + Zod validation                           |
-| Email      | Resend                                                     |
+| Forms      | Formspree (contact submissions)                            |
 | Animations | Framer Motion                                              |
 
 ---
@@ -93,9 +93,7 @@ Add your values:
 
 ```
 SITE_URL=http://localhost:3000
-RESEND_API_KEY=re_xxxxx
-CONTACT_EMAIL=your-email@example.com
-CONTACT_FROM="AI FileSense <noreply@yourdomain.com>"
+NEXT_PUBLIC_FORMSPREE_ID=your_formspree_form_id
 ```
 
 ### 3. Start Development Server
@@ -128,7 +126,6 @@ ai-filesense-website/
 │   │   ├── blog/              # Blog with MDX support
 │   │   ├── privacy/           # Privacy policy
 │   │   └── terms/             # Terms of service
-│   ├── actions/               # Server actions (contact.ts)
 │   ├── sitemap.ts             # Auto-generated sitemap
 │   └── robots.ts              # Robots.txt configuration
 ├── components/
@@ -136,7 +133,6 @@ ai-filesense-website/
 │   ├── layout/                # Navbar, footer, container, section
 │   ├── home/                  # Home page sections
 │   ├── contact/               # Contact form with validation
-│   ├── emails/                # React Email templates
 │   └── icons/                 # SVG icon components
 ├── messages/
 │   ├── en.json                # English translations
@@ -189,12 +185,10 @@ The desktop application organizes files into `Documents/Organized Files/` with n
 
 ### Environment Variables
 
-| Variable         | Required | Description                                   |
-| ---------------- | -------- | --------------------------------------------- |
-| `SITE_URL`       | Yes      | Production URL for SEO and sitemap generation |
-| `RESEND_API_KEY` | Yes      | Resend API key for email delivery             |
-| `CONTACT_EMAIL`  | Yes      | Recipient for contact form submissions        |
-| `CONTACT_FROM`   | Yes      | From address for outgoing emails              |
+| Variable                   | Required | Description                                   |
+| -------------------------- | -------- | --------------------------------------------- |
+| `SITE_URL`                 | Yes      | Production URL for SEO and sitemap generation |
+| `NEXT_PUBLIC_FORMSPREE_ID` | Yes      | Formspree form ID for contact submissions     |
 
 ### Internationalization
 
@@ -246,9 +240,7 @@ vercel --prod
 Set these environment variables in the Vercel dashboard:
 
 - `SITE_URL`
-- `RESEND_API_KEY`
-- `CONTACT_EMAIL`
-- `CONTACT_FROM`
+- `NEXT_PUBLIC_FORMSPREE_ID`
 
 ### Manual Build
 
@@ -309,7 +301,7 @@ Lighthouse scores from production deployment (January 2026):
 
 - [x] Honeypot field on contact form for spam protection
 - [x] Zod schema validation on all form inputs
-- [x] Server Actions for form processing (no exposed API routes)
+- [x] Formspree for form processing (no custom backend needed)
 - [x] Environment variables for sensitive configuration
 
 ---

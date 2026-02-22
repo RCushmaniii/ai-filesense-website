@@ -31,13 +31,11 @@ ai-filesense-website/
 │   │   ├── features/          # Features page with differentiators
 │   │   ├── support/           # Support hub (FAQ, Getting Started, Contact)
 │   │   └── ...                # Other pages
-│   ├── actions/               # Server actions (contact form)
 │   └── sitemap.ts             # Auto-generated sitemap
 ├── components/
 │   ├── ui/                    # Atomic components (button, card, input)
 │   ├── layout/                # Layout components (navbar, footer, container)
-│   ├── contact/               # Contact form
-│   └── emails/                # React Email templates
+│   └── contact/               # Contact form
 ├── messages/
 │   ├── en.json                # English translations
 │   └── es.json                # Spanish translations
@@ -56,7 +54,7 @@ ai-filesense-website/
 - **Tailwind CSS** - Utility-first styling with `cn()` helper
 - **next-intl** - Internationalization (EN + ES-MX)
 - **React Hook Form + Zod** - Form validation
-- **Resend** - Transactional emails
+- **Formspree** - Contact form submissions
 
 ## Architecture Patterns
 
@@ -78,8 +76,8 @@ ai-filesense-website/
 ### Forms
 - React Hook Form for state management
 - Zod schemas for validation
-- Server Actions for submission
-- Honeypot field for spam protection
+- Formspree for submission (client-side `fetch` POST)
+- Honeypot field (`_gotcha`) for spam protection
 
 ## Important Files
 
@@ -90,8 +88,7 @@ ai-filesense-website/
 | `app/[locale]/features/page.tsx` | Features, differentiators, roadmap |
 | `app/[locale]/support/faq/page.tsx` | 10 FAQs (flat list) |
 | `app/[locale]/support/getting-started/page.tsx` | 5-step user journey |
-| `components/contact/contact-form.tsx` | Contact form with validation |
-| `app/actions/contact.ts` | Server action for email submission |
+| `components/contact/contact-form.tsx` | Contact form with validation (Formspree) |
 | `messages/en.json` | English translations |
 | `messages/es.json` | Spanish translations |
 
@@ -105,9 +102,7 @@ ai-filesense-website/
 
 ```env
 SITE_URL=https://aifilesense.com
-RESEND_API_KEY=your_resend_api_key
-NOTIFICATION_EMAIL=your-email@example.com
-CONTACT_FROM="AI FileSense <noreply@aifilesense.com>"
+NEXT_PUBLIC_FORMSPREE_ID=your_formspree_form_id
 ```
 
 ## Key Content

@@ -16,9 +16,8 @@ export const contactFormSchema = z.object({
     .min(10, { message: 'Please share a bit more detail about your question.' })
     .max(2000, { message: 'Message is too long.' }),
 
-  // HONEYPOT: Hidden field for bots. If this has a value, it is spam.
-  // We call it 'address' to trick bots into thinking it's a real field.
-  address: z.string().optional(),
+  // HONEYPOT: Formspree's native honeypot field. If filled, submission is rejected as spam.
+  _gotcha: z.string().optional(),
 })
 
 export type ContactFormData = z.infer<typeof contactFormSchema>
