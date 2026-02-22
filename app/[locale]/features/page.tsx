@@ -104,11 +104,6 @@ export default async function FeaturesPage() {
       title: t('differentiators.crashRecovery.title'),
       desc: t('differentiators.crashRecovery.description'),
     },
-    {
-      icon: <SparklesIcon className="w-8 h-8" />,
-      title: t('differentiators.personalized.title'),
-      desc: t('differentiators.personalized.description'),
-    },
   ]
 
   const fileTypes = [
