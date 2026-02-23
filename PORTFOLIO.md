@@ -1,8 +1,8 @@
 ---
 # === CONTROL FLAGS ===
 portfolio_enabled: true
-portfolio_priority: 2
-portfolio_featured: true
+portfolio_priority: 3
+portfolio_featured: false
 
 # === CARD DISPLAY ===
 title: "AI FileSense Website"
