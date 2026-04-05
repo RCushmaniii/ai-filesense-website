@@ -22,7 +22,7 @@
     "next-mdx-remote": "^6.0.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
-    "react-hook-form": "^7.58.0",
+    "react-hook-form": "^7.72.1",
     "tailwind-merge": "^2.6.0",
     "zod": "^3.25.0"
   },
