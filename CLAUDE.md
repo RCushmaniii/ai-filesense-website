@@ -4,7 +4,7 @@
 
 **Name:** AI FileSense Website
 **Type:** Marketing website for AI FileSense desktop application
-**Framework:** Next.js 14 (App Router)
+**Framework:** Next.js 16 (App Router)
 **Language:** TypeScript (strict mode)
 **Styling:** Tailwind CSS with CSS variables
 **i18n:** next-intl (English + Spanish)
@@ -49,7 +49,7 @@ ai-filesense-website/
 
 ## Key Technologies
 
-- **Next.js 14** - App Router, Server Components, Server Actions
+- **Next.js 16** - App Router, Server Components, Server Actions
 - **TypeScript** - Strict mode enabled
 - **Tailwind CSS** - Utility-first styling with `cn()` helper
 - **next-intl** - Internationalization (EN + ES-MX)

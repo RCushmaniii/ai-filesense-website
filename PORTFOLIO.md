@@ -5,116 +5,105 @@ portfolio_priority: 26
 portfolio_featured: false
 
 # === CARD DISPLAY ===
-title: "AI FileSense Website"
-tagline: "Bilingual marketing site with Lighthouse 100 and lead capture"
-slug: "ai-filesense-website"
-category: "Marketing"
+title: 'AI FileSense Website'
+tagline: 'Bilingual marketing site with Lighthouse 100 and lead capture'
+slug: 'ai-filesense-website'
+category: 'Marketing'
 tech_stack:
-  - "Next.js 14"
-  - "TypeScript"
-  - "Tailwind CSS"
-  - "next-intl"
-  - "Resend"
-thumbnail: "/images/portfolio/ai-filesense-website-thumb.jpg"
-status: "Production"
+  - 'Next.js 16'
+  - 'React 19'
+  - 'TypeScript'
+  - 'Tailwind CSS'
+  - 'next-intl'
+  - 'Resend'
+  - 'Sentry'
+thumbnail: '/images/portfolio/ai-filesense-website-thumb.jpg'
+status: 'Production'
 
 # === DETAIL PAGE ===
 problem: "Most indie software developers and small businesses ship a desktop app and then have nothing — no discoverability, no trust signals, no bilingual reach, no support system, and no conversion path. A download link with no context doesn't convert visitors into users."
 solution: "A 17-page bilingual marketing and support website that handles everything between 'I built an app' and 'I have a business' — SEO-optimized, conversion-focused, with a working contact/lead system and a complete support hub."
 key_features:
-  - "17 pages across 7 sections — full marketing funnel from homepage to terms of service"
-  - "Bilingual from day one (EN + ES-MX) — locale-based routing with hreflang sitemap alternates"
-  - "Working contact/lead capture — Zod + React Hook Form + Server Actions + Resend + honeypot spam protection"
-  - "Complete support hub — Getting Started guide, 11-question FAQ, validated contact form"
-  - "Production SEO — dynamic metadata, auto-generated sitemap, Open Graph cards, canonical URLs"
+  - '17 pages across 7 sections — full marketing funnel from homepage to terms of service'
+  - 'Bilingual from day one (EN + ES-MX) — locale-based routing with hreflang sitemap alternates'
+  - 'Working contact/lead capture — Zod + React Hook Form + Server Actions + Resend + honeypot spam protection'
+  - 'Complete support hub — Getting Started guide, 11-question FAQ, validated contact form'
+  - 'Production SEO — dynamic metadata, auto-generated sitemap, Open Graph cards, canonical URLs'
 
 # === MEDIA: PORTFOLIO SLIDES ===
 slides:
-  - src: "/images/portfolio/ai-filesense-website-01.webp"
-    alt_en: "Homepage hero with video explainer and download CTA"
-    alt_es: "Hero de la pagina principal con video explicativo y boton de descarga"
-  - src: "/images/portfolio/ai-filesense-website-02.webp"
-    alt_en: "How It Works — 3-step process breakdown"
-    alt_es: "Como Funciona — desglose del proceso en 3 pasos"
-  - src: "/images/portfolio/ai-filesense-website-03.webp"
-    alt_en: "Features section with trust signals"
-    alt_es: "Seccion de caracteristicas con senales de confianza"
-  - src: "/images/portfolio/ai-filesense-website-04.webp"
-    alt_en: "The 12-Folder Smart System overview"
-    alt_es: "Vista general del Sistema Inteligente de 12 Carpetas"
-  - src: "/images/portfolio/ai-filesense-website-05.webp"
-    alt_en: "Features page — differentiators and competitive advantages"
-    alt_es: "Pagina de caracteristicas — diferenciadores y ventajas competitivas"
-  - src: "/images/portfolio/ai-filesense-website-06.webp"
-    alt_en: "Support hub with Getting Started guide"
-    alt_es: "Centro de soporte con guia de inicio"
-  - src: "/images/portfolio/ai-filesense-website-07.webp"
-    alt_en: "Download page with system requirements and quick-start"
-    alt_es: "Pagina de descarga con requisitos del sistema e inicio rapido"
-  - src: "/images/portfolio/ai-filesense-website-08.webp"
-    alt_en: "Dark mode — full theme support across all pages"
-    alt_es: "Modo oscuro — soporte completo de temas en todas las paginas"
+  - src: '/images/portfolio/ai-filesense-website-01.webp'
+    alt_en: 'Homepage hero with video explainer and download CTA'
+    alt_es: 'Hero de la pagina principal con video explicativo y boton de descarga'
+  - src: '/images/portfolio/ai-filesense-website-02.webp'
+    alt_en: 'How It Works — 3-step process breakdown'
+    alt_es: 'Como Funciona — desglose del proceso en 3 pasos'
+  - src: '/images/portfolio/ai-filesense-website-03.webp'
+    alt_en: 'Features section with trust signals'
+    alt_es: 'Seccion de caracteristicas con senales de confianza'
+  - src: '/images/portfolio/ai-filesense-website-04.webp'
+    alt_en: 'The 12-Folder Smart System overview'
+    alt_es: 'Vista general del Sistema Inteligente de 12 Carpetas'
+  - src: '/images/portfolio/ai-filesense-website-05.webp'
+    alt_en: 'Features page — differentiators and competitive advantages'
+    alt_es: 'Pagina de caracteristicas — diferenciadores y ventajas competitivas'
+  - src: '/images/portfolio/ai-filesense-website-06.webp'
+    alt_en: 'Support hub with Getting Started guide'
+    alt_es: 'Centro de soporte con guia de inicio'
+  - src: '/images/portfolio/ai-filesense-website-07.webp'
+    alt_en: 'Download page with system requirements and quick-start'
+    alt_es: 'Pagina de descarga con requisitos del sistema e inicio rapido'
+  - src: '/images/portfolio/ai-filesense-website-08.webp'
+    alt_en: 'Dark mode — full theme support across all pages'
+    alt_es: 'Modo oscuro — soporte completo de temas en todas las paginas'
 
 # === MEDIA: VIDEO ===
-video_url: "/videos/AI-FileSense-Website-brief.mp4"
-video_poster: "/images/portfolio/AI-FileSense-Website-brief-poster.jpg"
+video_url: '/videos/AI-FileSense-Website-brief.mp4'
+video_poster: '/images/portfolio/AI-FileSense-Website-brief-poster.jpg'
 
 # === LINKS ===
-demo_url: "https://ai-filesense-website.vercel.app/"
-live_url: "https://ai-filesense-website.vercel.app"
+demo_url: 'https://ai-filesense-website.vercel.app/'
+live_url: 'https://ai-filesense-website.vercel.app'
 
 # === OPTIONAL ===
 metrics:
-  - "17 pages across 7 sections covering the full product lifecycle"
-  - "Lighthouse 100 Performance, 100 Best Practices, 92 SEO, 92 Accessibility"
-  - "0.3s FCP, 0.4s LCP, 0ms TBT — zero layout shift"
-  - "Auto-generated sitemap with hreflang alternates for 30+ locale-specific URLs"
+  - '17 pages across 7 sections covering the full product lifecycle'
+  - 'Lighthouse 100 Performance, 100 Best Practices, 92 SEO, 92 Accessibility'
+  - '0.3s FCP, 0.4s LCP, 0ms TBT — zero layout shift'
+  - 'Auto-generated sitemap with hreflang alternates for 30+ locale-specific URLs'
 tags:
-  - "nextjs"
-  - "typescript"
-  - "tailwind"
-  - "i18n"
-  - "bilingual"
-  - "seo"
-  - "resend"
-  - "marketing"
-  - "software-distribution"
-date_completed: "2026-02"
+  - 'nextjs'
+  - 'typescript'
+  - 'tailwind'
+  - 'i18n'
+  - 'bilingual'
+  - 'seo'
+  - 'resend'
+  - 'marketing'
+  - 'software-distribution'
+date_completed: '2026-02'
 
 # === REPO HEALTH STATUS ===
 # Last audited: 2026-04-05
 # Standards defined in: operating-system/delivery/repo-health-baseline.md
 health_status:
-  sentry: "-"
-  testing: "-"
-  ci_cd: "Y"
-  health_endpoint: "n/a"
-  security_headers: "Y"
-  rate_limiting: "n/a"
-  env_validation: "partial"
-  analytics: "DEFERRED"
-  structured_logging: "-"
-  dependabot: "Y"
-  secret_scanning: "Y"
-  db_backup: "-"
-health_status:
-  sentry: "-"
-  testing: "-"
-  ci_cd: "Y"
-  health_endpoint: "n/a"
-  security_headers: "-"
-  rate_limiting: "n/a"
-  env_validation: "-"
-  analytics: "DEFERRED"
-  structured_logging: "-"
-  dependabot: "Y"
-  secret_scanning: "Y"
-  db_backup: "-"
+  sentry: 'Y'
+  testing: 'smoke'
+  ci_cd: 'Y'
+  health_endpoint: 'n/a'
+  security_headers: 'Y'
+  rate_limiting: 'n/a'
+  env_validation: 'partial'
+  analytics: 'DEFERRED'
+  structured_logging: '-'
+  dependabot: 'Y'
+  secret_scanning: 'Y'
+  db_backup: '-'
 ---
 
 ## Architecture Overview
 
-AI FileSense Website is a Next.js 14 App Router marketing platform that doubles as a software distribution system. Server Components handle all pages by default for fast initial loads, with Client Components scoped to interactive elements (navbar, contact form, language switcher, dark mode toggle). The i18n system uses next-intl with locale-based URL routing (`/en/features`, `/es/features`), and every translation string lives in structured JSON files — no hardcoded English anywhere.
+AI FileSense Website is a Next.js 16 App Router marketing platform that doubles as a software distribution system. Server Components handle all pages by default for fast initial loads, with Client Components scoped to interactive elements (navbar, contact form, language switcher, dark mode toggle). The i18n system uses next-intl with locale-based URL routing (`/en/features`, `/es/features`), and every translation string lives in structured JSON files — no hardcoded English anywhere.
 
 The contact pipeline is production-grade: React Hook Form manages client state, Zod schemas validate on both client and server, a Server Action processes the submission (no exposed API routes), a honeypot field silently drops bot submissions, and Resend delivers a professionally templated email via React Email.
 
