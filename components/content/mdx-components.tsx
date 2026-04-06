@@ -101,7 +101,8 @@ export const mdxComponents = {
   ),
 
   // Image
-  img: ({ src = '', alt = '', ...props }: React.ImgHTMLAttributes<HTMLImageElement>) => {
+  img: ({ src: rawSrc = '', alt = '', ...props }: React.ImgHTMLAttributes<HTMLImageElement>) => {
+    const src = typeof rawSrc === 'string' ? rawSrc : ''
     const rest: Record<string, unknown> = { ...props }
     delete rest.width
     delete rest.height
@@ -110,12 +111,12 @@ export const mdxComponents = {
 
     return (
       <Image
-        src={src}
+        src={src as string}
         alt={alt}
         width={1200}
         height={600}
         className="rounded-lg my-6"
-        {...(rest as Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'width' | 'height' | 'sizes' | 'srcSet'>)}
+        {...(rest as Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'src' | 'width' | 'height' | 'sizes' | 'srcSet'>)}
       />
     )
   },

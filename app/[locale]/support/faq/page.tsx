@@ -12,10 +12,11 @@ export const metadata: Metadata = {
 }
 
 export default async function FAQPage({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   const t = await getTranslations('faq')
 
   const faqs = [
