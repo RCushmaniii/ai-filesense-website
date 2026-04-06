@@ -29,6 +29,7 @@ export function Navbar() {
 
   useEffect(() => {
     // Sync state with actual DOM state set by inline script
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDarkMode(document.documentElement.classList.contains('dark'))
     setMounted(true)
   }, [])
@@ -46,6 +47,7 @@ export function Navbar() {
   }
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMobileMenuOpen(false)
   }, [pathname])
 

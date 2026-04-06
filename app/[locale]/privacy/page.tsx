@@ -11,10 +11,11 @@ export const metadata: Metadata = {
 }
 
 export default async function PrivacyPage({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   const t = await getTranslations('privacy')
 
   return (

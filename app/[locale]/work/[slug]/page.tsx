@@ -20,9 +20,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }): Promise<Metadata> {
-  const work = getWorkBySlug(params.slug)
+  const { slug } = await params
+  const work = getWorkBySlug(slug)
 
   if (!work) {
     return {
@@ -43,12 +44,13 @@ export async function generateMetadata({
   }
 }
 
-export default function WorkDetailPage({
+export default async function WorkDetailPage({
   params,
 }: {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }) {
-  const work = getWorkBySlug(params.slug)
+  const { slug } = await params
+  const work = getWorkBySlug(slug)
 
   if (!work) {
     notFound()

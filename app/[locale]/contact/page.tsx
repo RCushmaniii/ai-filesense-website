@@ -12,10 +12,11 @@ export const metadata: Metadata = {
 }
 
 export default async function ContactPage({
-  params: { locale: _locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  await params
   const t = await getTranslations('contact')
 
   return (

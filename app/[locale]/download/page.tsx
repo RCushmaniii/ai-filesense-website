@@ -24,10 +24,11 @@ export const metadata: Metadata = {
 const DOWNLOAD_URL = 'https://github.com/RCushmaniii/ai-filesense-website/releases/download/v1.0.0/AI.FileSense_1.0.0_x64-setup.exe'
 
 export default async function DownloadPage({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   const t = await getTranslations('download')
 
   const quickStartSteps = [
