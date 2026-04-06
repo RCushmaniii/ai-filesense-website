@@ -8,7 +8,7 @@ import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
 import '@/styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -70,7 +70,10 @@ export async function generateMetadata({
       icon: [
         { url: '/favicon.svg', type: 'image/svg+xml' },
       ],
-      apple: '/icon.svg',
+      apple: '/apple-touch-icon.png',
+    },
+    other: {
+      'theme-color': '#2563eb',
     },
   }
 }

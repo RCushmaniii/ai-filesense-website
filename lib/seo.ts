@@ -14,14 +14,38 @@ export function getOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Agency',
+    name: 'AI FileSense',
     url: siteUrl,
-    logo: `${siteUrl}/logo.png`,
+    logo: `${siteUrl}/favicon.svg`,
     sameAs: [
-      'https://twitter.com/agency',
-      'https://github.com/agency',
-      'https://linkedin.com/company/agency',
+      'https://github.com/RCushmaniii/ai-filesense-website',
     ],
+  }
+}
+
+/**
+ * Generate SoftwareApplication schema for the product
+ */
+export function getSoftwareApplicationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'AI FileSense',
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Windows 10, Windows 11',
+    description:
+      'AI-powered desktop application that intelligently organizes your files locally using Claude AI. Privacy-first, fully bilingual (English/Spanish).',
+    url: siteUrl,
+    downloadUrl: `${siteUrl}/en/download`,
+    author: {
+      '@type': 'Organization',
+      name: 'AI FileSense',
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
   }
 }
 
@@ -44,14 +68,14 @@ export function getArticleSchema(article: {
     datePublished: article.date,
     author: {
       '@type': 'Organization',
-      name: 'Agency',
+      name: 'AI FileSense',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Agency',
+      name: 'AI FileSense',
       logo: {
         '@type': 'ImageObject',
-        url: `${siteUrl}/logo.png`,
+        url: `${siteUrl}/favicon.svg`,
       },
     },
     mainEntityOfPage: {

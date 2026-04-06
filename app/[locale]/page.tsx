@@ -4,6 +4,7 @@ import { HowItWorks } from '@/components/home/how-it-works'
 import { FeaturesSection } from '@/components/home/features-section'
 import { FoldersSection } from '@/components/home/folders-section'
 import { CTASection } from '@/components/home/cta-section'
+import { getOrganizationSchema, getSoftwareApplicationSchema } from '@/lib/seo'
 
 export default async function HomePage({
   params,
@@ -15,6 +16,15 @@ export default async function HomePage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            getOrganizationSchema(),
+            getSoftwareApplicationSchema(),
+          ]),
+        }}
+      />
       <Hero />
       <HowItWorks />
       <FeaturesSection />
