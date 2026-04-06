@@ -1,4 +1,5 @@
 const createNextIntlPlugin = require('next-intl/plugin')
+const { withSentryConfig } = require('@sentry/nextjs')
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
 
@@ -25,4 +26,10 @@ const nextConfig = {
   },
 }
 
-module.exports = withNextIntl(nextConfig)
+module.exports = withSentryConfig(withNextIntl(nextConfig), {
+  org: 'cushlabsai',
+  project: 'ai-filesense-website',
+  silent: !process.env.CI,
+  widenClientFileUpload: true,
+  disableLogger: true,
+})
