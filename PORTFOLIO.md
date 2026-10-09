@@ -3,6 +3,7 @@
 portfolio_enabled: true
 portfolio_priority: 26
 portfolio_featured: false
+portfolio_last_reviewed: "2026-09-13"
 
 # === CARD DISPLAY ===
 title: 'AI FileSense Website'
